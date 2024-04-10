@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject mainMenu;
     public GameObject ShoesMenu;
+    public GameObject settingsMenu;
 
     public void OpenShoes()
     {
@@ -22,10 +23,22 @@ public class MainMenu : MonoBehaviour
     //    mainMenu.SetActive(true);
     //}
 
+    public void OpenSettings()
+    {
+        mainMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void OpenGameScene()
+    {
+        SceneManager.LoadScene("CharlieScene");
+    }
+
     public void OpenMainMenu()
     {
         mainMenu.SetActive(true);
         ShoesMenu.SetActive(false);
+        settingsMenu.SetActive(false);
 
     }
     void Start()
