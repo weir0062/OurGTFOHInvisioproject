@@ -21,8 +21,14 @@ public class Invisio : MonoBehaviour
         {
             for(int i = 0; i < Footsteps.Count; i++)
             {
-                if (Footsteps[i].transform.position == GoodTilePos)
+                if (Footsteps[i].transform.position.y >= GoodTilePos.y)
                 {
+                    Debug.Log("Previous Footstep - " + Footsteps[i].transform.position.y + "\n while this footstep is - " + GoodTile.transform.position.y);
+                    return;
+                }
+                if (GoodTile.transform.position.y > Footsteps[i].transform.position.y+3.0f )
+                {
+                    Debug.Log("Too Far");
                     return;
                 }
             }
@@ -55,7 +61,6 @@ public class Invisio : MonoBehaviour
     }
     public void StepOnBadTile()
     {
-        // Логика проигрыша, например, показ экрана проигрыша
         Debug.Log("Game Over");
     }
 
@@ -85,7 +90,6 @@ public class Invisio : MonoBehaviour
     private void Update()
     {
 
-        Debug.Log(totalfootsteps);
     }
 
 }
