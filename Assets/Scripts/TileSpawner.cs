@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,9 +7,12 @@ public class TileSpawner : MonoBehaviour
     public GameObject badTilePrefab;
     public float spawnRate = 1f;
     public float tileSpeed = 3f;
-    
+    public int tilesPerLine = 4; // Количество тайлов в линии
     private float nextSpawnTime;
+    private float lastLineYPosition = 0f; // Последняя позиция Y для контроля вертикального зазора
+    public float verticalSpacing = 0.01f; // Вертикальный зазор между линиями плиток
 
+    private List<GameObject> spawnedTiles = new List<GameObject>();
 
     void Update()
     {
@@ -18,38 +20,43 @@ public class TileSpawner : MonoBehaviour
 
         if (Time.time >= nextSpawnTime)
         {
-            SpawnTile();
+            SpawnTilesLine();
             nextSpawnTime = Time.time + 1 / spawnRate;
         }
 
         CleanupTiles();
     }
 
-    void SpawnTile()
+    void SpawnTilesLine()
     {
-        Vector3 spawnPosition = new Vector3(Random.Range(-5, 5), transform.position.y, 0);
-        bool isBadTile = Random.Range(0, 5) == 0;
+        int goodTileIndex = Random.Range(0, tilesPerLine); // Гарантируем одну "хорошую" плитку в линии
 
-        GameObject tilePrefab = isBadTile ? badTilePrefab : goodTilePrefab;
-        GameObject spawnedTile = Instantiate(tilePrefab, spawnPosition, Quaternion.identity);
-        spawnedTile.transform.SetParent(transform); // Сделаем TileSpawner родителем для удобства управления
+        for (int i = 0; i < tilesPerLine; i++)
+        {
+            Vector3 spawnPosition = new Vector3(i - (tilesPerLine / 2.0f) + 0.5f, transform.position.y + lastLineYPosition, 0);
+            GameObject tilePrefab = i == goodTileIndex ? goodTilePrefab : badTilePrefab;
+            GameObject spawnedTile = Instantiate(tilePrefab, spawnPosition, Quaternion.identity, transform);
+            spawnedTiles.Add(spawnedTile);
+        }
     }
 
     void MoveTilesDown()
     {
-        foreach (Transform child in transform)
+        foreach (GameObject tile in spawnedTiles)
         {
-            child.position += Vector3.down * tileSpeed * Time.deltaTime;
+            tile.transform.position += Vector3.down * tileSpeed * Time.deltaTime;
         }
     }
 
     void CleanupTiles()
     {
-        foreach (Transform child in transform)
+        for (int i = spawnedTiles.Count - 1; i >= 0; i--)
         {
-            if (child.position.y < -6) // Предполагая, что -6 это ниже видимой области экрана
+            if (spawnedTiles[i].transform.position.y < -6) // Предполагаемая нижняя граница экрана
             {
-                Destroy(child.gameObject);
+                GameObject tileToDestroy = spawnedTiles[i];
+                spawnedTiles.RemoveAt(i);
+                Destroy(tileToDestroy);
             }
         }
     }
