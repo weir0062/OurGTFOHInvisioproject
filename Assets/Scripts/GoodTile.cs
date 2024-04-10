@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class GoodTile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnMouseDown()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Vector3 clickPosition = Input.mousePosition;
+        clickPosition = Camera.main.ScreenToWorldPoint(clickPosition);  
+        clickPosition.z = 0;  
+        FindObjectOfType<Invisio>().StepOnGoodTile(clickPosition, this.gameObject);
     }
 }

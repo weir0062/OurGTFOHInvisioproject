@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class BadTile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnMouseDown()
     {
-        
-    }
+        FindObjectOfType<Invisio>().StepOnBadTile();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
