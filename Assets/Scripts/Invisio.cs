@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Invisio : MonoBehaviour
 {
-    public GameObject footstepPrefab; // Префаб следа
-    private bool isRightFoot = true; // Переключатель между правой и левой ногой
-    private int activeFootsteps = 0; // Счетчик активных следов
+    public GameObject footstepPrefab; 
+    private bool isRightFoot = true;  
+    private int activeFootsteps = 0;  
     int totalfootsteps = 0;
     public float footstepscale = 0.2f;
     private List<GameObject> Footsteps = new List<GameObject>();
@@ -15,16 +15,27 @@ public class Invisio : MonoBehaviour
 
     public void StepOnGoodTile(Vector3 position, GameObject GoodTile)
     {
+
+        Vector3 GoodTilePos = GoodTile.transform.position;
         if (activeFootsteps <= 2)
         {
-            GameObject footstep = Instantiate(footstepPrefab, position, Quaternion.identity);
+            for(int i = 0; i < Footsteps.Count; i++)
+            {
+                if (Footsteps[i].transform.position == GoodTilePos)
+                {
+                    return;
+                }
+            }
+             
+            GameObject footstep = Instantiate(footstepPrefab, GoodTilePos, Quaternion.identity);
             isRightFoot = GetIsRightFoot(position.x, LastStepX, isRightFoot);
-            LastStepX = position.x;
+            LastStepX = GoodTilePos.x;
             footstep.transform.localScale = isRightFoot ? new Vector3(footstepscale, footstepscale, footstepscale) : new Vector3(-footstepscale, footstepscale, footstepscale);
             footstep.transform.SetParent(GoodTile.transform, true);
             Footsteps.Add(footstep);
             activeFootsteps++;
             totalfootsteps++;
+            
         }
         if (activeFootsteps > 2)
         {
