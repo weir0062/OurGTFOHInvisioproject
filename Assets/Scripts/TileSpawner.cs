@@ -10,7 +10,8 @@ public class TileSpawner : MonoBehaviour
     public int tilesPerLine = 4; // Количество тайлов в линии
     private float nextSpawnTime;
     private float lastLineYPosition = 0f; // Последняя позиция Y для контроля вертикального зазора
-    public float verticalSpacing = 0.01f; // Вертикальный зазор между линиями плиток
+    public float verticalSpacing = 0.05f; // Вертикальный зазор между линиями плиток
+
 
     private List<GameObject> spawnedTiles = new List<GameObject>();
 
