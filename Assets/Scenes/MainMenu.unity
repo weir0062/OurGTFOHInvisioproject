@@ -8337,7 +8337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1541805726}
   shoesMenu: {fileID: 649350197}
-  shoes2Menu: {fileID: 421793746}
   settingsMenu: {fileID: 682678171}
   creditsMenu: {fileID: 1190759910}
   MusicContObject: {fileID: 1667297840}
@@ -10005,11 +10004,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8337f733cc3e8e43b65b4b008ff1ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuMusicClip: {fileID: 8300000, guid: 7c43525fecfa26e4ba96e9f898da4a50, type: 3}
+  MenuSFXClip: {fileID: 8300000, guid: af84c3e6bd0b1354d866dc0bc5aba958, type: 3}
+  GameMusicClip: {fileID: 8300000, guid: 494844b001b153a409cb76a3d8054fc0, type: 3}
+  GameSFXClip: {fileID: 8300000, guid: cbc00d53d9025c84ab8fca981e853f60, type: 3}
   musicSource: {fileID: 1679511152}
   SFXSource: {fileID: 746945125}
   MusicSlider: {fileID: 1730332712}
   SFXSlider: {fileID: 1692170662}
-  SFXClip: {fileID: 8300000, guid: aecfdbb460c69e841aeed02bf37cff8c, type: 3}
 --- !u!1 &1679511150
 GameObject:
   m_ObjectHideFlags: 0
