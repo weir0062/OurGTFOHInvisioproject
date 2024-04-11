@@ -14,7 +14,20 @@ public class Invisio : MonoBehaviour
     private List<GameObject> Footsteps = new List<GameObject>();
     private float LastStepX = 0;
 
+    public GameObject MusicContObject;
+    private MusicController MusicController;
 
+
+
+
+    private void Start()
+    {
+        if(MusicContObject == null)
+        {
+            MusicContObject = GameObject.Find("Audio");
+        }
+        MusicController = MusicContObject.GetComponent<MusicController>();
+    }
     public void StepOnGoodTile(Vector3 position, GameObject GoodTile)
     {
 
@@ -57,6 +70,9 @@ public class Invisio : MonoBehaviour
         {
             RemoveOldestFootstep();
         }
+
+
+        MusicController.PlaySFXSound();
     }
 
     void RemoveOldestFootstep()
@@ -80,6 +96,10 @@ public class Invisio : MonoBehaviour
     private void Death()
     {
         Debug.Log("Dead");
+
+        MusicController = MusicContObject.GetComponent<MusicController>();
+        MusicController.SetMusicClip(MusicController.MenuMusicClip);
+        MusicController.SetSFXClip(MusicController.MenuSFXClip);
         SceneManager.LoadScene("MainMenu");
     }
 

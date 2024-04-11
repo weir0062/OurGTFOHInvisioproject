@@ -48,7 +48,6 @@ public class TileSpawner : MonoBehaviour
         UpdateBadTilePercentage();
 
 
-        Debug.Log(badTileCurrentPercentage);
     }
 
     float CalculateSpawnInterval()

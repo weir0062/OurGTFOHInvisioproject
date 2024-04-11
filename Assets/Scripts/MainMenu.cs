@@ -19,8 +19,6 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         OpenMainMenu();
-        MusicController = MusicContObject.GetComponent<MusicController>();
-
     }
     public void OpenShoes()
     {
@@ -52,11 +50,16 @@ public class MainMenu : MonoBehaviour
 
     public void OpenGameScene()
     {
+
+        MusicController.SetSFXClip(MusicController.GameSFXClip);
+        MusicController.SetMusicClip(MusicController.GameMusicClip);
         StartCoroutine(StartGame());
     }
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
+
+
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("CharlieScene");
         while (!asyncLoad.isDone)
         {
@@ -71,6 +74,9 @@ public class MainMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
 
+        MusicController = MusicContObject.GetComponent<MusicController>();
+        MusicController.SetMusicClip(MusicController.MenuMusicClip);
+        MusicController.SetSFXClip(MusicController.MenuSFXClip);
     }
 
 
