@@ -22,8 +22,8 @@ public class MusicController : MonoBehaviour
         MusicvolumeSlider = MusicSlider.GetComponent<Slider>();
         MusicvolumeSlider.value = 50;
         musicSource.volume = MusicvolumeSlider.value;
-        //sfx
 
+        //sfx
         SFXvolumeSlider = SFXSlider.GetComponent<Slider>();
         SFXvolumeSlider.value = 50;
         SFXSource.clip = SFXClip;

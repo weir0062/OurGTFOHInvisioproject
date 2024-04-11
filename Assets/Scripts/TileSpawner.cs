@@ -21,6 +21,11 @@ public class TileSpawner : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    private void Awake()
+    {
+
         nextSpawnTime = Time.time;
         badTileCurrentPercentage = badTileStartPercentage;
     }

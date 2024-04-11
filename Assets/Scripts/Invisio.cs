@@ -28,11 +28,19 @@ public class Invisio : MonoBehaviour
                     Debug.Log("Previous Footstep - " + Footsteps[i].transform.position.y + "\n while this footstep is - " + GoodTile.transform.position.y);
                     return;
                 }
-                if (GoodTile.transform.position.y > Footsteps[i].transform.position.y+3.0f )
+            }
+
+            if(activeFootsteps == 2)
+            {
+
+            if (Footsteps[1])
+            {
+                if (GoodTile.transform.position.y > Footsteps[1].transform.position.y+3.0f )
                 {
                     Debug.Log("Too Far");
                     return;
                 }
+            }
             }
              
             GameObject footstep = Instantiate(footstepPrefab, GoodTilePos, Quaternion.identity);

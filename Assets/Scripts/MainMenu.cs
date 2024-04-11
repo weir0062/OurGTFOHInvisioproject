@@ -54,12 +54,14 @@ public class MainMenu : MonoBehaviour
     {
         StartCoroutine(StartGame());
     }
-
     IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("CharlieScene");
-
+        yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("CharlieScene");
+        while (!asyncLoad.isDone)
+        {
+            yield return null; // Wait until the scene fully loads
+        }
     }
 
     public void OpenMainMenu()
