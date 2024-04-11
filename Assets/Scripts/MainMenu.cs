@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsMenu;
     public GameObject MusicContObject;
     private MusicController MusicController;
+    public GameObject shoes2Menu;
 
 
 
@@ -23,9 +24,16 @@ public class MainMenu : MonoBehaviour
     public void OpenShoes()
     {
         mainMenu.SetActive(false);
+        shoes2Menu.SetActive(false);
         shoesMenu.SetActive(true);
+        
     }
 
+    public void Open2Shoes()
+    {
+        shoesMenu.SetActive(false);
+        shoes2Menu.SetActive(true);
+    }
     public void OpenCredits()
     {
         mainMenu.SetActive(false);
@@ -73,6 +81,7 @@ public class MainMenu : MonoBehaviour
         shoesMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+        shoes2Menu.SetActive(false);
 
         MusicController = MusicContObject.GetComponent<MusicController>();
         MusicController.SetMusicClip(MusicController.MenuMusicClip);

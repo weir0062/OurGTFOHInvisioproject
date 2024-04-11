@@ -8340,6 +8340,7 @@ MonoBehaviour:
   settingsMenu: {fileID: 682678171}
   creditsMenu: {fileID: 1190759910}
   MusicContObject: {fileID: 1667297840}
+  shoes2Menu: {fileID: 421793746}
 --- !u!1 &1247730701
 GameObject:
   m_ObjectHideFlags: 0
@@ -11261,7 +11262,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1239564414}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: OpenShoes2
+        m_MethodName: Open2Shoes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
