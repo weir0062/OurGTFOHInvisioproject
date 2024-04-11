@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Invisio : MonoBehaviour
 {
-    public GameObject footstepPrefab; // Префаб следа
-    private bool isRightFoot = true; // Переключатель между правой и левой ногой
-    private int activeFootsteps = 0; // Счетчик активных следов
+    public GameObject footstepPrefab; 
+    private bool isRightFoot = true;  
+    private int activeFootsteps = 0;  
     int totalfootsteps = 0;
     public float footstepscale = 0.2f;
     private List<GameObject> Footsteps = new List<GameObject>();
@@ -15,16 +15,33 @@ public class Invisio : MonoBehaviour
 
     public void StepOnGoodTile(Vector3 position, GameObject GoodTile)
     {
+
+        Vector3 GoodTilePos = GoodTile.transform.position;
         if (activeFootsteps <= 2)
         {
-            GameObject footstep = Instantiate(footstepPrefab, position, Quaternion.identity);
+            for(int i = 0; i < Footsteps.Count; i++)
+            {
+                if (Footsteps[i].transform.position.y >= GoodTilePos.y)
+                {
+                    Debug.Log("Previous Footstep - " + Footsteps[i].transform.position.y + "\n while this footstep is - " + GoodTile.transform.position.y);
+                    return;
+                }
+                if (GoodTile.transform.position.y > Footsteps[i].transform.position.y+3.0f )
+                {
+                    Debug.Log("Too Far");
+                    return;
+                }
+            }
+             
+            GameObject footstep = Instantiate(footstepPrefab, GoodTilePos, Quaternion.identity);
             isRightFoot = GetIsRightFoot(position.x, LastStepX, isRightFoot);
-            LastStepX = position.x;
+            LastStepX = GoodTilePos.x;
             footstep.transform.localScale = isRightFoot ? new Vector3(footstepscale, footstepscale, footstepscale) : new Vector3(-footstepscale, footstepscale, footstepscale);
             footstep.transform.SetParent(GoodTile.transform, true);
             Footsteps.Add(footstep);
             activeFootsteps++;
             totalfootsteps++;
+            
         }
         if (activeFootsteps > 2)
         {
@@ -44,7 +61,6 @@ public class Invisio : MonoBehaviour
     }
     public void StepOnBadTile()
     {
-        // Логика проигрыша, например, показ экрана проигрыша
         Debug.Log("Game Over");
     }
 
@@ -74,7 +90,6 @@ public class Invisio : MonoBehaviour
     private void Update()
     {
 
-        Debug.Log(totalfootsteps);
     }
 
 }
