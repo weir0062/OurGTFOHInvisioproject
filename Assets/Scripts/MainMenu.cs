@@ -8,8 +8,9 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject mainMenu;
-    public GameObject ShoesMenu;
+    public GameObject shoesMenu;
     public GameObject settingsMenu;
+    public GameObject creditsMenu;
     public GameObject MusicContObject;
     private MusicController MusicController;
 
@@ -24,10 +25,14 @@ public class MainMenu : MonoBehaviour
     public void OpenShoes()
     {
         mainMenu.SetActive(false);
-        ShoesMenu.SetActive(true);
+        shoesMenu.SetActive(true);
     }
 
-
+    public void OpenCredits()
+    {
+        mainMenu.SetActive(false);
+        creditsMenu.SetActive(true);
+    }
     public void ButtonClick()
     {
         MusicController.PlaySFXSound();
@@ -60,8 +65,9 @@ public class MainMenu : MonoBehaviour
     public void OpenMainMenu()
     {
         mainMenu.SetActive(true);
-        ShoesMenu.SetActive(false);
+        shoesMenu.SetActive(false);
         settingsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
 
     }
 
