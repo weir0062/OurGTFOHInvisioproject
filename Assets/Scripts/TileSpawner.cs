@@ -10,9 +10,9 @@ public class TileSpawner : MonoBehaviour
     private float nextSpawnTime;
     private float lastLineYPosition = 0f;  
     public float badTileStartPercentage = 35f; 
-    public float badTileMaxPercentage = 75f;   
-    private float badTileCurrentPercentage;  
+    public float badTileMaxPercentage = 99.9f;   
     public float percentageIncreaseRate = 0.1f; 
+    float badTileCurrentPercentage;  
 
 
     private List<GameObject> spawnedTiles = new List<GameObject>();
@@ -33,10 +33,10 @@ public class TileSpawner : MonoBehaviour
     {
         tileSpeed += 0.01f * Time.deltaTime;
 
+
+
         MoveTilesDown();
-
         float spawnInterval = CalculateSpawnInterval();
-
         if (Time.time >= nextSpawnTime)
         {
             SpawnTilesLine();
@@ -46,6 +46,9 @@ public class TileSpawner : MonoBehaviour
         CleanupTiles();
 
         UpdateBadTilePercentage();
+
+
+        Debug.Log(badTileCurrentPercentage);
     }
 
     float CalculateSpawnInterval()
@@ -58,7 +61,7 @@ public class TileSpawner : MonoBehaviour
     {
         if (badTileCurrentPercentage < badTileMaxPercentage)
         {
-            badTileCurrentPercentage += percentageIncreaseRate;// * Time.deltaTime;
+            badTileCurrentPercentage += percentageIncreaseRate * Time.deltaTime;
         }
     }
 
@@ -67,17 +70,38 @@ public class TileSpawner : MonoBehaviour
 
     void SpawnTilesLine()
     {
-
-        float totalSize = 1.01f; // размер тайла + отсуп
+        float totalSize = 1.01f; // Tile size + spacing
+        int badTileCount = 0;
+        List<int> badTileIndices = new List<int>();
 
         for (int i = 0; i < tilesPerLine; i++)
         {
             Vector3 spawnPosition = new Vector3((i * totalSize) - ((tilesPerLine * totalSize) / 2.0f) + (totalSize / 2.0f), transform.position.y + lastLineYPosition, 0);
             bool isBadTile = Random.Range(0f, 100f) < badTileCurrentPercentage;
+
+            if (isBadTile)
+            {
+                badTileCount++;
+                badTileIndices.Add(i);
+            }
+
             GameObject tilePrefab = isBadTile ? badTilePrefab : goodTilePrefab;
             GameObject spawnedTile = Instantiate(tilePrefab, spawnPosition, Quaternion.identity, transform);
             spawnedTiles.Add(spawnedTile);
         }
+
+        // If all tiles are bad, randomly change one to good
+        if (badTileCount == tilesPerLine)
+        {
+            int indexToChange = badTileIndices[Random.Range(0, badTileIndices.Count)];
+            GameObject tileToChange = spawnedTiles[spawnedTiles.Count - tilesPerLine + indexToChange];
+            Destroy(tileToChange); // Destroy the bad tile
+
+            Vector3 spawnPosition = tileToChange.transform.position;
+            GameObject goodTile = Instantiate(goodTilePrefab, spawnPosition, Quaternion.identity, transform);
+            spawnedTiles[spawnedTiles.Count - tilesPerLine + indexToChange] = goodTile; // Replace with good tile
+        }
+
         lastLineYPosition += 1.01f;
     }
 
