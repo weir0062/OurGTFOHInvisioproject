@@ -10,13 +10,29 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject ShoesMenu;
     public GameObject settingsMenu;
+    public GameObject MusicContObject;
+    private MusicController MusicController;
 
+
+
+    void Start()
+    {
+        OpenMainMenu();
+        MusicController = MusicContObject.GetComponent<MusicController>();
+
+    }
     public void OpenShoes()
     {
         mainMenu.SetActive(false);
         ShoesMenu.SetActive(true);
     }
 
+
+    public void ButtonClick()
+    {
+        MusicController.PlaySFXSound();
+
+    }
     //public void CloseShoes() FIRST CODE OF ALPACIN ON C#
     //{
     //    ShoesMenu.SetActive(false);
@@ -31,7 +47,14 @@ public class MainMenu : MonoBehaviour
 
     public void OpenGameScene()
     {
+        StartCoroutine(StartGame());
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("CharlieScene");
+
     }
 
     public void OpenMainMenu()
@@ -41,14 +64,11 @@ public class MainMenu : MonoBehaviour
         settingsMenu.SetActive(false);
 
     }
-    void Start()
-    {
-       // OpenMainMenu();
-    }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

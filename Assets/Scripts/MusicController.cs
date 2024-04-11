@@ -8,24 +8,41 @@ public class MusicController : MonoBehaviour
 {
 
     public AudioSource musicSource;
-    public GameObject Slider;
-    Slider volumeSlider;
-
+    public AudioSource SFXSource;
+    public GameObject MusicSlider;
+    public GameObject SFXSlider;
+    public AudioClip SFXClip;
+    Slider MusicvolumeSlider;
+    Slider SFXvolumeSlider;
 
     // Start is called before the first frame update
     void Start()
     {
-        musicSource = GameObject.Find("Music").GetComponent<AudioSource>();
+        //music
+        MusicvolumeSlider = MusicSlider.GetComponent<Slider>();
+        MusicvolumeSlider.value = 50;
+        musicSource.volume = MusicvolumeSlider.value;
+        //sfx
 
-        volumeSlider = Slider.GetComponent<Slider>();
+        SFXvolumeSlider = SFXSlider.GetComponent<Slider>();
+        SFXvolumeSlider.value = 50;
+        SFXSource.clip = SFXClip;
+        SFXSource.volume = SFXvolumeSlider.value;
 
-        volumeSlider.value = 50;
-        musicSource.volume = volumeSlider.value;
+        SFXSource.loop = false;
     }
 
-    public void ChangeVolume()
+    public void ChangeMusicVolume()
     {
-         musicSource.volume = volumeSlider.value;
+        musicSource.volume = MusicvolumeSlider.value;
     }
-      
+    public void ChangeSFXVolume()
+    {
+        SFXSource.volume = SFXvolumeSlider.value;
+    }
+
+    public void PlaySFXSound()
+    {
+        SFXSource.Play();
+    }
 }
