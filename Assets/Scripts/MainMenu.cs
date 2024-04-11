@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject mainMenu;
     public GameObject shoesMenu;
+    public GameObject shoes2Menu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
     public GameObject MusicContObject;
@@ -25,7 +26,14 @@ public class MainMenu : MonoBehaviour
     public void OpenShoes()
     {
         mainMenu.SetActive(false);
+        shoes2Menu.SetActive(false);
         shoesMenu.SetActive(true);
+    }
+
+    public void OpenShoes2()
+    {
+        shoesMenu.SetActive(false);
+        shoes2Menu.SetActive(true);
     }
 
     public void OpenCredits()
@@ -70,7 +78,7 @@ public class MainMenu : MonoBehaviour
         shoesMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
-
+        shoes2Menu.SetActive(false);
     }
 
 
