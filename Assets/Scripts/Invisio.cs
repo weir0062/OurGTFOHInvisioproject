@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Invisio : MonoBehaviour
 {
@@ -62,6 +64,15 @@ public class Invisio : MonoBehaviour
     public void StepOnBadTile()
     {
         Debug.Log("Game Over");
+
+        Death();
+
+    }
+
+    private void Death()
+    {
+        Debug.Log("Dead");
+        SceneManager.LoadScene("MainMenu");
     }
 
     private bool GetIsRightFoot(float thisStep, float LastStep, bool isRightFoot)
@@ -90,6 +101,18 @@ public class Invisio : MonoBehaviour
     private void Update()
     {
 
+
+        if (activeFootsteps > 0)
+        {
+
+        for(int i = 0; i < Footsteps.Count; i++)
+        {
+            if (Footsteps[i].transform.position.y < -6.0f)
+            {
+                Death();
+            }
+        }
+        }
     }
 
 }
