@@ -9,7 +9,7 @@ public class TileSpawner : MonoBehaviour
     public int tilesPerLine = 5;  
     private float nextSpawnTime;
     private float lastLineYPosition = 0f;  
-    public float badTileStartPercentage = 25f; 
+    public float badTileStartPercentage = 35f; 
     public float badTileMaxPercentage = 75f;   
     private float badTileCurrentPercentage;  
     public float percentageIncreaseRate = 0.1f; 
@@ -26,6 +26,8 @@ public class TileSpawner : MonoBehaviour
     }
     void Update()
     {
+        tileSpeed += 0.01f * Time.deltaTime;
+
         MoveTilesDown();
 
         float spawnInterval = CalculateSpawnInterval();

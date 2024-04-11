@@ -280,7 +280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837577731168688306, guid: fead52fb340c19741bd320c6f4b7bc75, type: 3}
       propertyPath: tileSpeed
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837577731168688306, guid: fead52fb340c19741bd320c6f4b7bc75, type: 3}
+      propertyPath: tilesPerLine
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837577731168688306, guid: fead52fb340c19741bd320c6f4b7bc75, type: 3}
+      propertyPath: badTileStartPercentage
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2837577731168688307, guid: fead52fb340c19741bd320c6f4b7bc75, type: 3}
       propertyPath: m_RootOrder

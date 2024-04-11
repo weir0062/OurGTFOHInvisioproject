@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharlieScene.unity
     guid: 843e18faecf0ee845bb064a513ce481f
-  - enabled: 1
-    path: Assets/Scenes/ShoesScene.unity
-    guid: ceb9073fa8b1d4444bd9cc8a16df52bc
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
