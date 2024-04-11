@@ -6304,7 +6304,7 @@ GameObject:
   - component: {fileID: 1714842702}
   - component: {fileID: 1714842701}
   m_Layer: 5
-  m_Name: Oleksii Panasevich
+  m_Name: Oleksii Panasevych
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6350,7 +6350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oleksii Panasevich
+  m_text: Oleksii Panasevych
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ee4ec743de10e8e4bbc248e997ed9794, type: 2}
   m_sharedMaterial: {fileID: 9031629449920960226, guid: ee4ec743de10e8e4bbc248e997ed9794, type: 2}
