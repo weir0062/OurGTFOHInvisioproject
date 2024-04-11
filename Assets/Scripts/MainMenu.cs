@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
     }
     void Start()
     {
-        OpenMainMenu();
+       // OpenMainMenu();
     }
 
     // Update is called once per frame
