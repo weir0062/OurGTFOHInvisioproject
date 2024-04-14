@@ -20,20 +20,24 @@ public enum TileState
 public class Tile : MonoBehaviour
 {
     public TileState state = TileState.Solid;
+    public SpriteRenderer spriteRenderer;
     int StepsTaken = 0;
 
-    Material currentMat;
+    bool IsSteppedOn = false;
 
-    Material SolidMat;
-    Material SmallMat;
-    Material MidMat;
-    Material VeryMat;
-    Material MaxMat;
+    Sprite currentSprite;
+
+    public Sprite SolidSprite;
+    public Sprite SmallSprite;
+    public Sprite MidSprite;
+    public Sprite VerySprite;
+    public Sprite MaxSprite;
     // Start is called before the first frame update
     void Start()
     {
 
         InitializeDefaults();
+        UpdateState();
     }
 
     // Update is called once per frame
@@ -51,6 +55,12 @@ public class Tile : MonoBehaviour
         StepsTaken++;
         UpdateState();
     }
+
+    public void StepEnded()
+    {
+    }
+
+
 
     void InitializeDefaults()
     {
@@ -77,24 +87,24 @@ public class Tile : MonoBehaviour
         {
             case 0:
                 state = TileState.Solid;
-                currentMat = SolidMat;
+                currentSprite = SolidSprite;
                 break;
 
             case 1:
                 state = TileState.SmallDamage;
-                currentMat = SmallMat;
+                currentSprite = SmallSprite;
                 break;
             case 2:
                 state = TileState.MidDamage;
-                currentMat = MidMat;
+                currentSprite = MidSprite;
                 break;
             case 3:
                 state = TileState.VeryDamaged;
-                currentMat = VeryMat;
+                currentSprite = VerySprite;
                 break;
             case 4:
                 state = TileState.MaxDamaged;
-                currentMat = MaxMat;
+                currentSprite = MaxSprite;
                 break;
             case 5:
                 Destroy(this);
@@ -103,9 +113,8 @@ public class Tile : MonoBehaviour
                 break;
         }
 
+        spriteRenderer.sprite = currentSprite;
 
-
-        
     }
 
 
