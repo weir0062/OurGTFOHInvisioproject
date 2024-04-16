@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 12787540}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 62010027}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -430,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 108704273}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -534,6 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 115457568}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -722,6 +726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 147858269}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -826,6 +831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 159385301}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -863,6 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 169626095}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1034,6 +1041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 198793586}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1138,6 +1146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 264614574}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1242,6 +1251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 376350381}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1346,6 +1356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 517672736}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1450,6 +1461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 557889708}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1554,6 +1566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 800013877}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1658,6 +1671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 827502593}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1846,6 +1860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 1081515533}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1950,6 +1965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1123561962}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2054,6 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 1308139160}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2158,6 +2175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1342955658}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2262,6 +2280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1583756541}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2366,6 +2385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1598935777}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2470,6 +2490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1602799439}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2574,6 +2595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1672384475}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2611,6 +2633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 1697799560}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2866,6 +2889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1897764894}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2955,6 +2979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 1920323238}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3074,6 +3099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 2023271872}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3130,8 +3156,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 1
+  field of view: 50
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -3262,6 +3288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 2070719555}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3450,6 +3477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 2129542851}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}

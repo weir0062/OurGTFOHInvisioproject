@@ -122,15 +122,6 @@ public class Tile : MonoBehaviour
 
     }
 
-
-
-
-
-
-
-
-
-
 }
 
 
