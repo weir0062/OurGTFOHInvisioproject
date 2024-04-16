@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
@@ -22,6 +23,7 @@ public class Tile : MonoBehaviour
     public TileState state = TileState.Solid;
     public SpriteRenderer spriteRenderer;
     int StepsTaken = 0;
+    public TextMeshPro text;
 
     bool IsSteppedOn = false;
 
@@ -35,7 +37,7 @@ public class Tile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
     }
@@ -48,7 +50,10 @@ public class Tile : MonoBehaviour
 
 
 
-
+    public void SetText(string newtext)
+    {
+        text.text = newtext;
+    }
 
     public void StepTaken()
     {
