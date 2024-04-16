@@ -217,7 +217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 688863748007662426, guid: 1dea914801269c24faf3b326123b4a3e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 688863748007662426, guid: 1dea914801269c24faf3b326123b4a3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 347393781}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -490,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 458481962}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -594,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 476274449}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -782,6 +785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 521616645}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -886,6 +890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 592635946}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -990,6 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 593718091}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1094,6 +1100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 598232503}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1198,6 +1205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 670467755}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1270,6 +1278,73 @@ Transform:
   m_Father: {fileID: 1532150525}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &733907337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156790045879815409, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_Name
+      value: Tile (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
 --- !u!1 &792687806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 792687807}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1406,6 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 945894842}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1478,6 +1555,50 @@ Transform:
   m_Father: {fileID: 1532150525}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1010938524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010938526}
+  - component: {fileID: 1010938525}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010938525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010938524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60efba8d12c58b74786c5d6b6e4b1153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1010938526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010938524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8323997, y: -1.5665148, z: -0.0018304316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1173824301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,6 +1631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1173824303}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1681,6 +1803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 1203725193}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1718,6 +1841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 1241733855}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1822,6 +1946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 1248982808}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -1978,6 +2103,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1314171486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156790045879815409, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+      propertyPath: m_Name
+      value: Tile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
 --- !u!1 &1334989726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,6 +2206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1334989728}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2114,6 +2311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1353486188}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2218,6 +2416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1446579661}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2389,6 +2588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 1449878268}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2409,7 +2609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1532150525
 Transform:
   m_ObjectHideFlags: 0
@@ -2418,7 +2618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532150524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77678263, y: 0.5844684, z: 0.007873017}
+  m_LocalPosition: {x: -0.77678263, y: 0.4, z: 0.007873017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2455,7 +2655,7 @@ Transform:
   - {fileID: 213594247}
   - {fileID: 488463308}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1606089894
 GameObject:
@@ -2489,6 +2689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1606089896}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2593,6 +2794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1725854229}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2781,6 +2983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 1801060326}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2885,6 +3088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   spriteRenderer: {fileID: 1909495449}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -2989,6 +3193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 4
   spriteRenderer: {fileID: 1972265905}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3093,6 +3298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 1972432915}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3264,6 +3470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 1985442948}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3301,6 +3508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   spriteRenderer: {fileID: 1988710919}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3405,6 +3613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 2020787770}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
@@ -3509,6 +3718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   spriteRenderer: {fileID: 2121229600}
+  text: {fileID: 0}
   SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
   SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
   MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
