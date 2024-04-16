@@ -34,6 +34,10 @@ public class Tile : MonoBehaviour
     public Sprite MidSprite;
     public Sprite VerySprite;
     public Sprite MaxSprite;
+
+
+
+    Vector2 position;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +53,21 @@ public class Tile : MonoBehaviour
     }
 
 
+    public  void SetPosition(Vector2 pos)
+    {
+        position = pos;
+    }
 
+    public void SetPosition(int x, int y)
+    {
+        position = new Vector2(x, y);
+    }
+
+    public Vector2 GetPosition()
+    {
+        return position;
+
+    }
     public void SetText(string newtext)
     {
         text.text = newtext;
