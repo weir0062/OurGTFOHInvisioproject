@@ -83,7 +83,10 @@ public class Tile : MonoBehaviour
     {
     }
 
-
+    public int GetStepsTaken()
+    {
+        return StepsTaken;
+    }
 
     void InitializeDefaults()
     {

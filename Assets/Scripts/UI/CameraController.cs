@@ -69,13 +69,11 @@ public class CameraController : MonoBehaviour
         {
             currentFocusObject = tileController.GetActiveTile().transform;
             CameraFocus();
-            Debug.Log(currentFocusObject.transform.position + "Player");
         }
         else
         {
             currentFocusObject = tileController.GetCentralTile().transform;
             CameraFocus();
-            Debug.Log(currentFocusObject.transform.position + "Center");
 
         }
 

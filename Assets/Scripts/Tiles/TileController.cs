@@ -61,8 +61,8 @@ public class TileController : MonoBehaviour
                 int xIndex = xMap[roundedX];
                 int yIndex = yMap[roundedY];
 
-                tile.SetPosition(xIndex, yIndex); // Установка позиции тайла
-                tile.SetText(xIndex + ", " + yIndex); // Отладочный вывод позиции
+                tile.SetPosition(xIndex, yIndex);  
+                tile.SetText(tile.GetStepsTaken().ToString());  
                 tiles[xIndex, yIndex] = tile;
             }
         }
