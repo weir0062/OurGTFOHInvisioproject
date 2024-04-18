@@ -62,7 +62,6 @@ public class TileController : MonoBehaviour
                 int yIndex = yMap[roundedY];
 
                 tile.SetPosition(xIndex, yIndex);  
-                tile.SetText(tile.GetStepsTaken().ToString());  
                 tiles[xIndex, yIndex] = tile;
             }
         }

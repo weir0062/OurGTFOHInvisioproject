@@ -23,6 +23,8 @@ public class Tile : MonoBehaviour
     public TileState state = TileState.Solid;
     public SpriteRenderer spriteRenderer;
     int StepsTaken = 0;
+
+    int hp = 5;
     public TextMeshPro text;
 
     bool IsSteppedOn = false;
@@ -44,6 +46,7 @@ public class Tile : MonoBehaviour
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
+        TurnRed();
     }
 
     // Update is called once per frame
@@ -73,10 +76,17 @@ public class Tile : MonoBehaviour
         text.text = newtext;
     }
 
+
+
+    public void TurnRed()
+    {
+        spriteRenderer.material.color = Color.red;
+    }
     public void StepTaken()
     {
         StepsTaken++;
         UpdateState();
+        SetText(hp.ToString());
     }
 
     public void StepEnded()
@@ -108,6 +118,9 @@ public class Tile : MonoBehaviour
                 currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
                 StepsTaken = 4; break;
         }
+
+        hp = 5-StepsTaken;
+        SetText(hp.ToString());
     }
 
 
@@ -144,6 +157,8 @@ public class Tile : MonoBehaviour
                 break;
         }
 
+
+        hp = 5 - StepsTaken;
         spriteRenderer.sprite = currentSprite;
 
     }
