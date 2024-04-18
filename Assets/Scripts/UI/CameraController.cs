@@ -57,6 +57,7 @@ public class CameraController : MonoBehaviour
 
         List<GameObject> tileObjects = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tile"));
         tileController.InitializeTileArray(tileObjects);
+        tileController.SetRedTiles();
     }
     // Update is called once per frame
     void Update()
@@ -89,12 +90,12 @@ public class CameraController : MonoBehaviour
     }
 
 
-    void CameraFocus()
+   public void CameraFocus()
     {
         if (currentFocusObject != null)
         { 
             // Calculate the target position. You might want to adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, currentFocusObject.position.y, transform.position.z);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x+1, currentFocusObject.position.y+2, transform.position.z);
 
             // Smoothly interpolate the camera's position towards the target position
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * focusSpeed);
@@ -102,7 +103,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    void CameraFocus(Transform focusObject)
+  public void CameraFocus(Transform focusObject)
     {
         currentFocusObject = focusObject;
 

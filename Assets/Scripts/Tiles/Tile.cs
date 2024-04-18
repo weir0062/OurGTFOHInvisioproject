@@ -13,11 +13,6 @@ public enum TileState
     VeryDamaged,
     MaxDamaged
 };
-
-
-
-
-
 public class Tile : MonoBehaviour
 {
     public TileState state = TileState.Solid;
@@ -37,8 +32,11 @@ public class Tile : MonoBehaviour
     public Sprite[] VerySprite;
     public Sprite[] MaxSprite;
 
+    public GameObject DefaultSprite;
+    public GameObject TextObject;
 
-    bool IsActive = false;
+    Player player;
+    public bool IsActive = false;
     Vector2 position;
     // Start is called before the first frame update
     void Start()
@@ -46,16 +44,25 @@ public class Tile : MonoBehaviour
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
+        TextObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Pressed()
     {
-
+        Debug.Log("MouseDown");
+        if (player == null)
+        {
+            InitializePlayer();
+        }
+        player?.TakeStep(this);
     }
 
+    void InitializePlayer()
+    {
+        player = GameObject.FindObjectOfType<Player>();
+    }
 
-    public  void SetPosition(Vector2 pos)
+    public void SetPosition(Vector2 pos)
     {
         position = pos;
     }
@@ -86,16 +93,36 @@ public class Tile : MonoBehaviour
         StepsTaken++;
         UpdateState();
         SetText(hp.ToString());
+        IsActive = true;
+        
+        SetActive();
+
     }
 
     public void StepEnded()
     {
+        SetNotActive();
     }
 
+    public void SetActive()
+    {
+        IsActive = true;
+        spriteRenderer.material.color = Color.red;
+        DefaultSprite.SetActive(false);
+        TextObject.SetActive(true);
+
+    }
+    public void SetNotActive()
+    {
+        IsActive = false;
+
+        spriteRenderer.material.color = Color.white;
+    }
     public int GetStepsTaken()
     {
         return StepsTaken;
     }
+
 
     void InitializeDefaults()
     {
@@ -118,7 +145,7 @@ public class Tile : MonoBehaviour
                 StepsTaken = 4; break;
         }
 
-        hp = 5-StepsTaken;
+        hp = 5 - StepsTaken;
         SetText(hp.ToString());
     }
 

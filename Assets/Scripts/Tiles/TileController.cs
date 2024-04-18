@@ -10,12 +10,14 @@ public class TileController : MonoBehaviour
 
     Tile ActiveTile;
     Tile CentralTile;
+
+    Player player;
     void Start()
     {
 
     }
 
-  public void InitializeTileArray(List<GameObject> tileObjects)
+    public void InitializeTileArray(List<GameObject> tileObjects)
     {
         if (tileObjects.Count == 0) return;
 
@@ -61,23 +63,71 @@ public class TileController : MonoBehaviour
                 int xIndex = xMap[roundedX];
                 int yIndex = yMap[roundedY];
 
-                tile.SetPosition(xIndex, yIndex);  
+                tile.SetPosition(xIndex, yIndex);
                 tiles[xIndex, yIndex] = tile;
             }
         }
         ActiveTile = tiles[0, 0];
-
+        tiles[0, 0].SetActive();
         CentralTile = tiles[xCoordinates.Count / 2, yCoordinates.Count / 2];
+        InitializePlayer();
     }
 
+    public void SetRedTiles()
+    {
+        //for (int i = 1; i < tiles.GetLength(0)-1; i++)
+        //{
+        //    for (int j = 1; j < tiles.GetLength(1)-1; j++)
+        //    {
 
+        //        if (tiles[i - 1, j].GetStepsTaken() >= 4)
+        //        {
+        //            tiles[i, j].TurnRed();
+        //            tiles[i - 1, j].TurnRed();
 
+        //        } 
+        //        if (tiles[i + 1, j].GetStepsTaken() >= 4)
+        //        {
+        //            tiles[i, j].TurnRed();
+        //            tiles[i + 1, j].TurnRed();
 
+        //        }
+        //        if (tiles[i, j + 1].GetStepsTaken() >= 4)
+        //        {
+        //            tiles[i, j].TurnRed();
+        //            tiles[i, j + 1].TurnRed();
 
+        //        }
+        //        if (tiles[i, j - 1].GetStepsTaken() >= 4)
+        //        {
+        //            tiles[i, j].TurnRed();
+        //            tiles[i, j - 1].TurnRed();
 
+        //        }
+        //    }
+        //}
+    }
+
+    void InitializePlayer()
+    {
+
+        player = GameObject.FindObjectOfType<Player>();
+
+        if (player == null)
+        {
+            InitializePlayer();
+        }
+        player.SetActiveTile(ActiveTile);
+        player.TakeStep(ActiveTile);
+    }
+
+    public void SetActiveTile(Tile tile)
+    {
+        ActiveTile = tile;
+    }
     public Tile GetActiveTile()
     {
-        if(ActiveTile)
+        if (ActiveTile)
         {
             return ActiveTile;
         }
