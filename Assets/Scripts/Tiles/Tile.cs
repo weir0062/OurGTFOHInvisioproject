@@ -38,7 +38,7 @@ public class Tile : MonoBehaviour
     public Sprite[] MaxSprite;
 
 
-
+    bool IsActive = false;
     Vector2 position;
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,6 @@ public class Tile : MonoBehaviour
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
-        TurnRed();
     }
 
     // Update is called once per frame
