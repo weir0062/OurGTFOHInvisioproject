@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject mainMenu;
+    public GameObject levelsMenu;
     public GameObject shoesMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
@@ -20,6 +21,12 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         OpenMainMenu();
+    }
+
+    public void OpenLevels()
+    {
+        mainMenu.SetActive(false);
+        levelsMenu.SetActive(true);
     }
     public void OpenShoes()
     {
@@ -78,6 +85,7 @@ public class MainMenu : MonoBehaviour
     public void OpenMainMenu()
     {
         mainMenu.SetActive(true);
+        levelsMenu.SetActive(false);
         shoesMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
@@ -88,7 +96,48 @@ public class MainMenu : MonoBehaviour
         MusicController.SetSFXClip(MusicController.MenuSFXClip);
     }
 
+    public void OpenLevel1()
+    {
+        SceneManager.LoadSceneAsync("Level1");
+    }
 
+    public void OpenLevel2()
+    {
+        SceneManager.LoadSceneAsync("Level2");
+    }
+
+    public void OpenLevel3()
+    {
+        SceneManager.LoadSceneAsync("Level3");
+    }
+    public void OpenLevel4()
+    {
+        SceneManager.LoadSceneAsync("Level4");
+    }
+    public void OpenLevel5()
+    {
+        SceneManager.LoadSceneAsync("Level5");
+    }
+    public void OpenLevel6()
+    {
+        SceneManager.LoadSceneAsync("Level6");
+    }
+    public void OpenLevel7()
+    {
+        SceneManager.LoadSceneAsync("Level7");
+    }
+    public void OpenLevel8()
+    {
+        SceneManager.LoadSceneAsync("Level8");
+    }
+    public void OpenLevel9()
+    {
+        SceneManager.LoadSceneAsync("Level9");
+    }
+    public void OpenLevel10()
+    {
+        SceneManager.LoadSceneAsync("Level10");
+    }
     // Update is called once per frame
     void Update()
     {
