@@ -101,11 +101,36 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 3364713898258445333}
   text: {fileID: 6242987004110890484}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite:
+  - {fileID: 21300000, guid: 382e2cae6a8d14b468af3e1a7b6e9189, type: 3}
+  - {fileID: 21300000, guid: e8a77e2c5d42cc7419ac8f908d1d7af6, type: 3}
+  - {fileID: 21300000, guid: cb103a274d7fe39428e2f8cc8b50c2a7, type: 3}
+  - {fileID: 21300000, guid: 5e6703cc75bcd494b8e92232f18939bd, type: 3}
+  - {fileID: 21300000, guid: 1aab067c681ca93468432e5bbee0fca1, type: 3}
+  SmallSprite:
+  - {fileID: 21300000, guid: 302423a90756ee449992ef15cc9a5f18, type: 3}
+  - {fileID: 21300000, guid: ac3d982706267ec4fbc99418642f4a60, type: 3}
+  - {fileID: 21300000, guid: fb7cb44b3161c9940b6ed8fe9f6de70c, type: 3}
+  - {fileID: 21300000, guid: 0d46254d1902b1f49ba8e4d253a0d8d7, type: 3}
+  - {fileID: 21300000, guid: e0494866e15ac59419930c96195695ec, type: 3}
+  MidSprite:
+  - {fileID: 21300000, guid: a2dd2c5e0f8fd2341a3dacc48d0f979f, type: 3}
+  - {fileID: 21300000, guid: 2f2d9d345dbb1d14ba8eb68cd47cbdcf, type: 3}
+  - {fileID: 21300000, guid: c3efeb7dad1359c4eb709fa19d5a8493, type: 3}
+  - {fileID: 21300000, guid: 449d7d461db391f44b4243b48f9842a9, type: 3}
+  - {fileID: 21300000, guid: c22afff1626816b4c9980ebff91d511e, type: 3}
+  VerySprite:
+  - {fileID: 21300000, guid: 11eb9ffa53c32ee4dbd0391472025f8e, type: 3}
+  - {fileID: 21300000, guid: 958bc1abdcc17464a857fd88a83ee665, type: 3}
+  - {fileID: 21300000, guid: 7236b7982dc13924e86fb7a262d77d55, type: 3}
+  - {fileID: 21300000, guid: 085139e9117be264781d1772110f0c51, type: 3}
+  - {fileID: 21300000, guid: 0e243ec2a2085bf40b2b9c0c57098b56, type: 3}
+  MaxSprite:
+  - {fileID: 21300000, guid: 74b06840dfc78ee4187a8dbda9affc0c, type: 3}
+  - {fileID: 21300000, guid: d86a127a5908e8a40bb1b535a46b0485, type: 3}
+  - {fileID: 21300000, guid: b42b25fa3ec1ef842bdffed25a222a6d, type: 3}
+  - {fileID: 21300000, guid: 8649cb0d7a308a8438e631c3fb807940, type: 3}
+  - {fileID: 21300000, guid: 79d344ccd164d3b4f9dba1871281078c, type: 3}
 --- !u!1 &6864918921008419719
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,11 +29,11 @@ public class Tile : MonoBehaviour
 
     Sprite currentSprite;
 
-    public Sprite SolidSprite;
-    public Sprite SmallSprite;
-    public Sprite MidSprite;
-    public Sprite VerySprite;
-    public Sprite MaxSprite;
+    public Sprite[] SolidSprite;
+    public Sprite[] SmallSprite;
+    public Sprite[] MidSprite;
+    public Sprite[] VerySprite;
+    public Sprite[] MaxSprite;
 
 
 
@@ -90,14 +90,19 @@ public class Tile : MonoBehaviour
         switch (state)
         {
             case TileState.Solid:
+                currentSprite = SolidSprite[Random.Range(0, SolidSprite.Length)];
                 StepsTaken = 0; break;
             case TileState.SmallDamage:
+                currentSprite = SmallSprite[Random.Range(0, SmallSprite.Length)];
                 StepsTaken = 1; break;
             case TileState.MidDamage:
+                currentSprite = MidSprite[Random.Range(0, MidSprite.Length)];
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
+                currentSprite = VerySprite[Random.Range(0, VerySprite.Length)];
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
+                currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
                 StepsTaken = 4; break;
         }
     }
@@ -110,24 +115,24 @@ public class Tile : MonoBehaviour
         {
             case 0:
                 state = TileState.Solid;
-                currentSprite = SolidSprite;
+                currentSprite = SolidSprite[Random.Range(0, SolidSprite.Length)];
                 break;
 
             case 1:
                 state = TileState.SmallDamage;
-                currentSprite = SmallSprite;
+                currentSprite = SmallSprite[Random.Range(0, SmallSprite.Length)];
                 break;
             case 2:
                 state = TileState.MidDamage;
-                currentSprite = MidSprite;
+                currentSprite = MidSprite[Random.Range(0, MidSprite.Length)];
                 break;
             case 3:
                 state = TileState.VeryDamaged;
-                currentSprite = VerySprite;
+                currentSprite = VerySprite[Random.Range(0, VerySprite.Length)];
                 break;
             case 4:
                 state = TileState.MaxDamaged;
-                currentSprite = MaxSprite;
+                currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
                 break;
             case 5:
                 Destroy(this);
