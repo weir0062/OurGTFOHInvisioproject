@@ -566,11 +566,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 11377147}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &11377147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -1099,7 +1099,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -1332,7 +1332,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -1687,7 +1687,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -2181,11 +2181,11 @@ MonoBehaviour:
   state: 4
   spriteRenderer: {fileID: 42066618}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &42066618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2992,7 +2992,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -7078,7 +7078,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -7306,7 +7306,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -7985,7 +7985,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -9745,7 +9745,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -10771,11 +10771,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 204114688}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &204114688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12972,11 +12972,11 @@ MonoBehaviour:
   state: 4
   spriteRenderer: {fileID: 247317700}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &247317700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13107,11 +13107,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 259224069}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &259224069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18117,7 +18117,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -19466,7 +19466,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -20469,7 +20469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -20763,7 +20763,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -21779,11 +21779,11 @@ MonoBehaviour:
   state: 2
   spriteRenderer: {fileID: 450486635}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &450486635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24378,11 +24378,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 506568081}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &506568081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25388,7 +25388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -26340,7 +26340,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -29115,11 +29115,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 612680228}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &612680228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30203,11 +30203,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 632603569}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &632603569
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30886,11 +30886,11 @@ MonoBehaviour:
   state: 2
   spriteRenderer: {fileID: 657382575}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &657382575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32203,11 +32203,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 677480336}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &677480336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32376,7 +32376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -34469,11 +34469,11 @@ MonoBehaviour:
   state: 1
   spriteRenderer: {fileID: 730477398}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &730477398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36394,7 +36394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -39036,7 +39036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -40832,7 +40832,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -43542,7 +43542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -44324,11 +44324,11 @@ MonoBehaviour:
   state: 2
   spriteRenderer: {fileID: 934259996}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &934259996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46899,11 +46899,11 @@ MonoBehaviour:
   state: 1
   spriteRenderer: {fileID: 985031940}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &985031940
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53204,11 +53204,11 @@ MonoBehaviour:
   state: 4
   spriteRenderer: {fileID: 1136832875}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1136832875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56364,11 +56364,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 1199837189}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1199837189
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56763,11 +56763,11 @@ MonoBehaviour:
   state: 1
   spriteRenderer: {fileID: 1210989589}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1210989589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58249,7 +58249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -59957,7 +59957,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -63031,7 +63031,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -64308,7 +64308,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -67681,11 +67681,11 @@ MonoBehaviour:
   state: 1
   spriteRenderer: {fileID: 1471494259}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1471494259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68508,7 +68508,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -68731,7 +68731,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -69875,11 +69875,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 1512369531}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1512369531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71877,11 +71877,11 @@ MonoBehaviour:
   state: 4
   spriteRenderer: {fileID: 1571875947}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1571875947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73783,11 +73783,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 1608802720}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1608802720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74434,6 +74434,7 @@ GameObject:
   - component: {fileID: 1614364803}
   - component: {fileID: 1614364802}
   - component: {fileID: 1614364801}
+  - component: {fileID: 1614364804}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -74507,6 +74508,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1614364804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614364800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &1614556923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75239,11 +75273,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 1627882593}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1627882593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76124,11 +76158,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 1652206072}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1652206072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80628,11 +80662,11 @@ MonoBehaviour:
   state: 2
   spriteRenderer: {fileID: 1754295061}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1754295061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83217,11 +83251,11 @@ MonoBehaviour:
   state: 0
   spriteRenderer: {fileID: 1817678845}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1817678845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83395,7 +83429,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -84636,7 +84670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -85026,7 +85060,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -85872,7 +85906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -87620,11 +87654,11 @@ MonoBehaviour:
   state: 3
   spriteRenderer: {fileID: 1923722115}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1923722115
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90004,7 +90038,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -90075,7 +90109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -90326,11 +90360,11 @@ MonoBehaviour:
   state: 2
   spriteRenderer: {fileID: 1973012503}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &1973012503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90540,7 +90574,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -90992,7 +91026,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -91658,7 +91692,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -93397,7 +93431,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: state
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
@@ -93698,11 +93732,11 @@ MonoBehaviour:
   state: 1
   spriteRenderer: {fileID: 2051029862}
   text: {fileID: 0}
-  SolidSprite: {fileID: 21300000, guid: d7022ef41c792654d8d803c813cdd729, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 40c786bdcc356094ab6620287437f588, type: 3}
-  MidSprite: {fileID: 21300000, guid: 573e21fc6de63e74fa99f0eb42772c1d, type: 3}
-  VerySprite: {fileID: 21300000, guid: e40c917bf237189469ac018889e27d08, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 630365c0cfe1b8343a4a66236db519e5, type: 3}
+  SolidSprite: []
+  SmallSprite: []
+  MidSprite: []
+  VerySprite: []
+  MaxSprite: []
 --- !u!212 &2051029862
 SpriteRenderer:
   m_ObjectHideFlags: 0
