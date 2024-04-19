@@ -94398,6 +94398,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8999043833888951858, guid: d165f19b7c33ea74e87767840ed45eeb, type: 3}
+      propertyPath: IsHardMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951860, guid: d165f19b7c33ea74e87767840ed45eeb, type: 3}
       propertyPath: m_Name
       value: GameCamera
