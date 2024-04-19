@@ -24,9 +24,8 @@ public class TileController : MonoBehaviour
         var xCoordinates = new HashSet<float>();
         var yCoordinates = new HashSet<float>();
 
-        float gridSize = 1.0f; // Предполагаемый размер тайла / сетки
+        float gridSize = 1.0f;  
 
-        // Сбор и округление уникальных координат
         foreach (GameObject obj in tileObjects)
         {
             Vector3 pos = obj.transform.position;
