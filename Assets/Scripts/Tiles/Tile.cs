@@ -24,7 +24,6 @@ public class Tile : MonoBehaviour
 
     bool isRed = false;
     Sprite currentSprite;
-
     public Sprite[] SolidSprite;
     public Sprite[] SmallSprite;
     public Sprite[] MidSprite;
@@ -87,7 +86,10 @@ public class Tile : MonoBehaviour
     {
         text.text = newtext;
     }
-
+    public void SetIsHidden(bool ishidden)
+    {
+        DefaultSprite.SetActive(ishidden);
+    }
 
 
     public void TurnRed()
@@ -100,7 +102,6 @@ public class Tile : MonoBehaviour
         UpdateState();
         SetText(hp.ToString());
         SetActive();
-
     }
 
     public void StepEnded()
@@ -116,10 +117,8 @@ public class Tile : MonoBehaviour
             DangerWarning.SetActive(true);
         }
         PositionIndicator.SetActive(true);
-
         DefaultSprite.SetActive(false);
         TextObject.SetActive(true);
-
     }
     public void SetNotActive()
     {
@@ -158,7 +157,6 @@ public class Tile : MonoBehaviour
         hp = 5 - StepsTaken;
         SetText(hp.ToString());
     }
-
 
 
     void UpdateState()

@@ -6,7 +6,7 @@ using System.Linq;
 public class TileController : MonoBehaviour
 {
     public Tile[,] tiles;
-
+    public bool IsHardMode = false;
 
     Tile ActiveTile;
     Tile CentralTile;
@@ -50,6 +50,7 @@ public class TileController : MonoBehaviour
         foreach (GameObject obj in tileObjects)
         {
             Tile tile = obj.GetComponent<Tile>();
+            tile.SetIsHidden(IsHardMode);
             if (tile != null)
             {
                 Vector3 pos = obj.transform.position;
@@ -62,6 +63,7 @@ public class TileController : MonoBehaviour
                 int yIndex = yMap[roundedY];
 
                 tile.SetPosition(xIndex, yIndex);
+
                 tiles[xIndex, yIndex] = tile;
             }
         }
