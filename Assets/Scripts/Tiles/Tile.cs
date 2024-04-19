@@ -22,8 +22,7 @@ public class Tile : MonoBehaviour
     int hp = 5;
     public TextMeshPro text;
 
-    bool IsSteppedOn = false;
-
+    bool isRed = false;
     Sprite currentSprite;
 
     public Sprite[] SolidSprite;
@@ -33,7 +32,9 @@ public class Tile : MonoBehaviour
     public Sprite[] MaxSprite;
 
     public GameObject DefaultSprite;
+    public GameObject PositionIndicator;
     public GameObject TextObject;
+    public GameObject DangerWarning;
 
     Player player;
     public bool IsActive = false;
@@ -45,6 +46,11 @@ public class Tile : MonoBehaviour
         InitializeDefaults();
         UpdateState();
         TextObject.SetActive(false);
+        PositionIndicator.SetActive(false);
+        SpriteRenderer indicatorSprite = PositionIndicator.GetComponent<SpriteRenderer>();
+
+        indicatorSprite.material.color = Color.black;
+
     }
 
     public void Pressed()
@@ -86,15 +92,13 @@ public class Tile : MonoBehaviour
 
     public void TurnRed()
     {
-        spriteRenderer.material.color = Color.red;
+        isRed = true;
     }
     public void StepTaken()
     {
         StepsTaken++;
         UpdateState();
         SetText(hp.ToString());
-        IsActive = true;
-        
         SetActive();
 
     }
@@ -107,7 +111,12 @@ public class Tile : MonoBehaviour
     public void SetActive()
     {
         IsActive = true;
-        spriteRenderer.material.color = Color.red;
+        if (isRed)
+        {
+            DangerWarning.SetActive(true);
+        }
+        PositionIndicator.SetActive(true);
+
         DefaultSprite.SetActive(false);
         TextObject.SetActive(true);
 
@@ -115,6 +124,7 @@ public class Tile : MonoBehaviour
     public void SetNotActive()
     {
         IsActive = false;
+        PositionIndicator.SetActive(false);
 
         spriteRenderer.material.color = Color.white;
     }

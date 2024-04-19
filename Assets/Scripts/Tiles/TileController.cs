@@ -41,7 +41,6 @@ public class TileController : MonoBehaviour
         var sortedX = xCoordinates.OrderBy(x => x).ToList();
         var sortedY = yCoordinates.OrderBy(y => y).ToList();
 
-        // Создание словарей для маппинга координат в индексы
         Dictionary<float, int> xMap = sortedX.Select((value, index) => new { value, index })
                                              .ToDictionary(pair => pair.value, pair => pair.index);
         Dictionary<float, int> yMap = sortedY.Select((value, index) => new { value, index })
@@ -68,45 +67,34 @@ public class TileController : MonoBehaviour
             }
         }
         ActiveTile = tiles[0, 0];
-        tiles[0, 0].SetActive();
         CentralTile = tiles[xCoordinates.Count / 2, yCoordinates.Count / 2];
         InitializePlayer();
+        SetRedTiles();
+        tiles[0, 0].StepTaken();
     }
+
 
     public void SetRedTiles()
     {
-        //for (int i = 1; i < tiles.GetLength(0)-1; i++)
-        //{
-        //    for (int j = 1; j < tiles.GetLength(1)-1; j++)
-        //    {
+        int width = tiles.GetLength(0);
+        int height = tiles.GetLength(1);
 
-        //        if (tiles[i - 1, j].GetStepsTaken() >= 4)
-        //        {
-        //            tiles[i, j].TurnRed();
-        //            tiles[i - 1, j].TurnRed();
-
-        //        } 
-        //        if (tiles[i + 1, j].GetStepsTaken() >= 4)
-        //        {
-        //            tiles[i, j].TurnRed();
-        //            tiles[i + 1, j].TurnRed();
-
-        //        }
-        //        if (tiles[i, j + 1].GetStepsTaken() >= 4)
-        //        {
-        //            tiles[i, j].TurnRed();
-        //            tiles[i, j + 1].TurnRed();
-
-        //        }
-        //        if (tiles[i, j - 1].GetStepsTaken() >= 4)
-        //        {
-        //            tiles[i, j].TurnRed();
-        //            tiles[i, j - 1].TurnRed();
-
-        //        }
-        //    }
-        //}
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                // Check each direction safely
+                if ((x > 0 && tiles[x - 1, y].GetStepsTaken() >= 4) || // Left
+                    (x < width - 1 && tiles[x + 1, y].GetStepsTaken() >= 4) || // Right
+                    (y < height - 1 && tiles[x, y + 1].GetStepsTaken() >= 4) || // Up
+                    (y > 0 && tiles[x, y - 1].GetStepsTaken() >= 4)) // Down
+                {
+                    tiles[x, y].TurnRed();
+                }
+            }
+        }
     }
+
 
     void InitializePlayer()
     {
