@@ -29,7 +29,7 @@ public class Tile : MonoBehaviour
     public Sprite[] MidSprite;
     public Sprite[] VerySprite;
     public Sprite[] MaxSprite;
-    public Sprite[] NonactiveSprite;
+    public Sprite NonactiveSprite;
 
     public GameObject PositionIndicator;
     public GameObject TextObject;
@@ -155,7 +155,7 @@ public class Tile : MonoBehaviour
                 currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
                 StepsTaken = 4; break;
             case TileState.NonActive:
-                currentSprite = NonactiveSprite[Random.Range(0, NonactiveSprite.Length)];
+                currentSprite = NonactiveSprite;
                 StepsTaken = 69;
                 break;
         }
@@ -194,7 +194,7 @@ public class Tile : MonoBehaviour
                 Destroy(this);
                 break;
             case 69:
-                currentSprite = NonactiveSprite[Random.Range(0, NonactiveSprite.Length)];
+                currentSprite = NonactiveSprite;
                 state = TileState.NonActive;
                 break;
             default:
