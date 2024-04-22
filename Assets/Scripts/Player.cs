@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     {
 
         cam = GameObject.FindObjectOfType<Camera>();
-        camController=cam.GetComponent<CameraController>();
+        camController = cam.GetComponent<CameraController>();
     }
 
 
@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
                 Vector2 tilepos = Newtile.GetPosition(); // получаем позицию плитки на карте (кастомную позицию плитки, а не позицию по Юнити)
                 camController?.CameraFocus(ActiveTile.transform); // меняем фокусировку на новую активную плиту
                 ActiveTile.StepTaken(); // делаем шаг на новую плитку
-                tileController.SetRedTiles(); // делаем плитки рядом с плохими красными
             }
         }
 
@@ -47,8 +46,8 @@ public class Player : MonoBehaviour
         Vector2 activeTilePos = ActiveTile.GetPosition();
         Vector2 newTilePos = NewTile.GetPosition();
         Vector2 Distance = activeTilePos - newTilePos;
-        float DistX = Distance.x > 0 ? Distance.x : Distance.x*-1;
-        float DistY = Distance.y > 0 ? Distance.y : Distance.y*-1;
+        float DistX = Distance.x > 0 ? Distance.x : Distance.x * -1;
+        float DistY = Distance.y > 0 ? Distance.y : Distance.y * -1;
 
 
         return (DistX < 1.2 && DistY < 1.2);
@@ -74,37 +73,42 @@ public class Player : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(new Vector2(worldPoint.x, worldPoint.y), Vector2.zero);
             if (hit.collider != null)
             {
-                Tile tile = hit.collider.GetComponent<Tile>();
-                if (tile != null)
+                Tile tile;
+                if (tile = hit.collider.GetComponent<Tile>())
                 {
-                    Debug.Log($"Tile hit: {tile.name} at position {hit.point}"); // Confirm hit in the console
-                    if (!tile.IsActive)
-                    {
-                        tile.Pressed(); // Ensure this function is implemented in the Tile class
-                      
 
+
+                    if (tile?.state != TileState.NonActive)
+                    {
+                        Debug.Log($"Tile hit: {tile.name} at position {hit.point}"); // Confirm hit in the console
+                        if (!tile.IsActive)
+                        {
+                            tile.Pressed(); // Ensure this function is implemented in the Tile class
+
+
+                        }
+                        else
+                        {
+                            Debug.Log($"Hit object is not a Tile. Hit: {hit.collider.gameObject.name}");
+                        }
                     }
                     else
                     {
-                        Debug.Log($"Hit object is not a Tile. Hit: {hit.collider.gameObject.name}");
+                        Debug.Log("No object hit by ray.");
                     }
-                }
-                else
-                {
-                    Debug.Log("No object hit by ray.");
                 }
             }
         }
 
     }
 
-        public void SetActiveTile(Tile newActiveTile)
-        {
-            ActiveTile = newActiveTile;
-        }
-
-        void Update()
-        {
-            CheckForTouch();
-        }
+    public void SetActiveTile(Tile newActiveTile)
+    {
+        ActiveTile = newActiveTile;
     }
+
+    void Update()
+    {
+        CheckForTouch();
+    }
+}

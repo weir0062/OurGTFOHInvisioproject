@@ -11,7 +11,8 @@ public enum TileState
     SmallDamage,
     MidDamage,
     VeryDamaged,
-    MaxDamaged
+    MaxDamaged,
+    NonActive
 };
 public class Tile : MonoBehaviour
 {
@@ -22,13 +23,13 @@ public class Tile : MonoBehaviour
     int hp = 5;
     public TextMeshPro text;
 
-    bool isRed = false;
     Sprite currentSprite;
     public Sprite[] SolidSprite;
     public Sprite[] SmallSprite;
     public Sprite[] MidSprite;
     public Sprite[] VerySprite;
     public Sprite[] MaxSprite;
+    public Sprite[] NonactiveSprite;
 
     public GameObject PositionIndicator;
     public GameObject TextObject;
@@ -52,6 +53,12 @@ public class Tile : MonoBehaviour
 
     public void Pressed()
     {
+        if(state == TileState.NonActive)
+        {
+
+        Debug.Log("NonActiveTile");
+            return;
+        }
         Debug.Log("MouseDown");
         if (player == null)
         {
@@ -83,34 +90,35 @@ public class Tile : MonoBehaviour
     public void SetText(string newtext)
     {
         text.text = newtext;
-    } 
-
-
-    public void TurnRed()
-    {
-        isRed = true;
     }
+
+     
     public void StepTaken()
     {
-        StepsTaken++;
-        UpdateState();
-        SetText(hp.ToString());
-        SetActive();
+        if (state != TileState.NonActive)
+        {
+
+            StepsTaken++;
+            UpdateState();
+            SetText(hp.ToString());
+            SetActive();
+        }
     }
 
     public void StepEnded()
     {
-        SetNotActive();
+
+        if (state != TileState.NonActive)
+        {
+
+
+            SetNotActive();
+        }
     }
 
     public void SetActive()
     {
-        IsActive = true;
-        if (isRed)
-        {
-            TextMeshPro text = TextObject.GetComponent<TextMeshPro>();
-            text.text = text.text.ToString() + "!";
-        }
+        IsActive = true; 
         PositionIndicator.SetActive(true);
         TextObject.SetActive(true);
     }
@@ -146,9 +154,13 @@ public class Tile : MonoBehaviour
             case TileState.MaxDamaged:
                 currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
                 StepsTaken = 4; break;
+            case TileState.NonActive:
+                currentSprite = NonactiveSprite[Random.Range(0, NonactiveSprite.Length)];
+                StepsTaken = 69;
+                break;
         }
 
-        hp = 5 - StepsTaken;
+        hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
         SetText(hp.ToString());
     }
 
@@ -181,12 +193,16 @@ public class Tile : MonoBehaviour
             case 5:
                 Destroy(this);
                 break;
+            case 69:
+                currentSprite = NonactiveSprite[Random.Range(0, NonactiveSprite.Length)];
+                state = TileState.NonActive;
+                break;
             default:
                 break;
         }
 
 
-        hp = 5 - StepsTaken;
+        hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
         spriteRenderer.sprite = currentSprite;
 
     }

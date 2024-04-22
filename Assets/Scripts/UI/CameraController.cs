@@ -57,7 +57,6 @@ public class CameraController : MonoBehaviour
 
         List<GameObject> tileObjects = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tile"));
         tileController.InitializeTileArray(tileObjects);
-        tileController.SetRedTiles();
     }
     // Update is called once per frame
     void Update()

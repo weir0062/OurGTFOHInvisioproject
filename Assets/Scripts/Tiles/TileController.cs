@@ -68,31 +68,10 @@ public class TileController : MonoBehaviour
         ActiveTile = tiles[0, 0];
         CentralTile = tiles[xCoordinates.Count / 2, yCoordinates.Count / 2];
         InitializePlayer();
-        SetRedTiles();
         tiles[0, 0].StepTaken();
     }
 
-
-    public void SetRedTiles()
-    {
-        int width = tiles.GetLength(0);
-        int height = tiles.GetLength(1);
-
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                // Check each direction safely
-                if ((x > 0 && tiles[x - 1, y].GetStepsTaken() >= 4) || // Left
-                    (x < width - 1 && tiles[x + 1, y].GetStepsTaken() >= 4) || // Right
-                    (y < height - 1 && tiles[x, y + 1].GetStepsTaken() >= 4) || // Up
-                    (y > 0 && tiles[x, y - 1].GetStepsTaken() >= 4)) // Down
-                {
-                    tiles[x, y].TurnRed();
-                }
-            }
-        }
-    }
+     
 
 
     void InitializePlayer()

@@ -133,7 +133,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b42b25fa3ec1ef842bdffed25a222a6d, type: 3}
   - {fileID: 21300000, guid: 8649cb0d7a308a8438e631c3fb807940, type: 3}
   - {fileID: 21300000, guid: 79d344ccd164d3b4f9dba1871281078c, type: 3}
-  DefaultSprite: {fileID: 0}
+  NonactiveSprite:
+  - {fileID: 21300000, guid: 33f4ce4ef8fd72348a6cc286f579648d, type: 3}
+  - {fileID: 21300000, guid: 90571685ddf081946914f608dff3d95a, type: 3}
+  - {fileID: 21300000, guid: 9c7f5f28d108c464f8767e9729301a8a, type: 3}
+  - {fileID: 21300000, guid: 317d8993b36a4d749b88ec49d05d682b, type: 3}
+  - {fileID: 21300000, guid: 095a34308d87aed478707c713c40b691, type: 3}
   PositionIndicator: {fileID: 1874191195570085332}
   TextObject: {fileID: 6864918921008419719}
   IsActive: 0
