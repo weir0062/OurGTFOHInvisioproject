@@ -30,10 +30,8 @@ public class Tile : MonoBehaviour
     public Sprite[] VerySprite;
     public Sprite[] MaxSprite;
 
-    public GameObject DefaultSprite;
     public GameObject PositionIndicator;
     public GameObject TextObject;
-    public GameObject DangerWarning;
 
     Player player;
     public bool IsActive = false;
@@ -85,11 +83,7 @@ public class Tile : MonoBehaviour
     public void SetText(string newtext)
     {
         text.text = newtext;
-    }
-    public void SetIsHidden(bool ishidden)
-    {
-        DefaultSprite.SetActive(ishidden);
-    }
+    } 
 
 
     public void TurnRed()
@@ -114,10 +108,10 @@ public class Tile : MonoBehaviour
         IsActive = true;
         if (isRed)
         {
-            DangerWarning.SetActive(true);
+            TextMeshPro text = TextObject.GetComponent<TextMeshPro>();
+            text.text = text.text.ToString() + "!";
         }
         PositionIndicator.SetActive(true);
-        DefaultSprite.SetActive(false);
         TextObject.SetActive(true);
     }
     public void SetNotActive()
