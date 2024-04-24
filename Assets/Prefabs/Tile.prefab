@@ -104,35 +104,45 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3364713898258445333}
   text: {fileID: 6242987004110890484}
   SolidSprite:
-  - {fileID: 21300000, guid: 382e2cae6a8d14b468af3e1a7b6e9189, type: 3}
-  - {fileID: 21300000, guid: e8a77e2c5d42cc7419ac8f908d1d7af6, type: 3}
-  - {fileID: 21300000, guid: cb103a274d7fe39428e2f8cc8b50c2a7, type: 3}
-  - {fileID: 21300000, guid: 5e6703cc75bcd494b8e92232f18939bd, type: 3}
-  - {fileID: 21300000, guid: 1aab067c681ca93468432e5bbee0fca1, type: 3}
+  - {fileID: 21300000, guid: c4b75ef5bf0a16546a4a2173b40d9d75, type: 3}
+  - {fileID: 21300000, guid: 46330d09bee1261448932721379e5527, type: 3}
+  - {fileID: 21300000, guid: bbf3f8007304c9e419617a41bb310345, type: 3}
+  - {fileID: 21300000, guid: 8be039392817a194aa8ca9c763a9ef24, type: 3}
+  - {fileID: 21300000, guid: 26782c1605fb3e24aac80453aacbe8c1, type: 3}
+  - {fileID: 21300000, guid: 875f0639ee5bc1741b335e02cbe7c13d, type: 3}
+  - {fileID: 21300000, guid: dc720b6fdc7f86a42be16924a93f00d9, type: 3}
   SmallSprite:
-  - {fileID: 21300000, guid: 302423a90756ee449992ef15cc9a5f18, type: 3}
-  - {fileID: 21300000, guid: ac3d982706267ec4fbc99418642f4a60, type: 3}
-  - {fileID: 21300000, guid: fb7cb44b3161c9940b6ed8fe9f6de70c, type: 3}
-  - {fileID: 21300000, guid: 0d46254d1902b1f49ba8e4d253a0d8d7, type: 3}
-  - {fileID: 21300000, guid: e0494866e15ac59419930c96195695ec, type: 3}
+  - {fileID: 21300000, guid: 4e545a03b27b34c4289b991f398e2fe5, type: 3}
+  - {fileID: 21300000, guid: b9981c5a114ab724f947472bf4f7708d, type: 3}
+  - {fileID: 21300000, guid: b122a8b6d74caab4d9302779f55fd2f2, type: 3}
+  - {fileID: 21300000, guid: 779c405587bcc924dae061f49109e369, type: 3}
+  - {fileID: 21300000, guid: 11740188a4b5f0741a6fe1d180f41f73, type: 3}
+  - {fileID: 21300000, guid: 527537b7316e9c54fa3c31e9b8d57937, type: 3}
+  - {fileID: 21300000, guid: 602bd5136f33a0646b1a8356c270633e, type: 3}
   MidSprite:
-  - {fileID: 21300000, guid: a2dd2c5e0f8fd2341a3dacc48d0f979f, type: 3}
-  - {fileID: 21300000, guid: 2f2d9d345dbb1d14ba8eb68cd47cbdcf, type: 3}
-  - {fileID: 21300000, guid: c3efeb7dad1359c4eb709fa19d5a8493, type: 3}
-  - {fileID: 21300000, guid: 449d7d461db391f44b4243b48f9842a9, type: 3}
-  - {fileID: 21300000, guid: c22afff1626816b4c9980ebff91d511e, type: 3}
+  - {fileID: 21300000, guid: 12648351ac8c54844b9f673a14abfb34, type: 3}
+  - {fileID: 21300000, guid: e869c078c7ad97346aa647be7b29c5e6, type: 3}
+  - {fileID: 21300000, guid: fcf829c7b0522484a9638ce393b44452, type: 3}
+  - {fileID: 21300000, guid: 18175d267179b284791409b1cd449ed4, type: 3}
+  - {fileID: 21300000, guid: 54b24f3c6dd331341bdc43667c526563, type: 3}
+  - {fileID: 21300000, guid: 50f19326301e5f149892efeb5323cc2b, type: 3}
+  - {fileID: 21300000, guid: 703cf0130e0d6b34da26a239bbb60df9, type: 3}
   VerySprite:
-  - {fileID: 21300000, guid: 11eb9ffa53c32ee4dbd0391472025f8e, type: 3}
-  - {fileID: 21300000, guid: 958bc1abdcc17464a857fd88a83ee665, type: 3}
-  - {fileID: 21300000, guid: 7236b7982dc13924e86fb7a262d77d55, type: 3}
-  - {fileID: 21300000, guid: 085139e9117be264781d1772110f0c51, type: 3}
-  - {fileID: 21300000, guid: 0e243ec2a2085bf40b2b9c0c57098b56, type: 3}
+  - {fileID: 21300000, guid: 87a5163e714c5944692cb72b1ab9e97a, type: 3}
+  - {fileID: 21300000, guid: be0bf1bb83e0bea4fb58eb23c9f018f3, type: 3}
+  - {fileID: 21300000, guid: 7064d4a1aa12eee48906c9062021609d, type: 3}
+  - {fileID: 21300000, guid: 6769e4d34846c5c42a08a24062d6655b, type: 3}
+  - {fileID: 21300000, guid: 5f74254f80b54e44587045411a35fe71, type: 3}
+  - {fileID: 21300000, guid: 5d2073176baafdc4486e15e08da40135, type: 3}
+  - {fileID: 21300000, guid: e2f3d3eee3ebbc64c8816f57cfbf84a0, type: 3}
   MaxSprite:
-  - {fileID: 21300000, guid: 74b06840dfc78ee4187a8dbda9affc0c, type: 3}
-  - {fileID: 21300000, guid: d86a127a5908e8a40bb1b535a46b0485, type: 3}
-  - {fileID: 21300000, guid: b42b25fa3ec1ef842bdffed25a222a6d, type: 3}
-  - {fileID: 21300000, guid: 8649cb0d7a308a8438e631c3fb807940, type: 3}
-  - {fileID: 21300000, guid: 79d344ccd164d3b4f9dba1871281078c, type: 3}
+  - {fileID: 21300000, guid: 3f2e6818e6d4b3a4bb0d6ddd1ab58e96, type: 3}
+  - {fileID: 21300000, guid: ccad73b2ddc5df547848612eb7d6cddf, type: 3}
+  - {fileID: 21300000, guid: f18ddc7c3f0db934ea078caac9c5e0fa, type: 3}
+  - {fileID: 21300000, guid: 9ae5d3dbe6a605c4e8c7ccfe47b7a947, type: 3}
+  - {fileID: 21300000, guid: 40b04de9c34095349bf44510f836693b, type: 3}
+  - {fileID: 21300000, guid: 5adc230389582d1489e5cd7bc6da1a80, type: 3}
+  - {fileID: 21300000, guid: 5320913164eea63408048f750056073a, type: 3}
   NonactiveSprite: {fileID: 21300000, guid: 095a34308d87aed478707c713c40b691, type: 3}
   PositionIndicator: {fileID: 1874191195570085332}
   TextObject: {fileID: 6864918921008419719}
