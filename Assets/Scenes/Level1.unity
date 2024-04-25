@@ -14384,7 +14384,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: NonactiveSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 182f41c0409212c4293c75a936f9771f, type: 3}
+      objectReference: {fileID: 21300000, guid: 90571685ddf081946914f608dff3d95a, type: 3}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -36919,7 +36919,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: NonactiveSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 182f41c0409212c4293c75a936f9771f, type: 3}
+      objectReference: {fileID: 21300000, guid: 90571685ddf081946914f608dff3d95a, type: 3}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -38435,7 +38435,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: NonactiveSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42f87f22f5650a849b96c7d9be5dd5cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 182f41c0409212c4293c75a936f9771f, type: 3}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -43632,7 +43632,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: NonactiveSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 90571685ddf081946914f608dff3d95a, type: 3}
+      objectReference: {fileID: 21300000, guid: 182f41c0409212c4293c75a936f9771f, type: 3}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
       propertyPath: m_RootOrder
       value: -1
