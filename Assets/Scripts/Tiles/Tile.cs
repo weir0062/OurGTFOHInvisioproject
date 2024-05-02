@@ -49,7 +49,13 @@ public class Tile : MonoBehaviour
         indicatorSprite.material.color = Color.black;
 
     }
-
+    private void Update()
+    {
+        if (IsActive == true && PositionIndicator.active == false)
+        {
+            SetActive();
+        }
+    }
     public void Pressed()
     {
         if(state == TileState.NonActive)

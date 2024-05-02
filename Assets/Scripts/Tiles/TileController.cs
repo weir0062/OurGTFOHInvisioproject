@@ -15,7 +15,10 @@ public class TileController : MonoBehaviour
     {
 
     }
-
+    private void Update()
+    {
+        Debug.Log(GetActiveTile());
+    }
     public void InitializeTileArray(List<GameObject> tileObjects)
     {
         if (tileObjects.Count == 0) return;
@@ -93,12 +96,16 @@ public class TileController : MonoBehaviour
     }
     public Tile GetActiveTile()
     {
-        if (ActiveTile)
+        if (ActiveTile != null)
         {
             return ActiveTile;
         }
+        else
+        {
+
         Debug.Log("TileNotActive");
         return null;
+        }
     }
     public Tile GetCentralTile()
     {
