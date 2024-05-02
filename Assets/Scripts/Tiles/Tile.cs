@@ -22,7 +22,6 @@ public class Tile : MonoBehaviour
     int StepsTaken = 0;
 
     int hp = 5;
-    public TextMeshPro text;
 
     Sprite currentSprite;
     public Sprite SolidSprite;
@@ -34,7 +33,6 @@ public class Tile : MonoBehaviour
     public Sprite SuperSolidSprite;
 
     public GameObject PositionIndicator;
-    public GameObject TextObject;
 
     Player player;
     public bool IsActive = false;
@@ -44,12 +42,7 @@ public class Tile : MonoBehaviour
     {
         gameObject.tag = "Tile";
         InitializeDefaults();
-        UpdateState();
-        TextObject.SetActive(false);
-        if(state == TileState.SuperSolid)
-        {
-            Destroy(TextObject);
-        }
+        UpdateState(); 
         PositionIndicator.SetActive(false);
         SpriteRenderer indicatorSprite = PositionIndicator.GetComponent<SpriteRenderer>();
 
@@ -92,12 +85,7 @@ public class Tile : MonoBehaviour
     {
         return position;
 
-    }
-    public void SetText(string newtext)
-    {
-        text.text = newtext;
-    }
-
+    } 
      
     public void StepTaken()
     {
@@ -114,7 +102,6 @@ public class Tile : MonoBehaviour
         }
             StepsTaken++;
             UpdateState();
-            SetText(hp.ToString());
             SetActive();
         
     }
@@ -133,12 +120,7 @@ public class Tile : MonoBehaviour
     public void SetActive()
     {
         IsActive = true; 
-        PositionIndicator.SetActive(true);
-        if(TextObject)
-        {
-
-            TextObject.SetActive(true);
-        }
+        PositionIndicator.SetActive(true); 
          
     }
     public void SetNotActive()
@@ -167,6 +149,9 @@ public class Tile : MonoBehaviour
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
                 currentSprite = VerySprite;
+               // spriteRenderer.material.color = Color.red;
+                spriteRenderer.material.color = new Color(255.0f, 0, 0, 0.1f);
+
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
                 currentSprite = MaxSprite;
@@ -182,7 +167,6 @@ public class Tile : MonoBehaviour
         }
 
         hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
-        SetText(hp.ToString());
     }
 
 
