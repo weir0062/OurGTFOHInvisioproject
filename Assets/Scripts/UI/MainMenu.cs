@@ -75,7 +75,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
 
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("CharlieScene");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level1");
         while (!asyncLoad.isDone)
         {
             yield return null; // Wait until the scene fully loads
@@ -132,7 +132,7 @@ public class MainMenu : MonoBehaviour
     }
     public void OpenLevel9()
     {
-        SceneManager.LoadSceneAsync("Level9");
+        SceneManager.LoadSceneAsync("Level69");
     }
     public void OpenLevel10()
     {

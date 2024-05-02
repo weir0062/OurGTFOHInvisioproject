@@ -43,6 +43,7 @@ public class CameraController : MonoBehaviour
         if (camera != null && camera.orthographic == true)
         {
             camera.orthographic = false;
+            
         }
         if(tileController)
         {
