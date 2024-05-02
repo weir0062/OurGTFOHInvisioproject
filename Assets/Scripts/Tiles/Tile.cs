@@ -12,6 +12,7 @@ public enum TileState
     MidDamage,
     VeryDamaged,
     MaxDamaged,
+    SuperSolid,
     NonActive
 };
 public class Tile : MonoBehaviour
@@ -24,12 +25,13 @@ public class Tile : MonoBehaviour
     public TextMeshPro text;
 
     Sprite currentSprite;
-    public Sprite[] SolidSprite;
-    public Sprite[] SmallSprite;
-    public Sprite[] MidSprite;
-    public Sprite[] VerySprite;
-    public Sprite[] MaxSprite;
+    public Sprite SolidSprite;
+    public Sprite SmallSprite;
+    public Sprite MidSprite;
+    public Sprite VerySprite;
+    public Sprite MaxSprite;
     public Sprite NonactiveSprite;
+    public Sprite SuperSolidSprite;
 
     public GameObject PositionIndicator;
     public GameObject TextObject;
@@ -44,6 +46,10 @@ public class Tile : MonoBehaviour
         InitializeDefaults();
         UpdateState();
         TextObject.SetActive(false);
+        if(state == TileState.SuperSolid)
+        {
+            Destroy(TextObject);
+        }
         PositionIndicator.SetActive(false);
         SpriteRenderer indicatorSprite = PositionIndicator.GetComponent<SpriteRenderer>();
 
@@ -95,14 +101,22 @@ public class Tile : MonoBehaviour
      
     public void StepTaken()
     {
-        if (state != TileState.NonActive)
+        if (state == TileState.NonActive)
         {
+            return;
+        }
 
+        if(state == TileState.SuperSolid)
+        {
+            SetActive();
+            return;
+
+        }
             StepsTaken++;
             UpdateState();
             SetText(hp.ToString());
             SetActive();
-        }
+        
     }
 
     public void StepEnded()
@@ -120,14 +134,17 @@ public class Tile : MonoBehaviour
     {
         IsActive = true; 
         PositionIndicator.SetActive(true);
-        TextObject.SetActive(true);
+        if(TextObject)
+        {
+
+            TextObject.SetActive(true);
+        }
+         
     }
     public void SetNotActive()
     {
         IsActive = false;
         PositionIndicator.SetActive(false);
-
-        spriteRenderer.material.color = Color.white;
     }
     public int GetStepsTaken()
     {
@@ -140,22 +157,26 @@ public class Tile : MonoBehaviour
         switch (state)
         {
             case TileState.Solid:
-                currentSprite = SolidSprite[Random.Range(0, SolidSprite.Length)];
+                currentSprite = SolidSprite;
                 StepsTaken = 0; break;
             case TileState.SmallDamage:
-                currentSprite = SmallSprite[Random.Range(0, SmallSprite.Length)];
+                currentSprite = SmallSprite;
                 StepsTaken = 1; break;
             case TileState.MidDamage:
-                currentSprite = MidSprite[Random.Range(0, MidSprite.Length)];
+                currentSprite = MidSprite;
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
-                currentSprite = VerySprite[Random.Range(0, VerySprite.Length)];
+                currentSprite = VerySprite;
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
-                currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
+                currentSprite = MaxSprite;
                 StepsTaken = 4; break;
             case TileState.NonActive:
                 currentSprite = NonactiveSprite;
+                StepsTaken = 69;
+                break;
+            case TileState.SuperSolid:
+                currentSprite = SuperSolidSprite;
                 StepsTaken = 69;
                 break;
         }
@@ -171,31 +192,27 @@ public class Tile : MonoBehaviour
         {
             case 0:
                 state = TileState.Solid;
-                currentSprite = SolidSprite[Random.Range(0, SolidSprite.Length)];
+                currentSprite = SolidSprite;
                 break;
 
             case 1:
                 state = TileState.SmallDamage;
-                currentSprite = SmallSprite[Random.Range(0, SmallSprite.Length)];
+                currentSprite = SmallSprite;
                 break;
             case 2:
                 state = TileState.MidDamage;
-                currentSprite = MidSprite[Random.Range(0, MidSprite.Length)];
+                currentSprite = MidSprite;
                 break;
             case 3:
                 state = TileState.VeryDamaged;
-                currentSprite = VerySprite[Random.Range(0, VerySprite.Length)];
+                currentSprite = VerySprite;
                 break;
             case 4:
                 state = TileState.MaxDamaged;
-                currentSprite = MaxSprite[Random.Range(0, MaxSprite.Length)];
+                currentSprite = MaxSprite;
                 break;
             case 5:
                 Destroy(this);
-                break;
-            case 69:
-                currentSprite = NonactiveSprite;
-                state = TileState.NonActive;
                 break;
             default:
                 break;
