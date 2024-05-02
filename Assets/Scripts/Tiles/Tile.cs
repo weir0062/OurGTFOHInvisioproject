@@ -148,9 +148,6 @@ public class Tile : MonoBehaviour
                 currentSprite = MidSprite;
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
-                currentSprite = VerySprite;
-               // spriteRenderer.material.color = Color.red;
-                spriteRenderer.material.color = new Color(255.0f, 0, 0, 0.1f);
 
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
