@@ -65,7 +65,10 @@ public class CameraController : MonoBehaviour
         if(camera == null || tileController == null)
         {
             InitilizeCamera();
+
         }
+            CameraFocus();
+/*
         if(camera.fieldOfView < MidZoomIn)
         {
             currentFocusObject = tileController.GetActiveTile().transform;
@@ -74,10 +77,8 @@ public class CameraController : MonoBehaviour
         else
         {
             currentFocusObject = tileController.GetCentralTile().transform;
-            CameraFocus();
 
         }
-
 
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
@@ -86,7 +87,7 @@ public class CameraController : MonoBehaviour
         {
             camera.fieldOfView -= scroll * ZoomSensitivity;
             camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, MinZoomIn, MaxZoomIn);
-        }
+        }*/
     }
 
 
