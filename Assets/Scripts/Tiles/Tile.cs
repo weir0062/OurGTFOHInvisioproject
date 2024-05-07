@@ -33,6 +33,8 @@ public class Tile : MonoBehaviour
     public Sprite SuperSolidSprite;
 
     public GameObject PositionIndicator;
+    public GameObject DialogueBoxObject;
+    
 
     Player player;
     public bool IsActive = false;
@@ -48,6 +50,11 @@ public class Tile : MonoBehaviour
 
         indicatorSprite.material.color = Color.black;
 
+
+        if(DialogueBoxObject != null)
+        {
+            DialogueBoxObject.SetActive(false);
+        }
     }
     private void Update()
     {
@@ -68,6 +75,10 @@ public class Tile : MonoBehaviour
         if (player == null)
         {
             InitializePlayer();
+        }
+        if(DialogueBoxObject != null)
+        {
+            DialogueBoxObject.SetActive(true);
         }
         player?.TakeStep(this);
     }

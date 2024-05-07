@@ -27,7 +27,6 @@ public class CameraController : MonoBehaviour
 
         if (tileController == null)
         {
-
             tileController = GameObject.FindObjectOfType<TileController>();
              
 
