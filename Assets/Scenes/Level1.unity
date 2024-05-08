@@ -48744,12 +48744,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.88
+      value: -11.27
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2909992
+      value: 4.33
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48787,9 +48799,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogBox
       objectReference: {fileID: 0}
+    - target: {fileID: 5742104958146855819, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_text
+      value: It's not my fault i was born this way!!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742104958146855819, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742104958146855819, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7900244355832968450, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
       propertyPath: m_text
       value: Tiny dick Phillip
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900244355832968450, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_fontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900244355832968450, guid: 7ee71364e9ade874c9b97bcb48efdc1b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
