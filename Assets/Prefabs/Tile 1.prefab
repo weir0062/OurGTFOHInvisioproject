@@ -101,14 +101,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   spriteRenderer: {fileID: 3364713898258445333}
-  SolidSprite: {fileID: 21300000, guid: 875f0639ee5bc1741b335e02cbe7c13d, type: 3}
-  SmallSprite: {fileID: 21300000, guid: 527537b7316e9c54fa3c31e9b8d57937, type: 3}
-  MidSprite: {fileID: 21300000, guid: 50f19326301e5f149892efeb5323cc2b, type: 3}
-  VerySprite: {fileID: 21300000, guid: 5d2073176baafdc4486e15e08da40135, type: 3}
-  MaxSprite: {fileID: 21300000, guid: 5adc230389582d1489e5cd7bc6da1a80, type: 3}
+  SolidSprite: {fileID: 21300000, guid: 2e14964af68127643a5a66623135323e, type: 3}
+  SmallSprite: {fileID: 21300000, guid: b3893660118ca64458c4edd2d60c482f, type: 3}
+  MidSprite: {fileID: 21300000, guid: 99251e10af3636d45bbed20118882dec, type: 3}
+  VerySprite: {fileID: 21300000, guid: 9f8768b27e3242d4db89d1488a36f3ce, type: 3}
+  MaxSprite: {fileID: 21300000, guid: 81672cbf5e509644fa941266a9c8416c, type: 3}
   NonactiveSprite: {fileID: 21300000, guid: 095a34308d87aed478707c713c40b691, type: 3}
   SuperSolidSprite: {fileID: 21300000, guid: 9c7f5f28d108c464f8767e9729301a8a, type: 3}
   PositionIndicator: {fileID: 1874191195570085332}
+  DialogueBoxObject: {fileID: 0}
   IsActive: 0
 --- !u!61 &1221998688509348492
 BoxCollider2D:
