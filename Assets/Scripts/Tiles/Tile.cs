@@ -31,7 +31,6 @@ public class Tile : MonoBehaviour
     public Material MaxMat;
     public Material NonactiveMat;
     public Material SuperSolidMat;
-    public TextMeshPro text;
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 

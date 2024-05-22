@@ -68,7 +68,6 @@ public class TileController : MonoBehaviour
                 int zIndex = zMap[roundedZ];
 
                 tile.SetPosition(xIndex, zIndex);
-                tile.text.SetText(xIndex + "," + zIndex);
                 tiles[xIndex, zIndex] = tile;
 
                  

@@ -95,7 +95,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         { 
             // Calculate the target position. You might want to adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x+1, transform.position.y, currentFocusObject.position.z+2);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z);
 
             // Smoothly interpolate the camera's position towards the target position
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * focusSpeed);
@@ -125,12 +125,12 @@ public class CameraController : MonoBehaviour
         float horizontalSize = boardWidth / (2.0f * camera.aspect);
 
         // Set the max zoom to the larger of the two sizes, plus a little margin
-        MaxZoomIn = Mathf.Max(verticalSize, horizontalSize) * 1.1f; // 1.1f adds a 10% margin
+        MaxZoomIn = Mathf.Max(verticalSize, horizontalSize) * 1.69f; // 1.1f adds a 69% margin
         MaxZoomIn = VerticalSizeToFOV(MaxZoomIn * 2, camera.transform.position.z - boardHeight / 2.0f);
         MaxZoomIn *= MaxZoomIn < 0 ? -2 : 2;
 
 
-            MidZoomIn = MaxZoomIn * 0.69f;
+            MidZoomIn = MaxZoomIn * 0.8f;
         }
 
     }
