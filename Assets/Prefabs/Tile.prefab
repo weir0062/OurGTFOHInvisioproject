@@ -50,11 +50,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   MatRenderer: {fileID: 657003792909127491}
-  SolidMat: {fileID: 2100000, guid: 749b9069dc4742c5bfa5c74644049926, type: 2}
-  SmallMat: {fileID: 2100000, guid: a00013af81304728b2be1f4309ee2433, type: 2}
-  MidMat: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  VeryMat: {fileID: -876546973899608171, guid: 4ac8ca33de336784584fc09e8c5752e9, type: 3}
-  MaxMat: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  SolidMat: {fileID: 2100000, guid: 4b2c174f3ab60c44a9c8e79a829e0e21, type: 2}
+  SmallMat: {fileID: 2100000, guid: 2e43cf3ba182e7f4e90b731d74f3dd36, type: 2}
+  MidMat: {fileID: 2100000, guid: 7c5e5bdd920ca05428b98eb13e2c4473, type: 2}
+  VeryMat: {fileID: 2100000, guid: 82acf730892aae04ca5989a053780091, type: 2}
+  MaxMat: {fileID: 2100000, guid: 8b696ca2111e966488614b74f7b30d22, type: 2}
   NonactiveMat: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   SuperSolidMat: {fileID: 2100000, guid: 94121525c2841044ca12f5f64bd3a3c3, type: 2}
   PositionIndicator: {fileID: 1874191195570085332}
