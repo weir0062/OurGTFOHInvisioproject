@@ -17,37 +17,37 @@ public class TileController : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(GetActiveTile());
+        // Debug.Log(ActiveTile);
     }
     public void InitializeTileArray(List<GameObject> tileObjects)
     {
         if (tileObjects.Count == 0) return;
 
         var xCoordinates = new HashSet<float>();
-        var yCoordinates = new HashSet<float>();
+        var zCoordinates = new HashSet<float>();
 
-        float gridSize = 1.0f;  
+        float gridSize = 1.0f;
 
         foreach (GameObject obj in tileObjects)
         {
             Vector3 pos = obj.transform.position;
 
             float roundedX = Mathf.Round(pos.x / gridSize) * gridSize;
-            float roundedY = Mathf.Round(pos.y / gridSize) * gridSize;
+            float roundedZ = Mathf.Round(pos.z / gridSize) * gridSize;
 
             xCoordinates.Add(roundedX);
-            yCoordinates.Add(roundedY);
+            zCoordinates.Add(roundedZ);
         }
 
         var sortedX = xCoordinates.OrderBy(x => x).ToList();
-        var sortedY = yCoordinates.OrderBy(y => y).ToList();
+        var sortedZ = zCoordinates.OrderBy(y => y).ToList();
 
         Dictionary<float, int> xMap = sortedX.Select((value, index) => new { value, index })
                                              .ToDictionary(pair => pair.value, pair => pair.index);
-        Dictionary<float, int> yMap = sortedY.Select((value, index) => new { value, index })
+        Dictionary<float, int> zMap = sortedZ.Select((value, index) => new { value, index })
                                              .ToDictionary(pair => pair.value, pair => pair.index);
 
-        tiles = new Tile[sortedX.Count, sortedY.Count];
+        tiles = new Tile[sortedX.Count, sortedZ.Count];
 
         foreach (GameObject obj in tileObjects)
         {
@@ -55,26 +55,35 @@ public class TileController : MonoBehaviour
             if (tile != null)
             {
                 Vector3 pos = obj.transform.position;
-                // Округляем координаты при запросе к словарю
                 float roundedX = Mathf.Round(pos.x / gridSize) * gridSize;
-                float roundedY = Mathf.Round(pos.y / gridSize) * gridSize;
+                float roundedZ = Mathf.Round(pos.z / gridSize) * gridSize;
 
-                // Используем округленные координаты для получения индексов
+                if (!xMap.ContainsKey(roundedX) || !zMap.ContainsKey(roundedZ))
+                {
+                    Debug.LogError($"Tile at position {pos} has invalid rounded coordinates ({roundedX}, {roundedZ})");
+                    continue;
+                }
+
                 int xIndex = xMap[roundedX];
-                int yIndex = yMap[roundedY];
+                int zIndex = zMap[roundedZ];
 
-                tile.SetPosition(xIndex, yIndex);
+                tile.SetPosition(xIndex, zIndex);
+                tile.text.SetText(xIndex + "," + zIndex);
+                tiles[xIndex, zIndex] = tile;
 
-                tiles[xIndex, yIndex] = tile;
+                 
             }
         }
+
+
+
+        CentralTile = tiles[sortedX.Count / 2, sortedZ.Count / 2];
         ActiveTile = tiles[0, 0];
-        CentralTile = tiles[xCoordinates.Count / 2, yCoordinates.Count / 2];
         InitializePlayer();
-        tiles[0, 0].StepTaken();
+        tiles[0, 0]?.StepTaken();
     }
 
-     
+
 
 
     void InitializePlayer()
@@ -103,8 +112,8 @@ public class TileController : MonoBehaviour
         else
         {
 
-        Debug.Log("TileNotActive");
-        return null;
+            Debug.Log("TileNotActive");
+            return null;
         }
     }
     public Tile GetCentralTile()

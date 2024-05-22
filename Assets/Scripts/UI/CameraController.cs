@@ -67,8 +67,8 @@ public class CameraController : MonoBehaviour
 
         }
             CameraFocus();
-/*
-        if(camera.fieldOfView < MidZoomIn)
+
+        if (camera.fieldOfView < MidZoomIn)
         {
             currentFocusObject = tileController.GetActiveTile().transform;
             CameraFocus();
@@ -86,7 +86,7 @@ public class CameraController : MonoBehaviour
         {
             camera.fieldOfView -= scroll * ZoomSensitivity;
             camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, MinZoomIn, MaxZoomIn);
-        }*/
+        }
     }
 
 
@@ -95,7 +95,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         { 
             // Calculate the target position. You might want to adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x+1, currentFocusObject.position.y+2, transform.position.z);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x+1, transform.position.y, currentFocusObject.position.z+2);
 
             // Smoothly interpolate the camera's position towards the target position
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * focusSpeed);

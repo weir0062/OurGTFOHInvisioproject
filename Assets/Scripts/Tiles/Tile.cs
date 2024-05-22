@@ -18,23 +18,23 @@ public enum TileState
 public class Tile : MonoBehaviour
 {
     public TileState state = TileState.Solid;
-    public SpriteRenderer spriteRenderer;
+    public MeshRenderer MatRenderer;
     int StepsTaken = 0;
 
     int hp = 5;
 
-    Sprite currentSprite;
-    public Sprite SolidSprite;
-    public Sprite SmallSprite;
-    public Sprite MidSprite;
-    public Sprite VerySprite;
-    public Sprite MaxSprite;
-    public Sprite NonactiveSprite;
-    public Sprite SuperSolidSprite;
-
+    Material currentMat;
+    public Material SolidMat;
+    public Material SmallMat;
+    public Material MidMat;
+    public Material VeryMat;
+    public Material MaxMat;
+    public Material NonactiveMat;
+    public Material SuperSolidMat;
+    public TextMeshPro text;
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
-    
+
 
     Player player;
     public bool IsActive = false;
@@ -44,14 +44,14 @@ public class Tile : MonoBehaviour
     {
         gameObject.tag = "Tile";
         InitializeDefaults();
-        UpdateState(); 
+        UpdateState();
         PositionIndicator.SetActive(false);
         SpriteRenderer indicatorSprite = PositionIndicator.GetComponent<SpriteRenderer>();
 
         indicatorSprite.material.color = Color.black;
 
 
-        if(DialogueBoxObject != null)
+        if (DialogueBoxObject != null)
         {
             DialogueBoxObject.SetActive(false);
         }
@@ -65,18 +65,17 @@ public class Tile : MonoBehaviour
     }
     public void Pressed()
     {
-        if(state == TileState.NonActive)
+        if (state == TileState.NonActive)
         {
 
-        Debug.Log("NonActiveTile");
+            Debug.Log("NonActiveTile");
             return;
         }
-        Debug.Log("MouseDown");
         if (player == null)
         {
             InitializePlayer();
         }
-        if(DialogueBoxObject != null)
+        if (DialogueBoxObject != null)
         {
             DialogueBoxObject.SetActive(true);
         }
@@ -102,8 +101,8 @@ public class Tile : MonoBehaviour
     {
         return position;
 
-    } 
-     
+    }
+
     public void StepTaken()
     {
         if (state == TileState.NonActive)
@@ -111,16 +110,17 @@ public class Tile : MonoBehaviour
             return;
         }
 
-        if(state == TileState.SuperSolid)
+        if (state == TileState.SuperSolid)
         {
             SetActive();
+           MatRenderer.material.color = Color.green;
             return;
 
         }
-            StepsTaken++;
-            UpdateState();
-            SetActive();
-        
+        StepsTaken++;
+        UpdateState();
+        SetActive();
+        MatRenderer.material.color = Color.green;
     }
 
     public void StepEnded()
@@ -128,17 +128,17 @@ public class Tile : MonoBehaviour
 
         if (state != TileState.NonActive)
         {
-
-
             SetNotActive();
         }
     }
 
     public void SetActive()
     {
-        IsActive = true; 
-        PositionIndicator.SetActive(true); 
-         
+        IsActive = true;
+        MatRenderer.material.color = Color.red;
+
+        PositionIndicator.SetActive(true);
+
     }
     public void SetNotActive()
     {
@@ -151,31 +151,33 @@ public class Tile : MonoBehaviour
     }
 
 
+
     void InitializeDefaults()
     {
         switch (state)
         {
             case TileState.Solid:
-                currentSprite = SolidSprite;
+                currentMat= SolidMat;
                 StepsTaken = 0; break;
             case TileState.SmallDamage:
-                currentSprite = SmallSprite;
+                currentMat= SmallMat;
                 StepsTaken = 1; break;
             case TileState.MidDamage:
-                currentSprite = MidSprite;
+                currentMat= MidMat;
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
+                currentMat = VeryMat;
 
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
-                currentSprite = MaxSprite;
+                currentMat= MaxMat;
                 StepsTaken = 4; break;
             case TileState.NonActive:
-                currentSprite = NonactiveSprite;
+                currentMat= NonactiveMat;
                 StepsTaken = 69;
                 break;
             case TileState.SuperSolid:
-                currentSprite = SuperSolidSprite;
+                currentMat= SuperSolidMat;
                 StepsTaken = 69;
                 break;
         }
@@ -190,24 +192,24 @@ public class Tile : MonoBehaviour
         {
             case 0:
                 state = TileState.Solid;
-                currentSprite = SolidSprite;
+                currentMat = SolidMat;
                 break;
 
             case 1:
                 state = TileState.SmallDamage;
-                currentSprite = SmallSprite;
+                currentMat = SmallMat;
                 break;
             case 2:
                 state = TileState.MidDamage;
-                currentSprite = MidSprite;
+                currentMat = MidMat;
                 break;
             case 3:
                 state = TileState.VeryDamaged;
-                currentSprite = VerySprite;
+                currentMat = VeryMat;
                 break;
             case 4:
                 state = TileState.MaxDamaged;
-                currentSprite = MaxSprite;
+                currentMat = MaxMat;
                 break;
             case 5:
                 Destroy(this);
@@ -218,7 +220,7 @@ public class Tile : MonoBehaviour
 
 
         hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
-        spriteRenderer.sprite = currentSprite;
+        MatRenderer.material = currentMat;
 
     }
 
