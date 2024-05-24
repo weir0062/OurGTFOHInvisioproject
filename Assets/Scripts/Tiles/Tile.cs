@@ -34,13 +34,15 @@ public class Tile : MonoBehaviour
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 
-
+    float moveDistance = 0.5f;
+    Vector3 initialPosition;
     Player player;
     public bool IsActive = false;
     Vector2 position;
     // Start is called before the first frame update
     void Start()
     {
+
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
@@ -49,11 +51,15 @@ public class Tile : MonoBehaviour
 
         indicatorSprite.material.color = Color.black;
 
+        initialPosition = transform.position;
+        initialPosition.y = 0;
 
         if (DialogueBoxObject != null)
         {
             DialogueBoxObject.SetActive(false);
         }
+
+
     }
     private void Update()
     {
@@ -101,6 +107,26 @@ public class Tile : MonoBehaviour
         return position;
 
     }
+    public void StepAnimation()
+    {
+
+        MoveTileDown();
+    }
+
+    void MoveTileDown()
+    {
+        Vector3 targetPosition = initialPosition;
+        targetPosition.y -= moveDistance;
+        transform.position = Vector3.Lerp(initialPosition, targetPosition, 0.5f);
+
+    }
+
+    void MoveTileUp()
+    {
+        Vector3 pos = transform.position;
+        //targetPosition.y += moveDistance;
+        transform.position = Vector3.Lerp(pos, initialPosition, 0.5f);
+    }
 
     public void StepTaken()
     {
@@ -112,14 +138,16 @@ public class Tile : MonoBehaviour
         if (state == TileState.SuperSolid)
         {
             SetActive();
-           MatRenderer.material.color = Color.green;
+            MoveTileDown();
             return;
 
         }
+
         StepsTaken++;
+        MoveTileDown();
         UpdateState();
         SetActive();
-        MatRenderer.material.color = Color.green;
+        
     }
 
     public void StepEnded()
@@ -127,15 +155,15 @@ public class Tile : MonoBehaviour
 
         if (state != TileState.NonActive)
         {
+            MoveTileUp();
             SetNotActive();
         }
+
     }
 
     public void SetActive()
     {
         IsActive = true;
-        MatRenderer.material.color = Color.red;
-
         PositionIndicator.SetActive(true);
 
     }
