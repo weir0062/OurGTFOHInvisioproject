@@ -34,8 +34,9 @@ public class Tile : MonoBehaviour
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 
-    float moveDistance = 0.5f;
+    float moveDistance = 0.25f;
     Vector3 initialPosition;
+    Vector3 LowerPosition;
     Player player;
     public bool IsActive = false;
     Vector2 position;
@@ -52,7 +53,7 @@ public class Tile : MonoBehaviour
         indicatorSprite.material.color = Color.black;
 
         initialPosition = transform.position;
-        initialPosition.y = 0;
+        LowerPosition = new Vector3( initialPosition.x, initialPosition.y-moveDistance, initialPosition.z);
 
         if (DialogueBoxObject != null)
         {
@@ -115,17 +116,13 @@ public class Tile : MonoBehaviour
 
     void MoveTileDown()
     {
-        Vector3 targetPosition = initialPosition;
-        targetPosition.y -= moveDistance;
-        transform.position = Vector3.Lerp(initialPosition, targetPosition, 0.5f);
+        transform.position = LowerPosition;
 
     }
 
     void MoveTileUp()
     {
-        Vector3 pos = transform.position;
-        //targetPosition.y += moveDistance;
-        transform.position = Vector3.Lerp(pos, initialPosition, 0.5f);
+        transform.position = initialPosition;
     }
 
     public void StepTaken()
@@ -152,10 +149,10 @@ public class Tile : MonoBehaviour
 
     public void StepEnded()
     {
+            MoveTileUp();
 
         if (state != TileState.NonActive)
         {
-            MoveTileUp();
             SetNotActive();
         }
 
