@@ -12088,9 +12088,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &347393781
 SpriteRenderer:
@@ -16003,9 +16003,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &458481962
 SpriteRenderer:
@@ -16692,9 +16692,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &476274449
 SpriteRenderer:
@@ -18264,9 +18264,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &521616645
 SpriteRenderer:
@@ -21426,9 +21426,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &592635946
 SpriteRenderer:
@@ -21536,9 +21536,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &593718091
 SpriteRenderer:
@@ -21646,9 +21646,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &598232503
 SpriteRenderer:
@@ -24158,9 +24158,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &670467755
 SpriteRenderer:
@@ -28778,9 +28778,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1 &794892242
 GameObject:
@@ -33911,9 +33911,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &945894842
 SpriteRenderer:
@@ -42858,9 +42858,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1173824303
 SpriteRenderer:
@@ -44723,9 +44723,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1205653519
 PrefabInstance:
@@ -45734,9 +45734,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1241733855
 SpriteRenderer:
@@ -46065,9 +46065,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1248982808
 SpriteRenderer:
@@ -49134,9 +49134,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1334989728
 SpriteRenderer:
@@ -50324,9 +50324,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1353486188
 SpriteRenderer:
@@ -52825,9 +52825,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1446579661
 SpriteRenderer:
@@ -53126,9 +53126,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1450711124
 PrefabInstance:
@@ -57102,9 +57102,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1606089896
 SpriteRenderer:
@@ -60088,9 +60088,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1725854229
 SpriteRenderer:
@@ -63146,9 +63146,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1801060326
 SpriteRenderer:
@@ -67341,9 +67341,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1909495449
 SpriteRenderer:
@@ -69600,9 +69600,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972265905
 SpriteRenderer:
@@ -69710,9 +69710,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972432915
 SpriteRenderer:
@@ -70335,9 +70335,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1985680614
 PrefabInstance:
@@ -70508,9 +70508,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1988710919
 SpriteRenderer:
@@ -71789,9 +71789,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2020787770
 SpriteRenderer:
@@ -74691,9 +74691,9 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  FinishMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2121229600
 SpriteRenderer:
@@ -75671,7 +75671,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: state
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}

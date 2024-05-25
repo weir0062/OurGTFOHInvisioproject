@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 
 public enum TileState
@@ -17,7 +19,7 @@ public enum TileState
 };
 public class Tile : MonoBehaviour
 {
-    public TileState state = TileState.Solid;
+    public TileState state; /*= TileState.Solid;*/
     public MeshRenderer MatRenderer;
     int StepsTaken = 0;
 
@@ -114,7 +116,6 @@ public class Tile : MonoBehaviour
     {
         LowerPosition = new Vector3(initialPosition.x, initialPosition.y - moveDistance, initialPosition.z);
         transform.localPosition = LowerPosition;
-
     }
 
     void MoveTileUp()
@@ -126,10 +127,16 @@ public class Tile : MonoBehaviour
     {
         if (state == TileState.Finish)
         {
-            SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
-            handler.LoadLevelAt(0);
+            //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
+            //handler.LoadLevelAt(0);
+            SceneManager.LoadScene("MainMenu");
             return;
         } 
+        if (state == TileState.MaxDamaged)
+        {
+            SceneManager.LoadScene("MainMenu");
+            return;
+        }
         if (state == TileState.NonActive)
         {
             return;
@@ -208,7 +215,7 @@ public class Tile : MonoBehaviour
                 break;
             case TileState.Finish:
                 currentMat = SuperSolidMat;
-                StepsTaken = 0;
+                StepsTaken = 69;
                 break;
         }
 
