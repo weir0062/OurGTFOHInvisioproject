@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 
 
-
 public enum TileState
 {
     Solid,
@@ -13,6 +12,7 @@ public enum TileState
     VeryDamaged,
     MaxDamaged,
     SuperSolid,
+    Finish,
     NonActive
 };
 public class Tile : MonoBehaviour
@@ -31,6 +31,7 @@ public class Tile : MonoBehaviour
     public Material MaxMat;
     public Material NonactiveMat;
     public Material SuperSolidMat;
+    public Material FinishMat;
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 
@@ -59,8 +60,6 @@ public class Tile : MonoBehaviour
         {
             DialogueBoxObject.SetActive(false);
         }
-
-
     }
     private void Update()
     {
@@ -110,14 +109,12 @@ public class Tile : MonoBehaviour
     }
     public void StepAnimation()
     {
-
         MoveTileDown();
     }
 
     void MoveTileDown()
     {
         transform.position = LowerPosition;
-
     }
 
     void MoveTileUp()
@@ -127,6 +124,12 @@ public class Tile : MonoBehaviour
 
     public void StepTaken()
     {
+        if (state == TileState.Finish)
+        {
+            SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
+            handler.LoadLevelAt(0);
+            return;
+        } 
         if (state == TileState.NonActive)
         {
             return;
@@ -137,7 +140,6 @@ public class Tile : MonoBehaviour
             SetActive();
             MoveTileDown();
             return;
-
         }
 
         StepsTaken++;
@@ -198,11 +200,15 @@ public class Tile : MonoBehaviour
                 StepsTaken = 4; break;
             case TileState.NonActive:
                 currentMat= NonactiveMat;
-                StepsTaken = 69;
+                StepsTaken = 70;
                 break;
             case TileState.SuperSolid:
                 currentMat= SuperSolidMat;
-                StepsTaken = 69;
+                StepsTaken = 68;
+                break;
+            case TileState.Finish:
+                currentMat = SuperSolidMat;
+                StepsTaken = 0;
                 break;
         }
 
