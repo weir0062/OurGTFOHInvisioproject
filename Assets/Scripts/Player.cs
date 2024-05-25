@@ -10,12 +10,15 @@ public class Player : MonoBehaviour
     Tile LastActiveTile;
     public Camera cam;
     CameraController camController;
+    public GameObject InGameMenuObj;
+    InGameMenu inGameMenu;
     // Start is called before the first frame update
     void Start()
     {
 
         cam = GameObject.FindObjectOfType<Camera>();
         camController = cam.GetComponent<CameraController>();
+        inGameMenu = InGameMenuObj.GetComponent<InGameMenu>();
     }
 
 
@@ -34,7 +37,7 @@ public class Player : MonoBehaviour
                 tileController.SetActiveTile(ActiveTile); // Даем контроллеру понять что новая плитка активна
                 Vector2 tilepos = Newtile.GetPosition(); // получаем позицию плитки на карте (кастомную позицию плитки, а не позицию по Юнити)
 
-                if(camController!=null) { camController = cam.GetComponent<CameraController>(); }
+                if (camController != null) { camController = cam.GetComponent<CameraController>(); }
                 camController?.CameraFocus(ActiveTile.transform); // меняем фокусировку на новую активную плиту
                 ActiveTile.StepTaken(); // делаем шаг на новую плитку
             }
@@ -97,5 +100,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         CheckForTouch();
+        inGameMenu.Update();
     }
 }

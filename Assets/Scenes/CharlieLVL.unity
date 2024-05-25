@@ -1460,8 +1460,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &29203187
 GameObject:
@@ -8590,8 +8590,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &253967103
 PrefabInstance:
@@ -12090,6 +12090,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &347393781
 SpriteRenderer:
@@ -13293,8 +13294,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &378260782
 GameObject:
@@ -16004,6 +16005,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &458481962
 SpriteRenderer:
@@ -16692,6 +16694,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &476274449
 SpriteRenderer:
@@ -18263,6 +18266,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &521616645
 SpriteRenderer:
@@ -20692,8 +20696,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &574806451
 GameObject:
@@ -20807,8 +20811,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &575484083
 GameObject:
@@ -21424,6 +21428,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &592635946
 SpriteRenderer:
@@ -21533,6 +21538,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &593718091
 SpriteRenderer:
@@ -21642,6 +21648,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &598232503
 SpriteRenderer:
@@ -24153,6 +24160,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &670467755
 SpriteRenderer:
@@ -27950,8 +27958,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &776349037
 GameObject:
@@ -28065,8 +28073,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &780031962
 PrefabInstance:
@@ -28310,8 +28318,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &785384780
 PrefabInstance:
@@ -28772,6 +28780,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1 &794892242
 GameObject:
@@ -28885,8 +28894,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &798481075
 GameObject:
@@ -30157,7 +30166,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: state
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
@@ -33134,8 +33143,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &937268170
 PrefabInstance:
@@ -33509,8 +33518,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &938984754
 GameObject:
@@ -33904,6 +33913,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &945894842
 SpriteRenderer:
@@ -34819,8 +34829,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &964394924
 PrefabInstance:
@@ -35793,8 +35803,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 33.826, y: -157.239, z: -142.995}
 --- !u!1001 &989116899
 PrefabInstance:
@@ -36714,8 +36724,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1027278621
 GameObject:
@@ -40682,6 +40692,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_CameraType
@@ -42840,6 +42855,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1173824303
 SpriteRenderer:
@@ -43970,8 +43986,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1191180036
 PrefabInstance:
@@ -44593,8 +44609,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1203725192
 GameObject:
@@ -44704,6 +44720,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1205653519
 PrefabInstance:
@@ -45546,8 +45563,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1240538239
 PrefabInstance:
@@ -45714,6 +45731,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1241733855
 SpriteRenderer:
@@ -46044,6 +46062,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1248982808
 SpriteRenderer:
@@ -47121,8 +47140,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1286156882
 GameObject:
@@ -49112,6 +49131,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1334989728
 SpriteRenderer:
@@ -50301,6 +50321,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1353486188
 SpriteRenderer:
@@ -51815,8 +51836,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1413527431
 PrefabInstance:
@@ -52438,8 +52459,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1441250119
 GameObject:
@@ -52801,6 +52822,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1446579661
 SpriteRenderer:
@@ -53101,6 +53123,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1450711124
 PrefabInstance:
@@ -55512,6 +55535,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1539540472}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1545429210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545429211}
+  m_Layer: 0
+  m_Name: Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1545429211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545429210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 972789354}
+  - {fileID: 772366627}
+  - {fileID: 1441000932}
+  - {fileID: 2090797062}
+  - {fileID: 1572882864}
+  - {fileID: 1238825972}
+  - {fileID: 1722307402}
+  - {fileID: 794892245}
+  - {fileID: 1761482940}
+  - {fileID: 935930057}
+  - {fileID: 28833381}
+  - {fileID: 964211154}
+  - {fileID: 253369947}
+  - {fileID: 1409066647}
+  - {fileID: 1284411176}
+  - {fileID: 377752081}
+  - {fileID: 574607550}
+  - {fileID: 776349040}
+  - {fileID: 938321855}
+  - {fileID: 574806454}
+  - {fileID: 1646124318}
+  - {fileID: 780596877}
+  - {fileID: 1190819850}
+  - {fileID: 1201731583}
+  - {fileID: 1025386795}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545934011
 GameObject:
   m_ObjectHideFlags: 0
@@ -56363,8 +56442,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1575754527
 PrefabInstance:
@@ -57076,6 +57155,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1606089896
 SpriteRenderer:
@@ -58493,8 +58573,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1647635099
 GameObject:
@@ -59903,7 +59983,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722307399
 GameObject:
@@ -60017,8 +60097,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1725854227
 GameObject:
@@ -60061,6 +60141,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1725854229
 SpriteRenderer:
@@ -61736,8 +61817,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1765900539
 PrefabInstance:
@@ -63118,6 +63199,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1801060326
 SpriteRenderer:
@@ -67312,6 +67394,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1909495449
 SpriteRenderer:
@@ -69570,6 +69653,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972265905
 SpriteRenderer:
@@ -69679,6 +69763,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972432915
 SpriteRenderer:
@@ -70303,6 +70388,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1985680614
 PrefabInstance:
@@ -70475,6 +70561,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1988710919
 SpriteRenderer:
@@ -71755,6 +71842,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2020787770
 SpriteRenderer:
@@ -73682,8 +73770,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1545429211}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2093466901
 GameObject:
@@ -74656,6 +74744,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2121229600
 SpriteRenderer:
