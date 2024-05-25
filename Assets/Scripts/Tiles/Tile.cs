@@ -35,7 +35,7 @@ public class Tile : MonoBehaviour
     public GameObject DialogueBoxObject;
 
     float moveDistance = 0.25f;
-    Vector3 initialPosition;
+    public Vector3 initialPosition;
     Vector3 LowerPosition;
     Player player;
     public bool IsActive = false;
@@ -52,8 +52,7 @@ public class Tile : MonoBehaviour
 
         indicatorSprite.material.color = Color.black;
 
-        initialPosition = transform.position;
-        LowerPosition = new Vector3( initialPosition.x, initialPosition.y-moveDistance, initialPosition.z);
+       // initialPosition = transform.localPosition;
 
         if (DialogueBoxObject != null)
         {
@@ -116,13 +115,15 @@ public class Tile : MonoBehaviour
 
     void MoveTileDown()
     {
-        transform.position = LowerPosition;
+        LowerPosition = new Vector3(initialPosition.x, initialPosition.y - moveDistance, initialPosition.z);
+
+        transform.localPosition = LowerPosition;
 
     }
 
     void MoveTileUp()
     {
-        transform.position = initialPosition;
+        transform.localPosition = initialPosition;
     }
 
     public void StepTaken()

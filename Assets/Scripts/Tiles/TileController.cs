@@ -35,6 +35,10 @@ public class TileController : MonoBehaviour
             float roundedX = Mathf.Round(pos.x / gridSize) * gridSize;
             float roundedZ = Mathf.Round(pos.z / gridSize) * gridSize;
 
+            Tile tile = obj.GetComponent<Tile>();
+            tile.initialPosition = tile.transform.localPosition;
+
+
             xCoordinates.Add(roundedX);
             zCoordinates.Add(roundedZ);
         }
