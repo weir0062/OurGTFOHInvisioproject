@@ -34,13 +34,16 @@ public class Tile : MonoBehaviour
     public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 
-
+    float moveDistance = 0.25f;
+    Vector3 initialPosition;
+    Vector3 LowerPosition;
     Player player;
     public bool IsActive = false;
     Vector2 position;
     // Start is called before the first frame update
     void Start()
     {
+
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
@@ -49,11 +52,15 @@ public class Tile : MonoBehaviour
 
         indicatorSprite.material.color = Color.black;
 
+        initialPosition = transform.position;
+        LowerPosition = new Vector3( initialPosition.x, initialPosition.y-moveDistance, initialPosition.z);
 
         if (DialogueBoxObject != null)
         {
             DialogueBoxObject.SetActive(false);
         }
+
+
     }
     private void Update()
     {
@@ -101,6 +108,22 @@ public class Tile : MonoBehaviour
         return position;
 
     }
+    public void StepAnimation()
+    {
+
+        MoveTileDown();
+    }
+
+    void MoveTileDown()
+    {
+        transform.position = LowerPosition;
+
+    }
+
+    void MoveTileUp()
+    {
+        transform.position = initialPosition;
+    }
 
     public void StepTaken()
     {
@@ -112,30 +135,32 @@ public class Tile : MonoBehaviour
         if (state == TileState.SuperSolid)
         {
             SetActive();
-           MatRenderer.material.color = Color.green;
+            MoveTileDown();
             return;
 
         }
+
         StepsTaken++;
+        MoveTileDown();
         UpdateState();
         SetActive();
-        MatRenderer.material.color = Color.green;
+        
     }
 
     public void StepEnded()
     {
+            MoveTileUp();
 
         if (state != TileState.NonActive)
         {
             SetNotActive();
         }
+
     }
 
     public void SetActive()
     {
         IsActive = true;
-        MatRenderer.material.color = Color.red;
-
         PositionIndicator.SetActive(true);
 
     }
