@@ -3,7 +3,12 @@ guid: 8ce92221373f9c54ebc5ec347e0e8171
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red Linen
+    second: {fileID: 2100000, guid: 74156f62d826ffc4680131455f8301c6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: ca35aa060fedb4c43afa09eb9bf4ead6
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Core
+    second: {fileID: 2100000, guid: 9257881c6ac29e24c9e8c87378185349, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lightwood
+    second: {fileID: 2100000, guid: f98fb928b09e25c46890378c093906ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red Flower
+    second: {fileID: 2100000, guid: a867d1a97f6bdbe4fa560d8937908eea, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

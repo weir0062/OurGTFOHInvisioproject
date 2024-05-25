@@ -3,7 +3,22 @@ guid: 6edfd608de2b58a489a439efa26412c2
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Purple Blanket
+    second: {fileID: 2100000, guid: c648f41e9cef5704b87dfcbafed99adc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sheets
+    second: {fileID: 2100000, guid: 2c8bd715fc0ea8041ba545f0d1d95fd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 132ea404eab7fae47b7ebbdecee30ee2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,32 @@ guid: 300ab9108e7917c4cb2bc9efda1887d9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue Book
+    second: {fileID: 2100000, guid: f2fb42fcc7844c8478689715b3145e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green Book
+    second: {fileID: 2100000, guid: e8da8b44fb00bf54dbfa00eaceb3c05e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Page
+    second: {fileID: 2100000, guid: 5b736b515ae20804d970bf0ab2bc7594, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red Book
+    second: {fileID: 2100000, guid: 9b6f78ccedf757f40a2955ce24383953, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 362dd9bfdc8b19f428510a85045c01e3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

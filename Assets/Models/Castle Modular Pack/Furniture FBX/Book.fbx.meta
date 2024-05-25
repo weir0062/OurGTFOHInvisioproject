@@ -3,7 +3,17 @@ guid: dd739ea62819fc34da56aa0f94bc2458
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green Book
+    second: {fileID: 2100000, guid: b9b0f4bbee1a0e4428b023b81719fd3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Page
+    second: {fileID: 2100000, guid: 7679ccd3ecb7c42449804fe11f969b5b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
