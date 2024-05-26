@@ -3696,6 +3696,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 100253344}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &100492464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121286623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &100492469 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6436231310631122506, guid: d165f19b7c33ea74e87767840ed45eeb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121286623}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100492464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7c44330fb207c4da0d2206790981fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &107958669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40697,6 +40715,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8459780024916898693, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 100492469}
+    - target: {fileID: 8459780024916898693, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459780024916898693, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InGameMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459780024916898693, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660206010761487250, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 100492469}
+    - target: {fileID: 8660206010761487250, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660206010761487250, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InGameMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660206010761487250, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_CameraType
@@ -40732,6 +40790,11 @@ PrefabInstance:
       propertyPath: IsHardMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8999043833888951859, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: InGameMenuObj
+      value: 
+      objectReference: {fileID: 100492464}
     - target: {fileID: 8999043833888951860, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_Name
@@ -40871,6 +40934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109752310170625639, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitToMainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
