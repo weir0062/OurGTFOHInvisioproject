@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3814994202436578759}
   - component: {fileID: 5845170824770813152}
   m_Layer: 0
-  m_Name: dildo sphere
+  m_Name: Left Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 309555674499602959}
   - component: {fileID: 102342263283539319}
   m_Layer: 0
-  m_Name: dildo sphere 3
+  m_Name: ZALUPA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 7823349164139006844}
   - component: {fileID: 9207687115961362807}
   m_Layer: 0
-  m_Name: dildo sphere 4
+  m_Name: Shaft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 1695079344894084805}
   - component: {fileID: 6906417457657016468}
   m_Layer: 0
-  m_Name: dildo sphere 2
+  m_Name: Right Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

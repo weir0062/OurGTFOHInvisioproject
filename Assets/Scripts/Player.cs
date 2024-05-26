@@ -102,4 +102,4 @@ public class Player : MonoBehaviour
         CheckForTouch();
         inGameMenu.Update();
     }
-{
+}
