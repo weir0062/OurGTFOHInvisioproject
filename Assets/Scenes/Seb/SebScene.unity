@@ -12157,6 +12157,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &347393781
 SpriteRenderer:
@@ -16071,6 +16072,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &458481962
 SpriteRenderer:
@@ -16759,6 +16761,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &476274449
 SpriteRenderer:
@@ -18330,6 +18333,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &521616645
 SpriteRenderer:
@@ -21491,6 +21495,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &592635946
 SpriteRenderer:
@@ -21600,6 +21605,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &593718091
 SpriteRenderer:
@@ -21709,6 +21715,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &598232503
 SpriteRenderer:
@@ -22161,6 +22168,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 610011702}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &611009957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611009958}
+  - component: {fileID: 611009960}
+  - component: {fileID: 611009959}
+  - component: {fileID: 611009961}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &611009958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611009957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061178942}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000011444, y: 0.20041}
+  m_SizeDelta: {x: 720, y: 514.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &611009959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611009957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &611009960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611009957}
+  m_CullTransparentMesh: 1
+--- !u!114 &611009961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611009957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aace1ff50e332e4d9dcd0d5859850bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Darkness: {fileID: 0}
+  Speed: 0.5
+  FadeAmount: 0
 --- !u!1001 &611768670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24220,6 +24316,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &670467755
 SpriteRenderer:
@@ -28839,6 +28936,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1 &794892242
 GameObject:
@@ -34119,6 +34217,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &945894842
 SpriteRenderer:
@@ -38104,8 +38203,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 611009958}
   - {fileID: 863814044}
   - {fileID: 1849967289}
+  - {fileID: 1904539471}
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41000,6 +41101,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_CameraType
@@ -43158,6 +43264,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1173824303
 SpriteRenderer:
@@ -45022,6 +45129,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1205653519
 PrefabInstance:
@@ -46032,6 +46140,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1241733855
 SpriteRenderer:
@@ -46362,6 +46471,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1248982808
 SpriteRenderer:
@@ -49567,6 +49677,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1334989728
 SpriteRenderer:
@@ -50756,6 +50867,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1353486188
 SpriteRenderer:
@@ -53256,6 +53368,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1446579661
 SpriteRenderer:
@@ -53556,6 +53669,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1450711124
 PrefabInstance:
@@ -57628,6 +57742,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1606089896
 SpriteRenderer:
@@ -60748,6 +60863,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1725854229
 SpriteRenderer:
@@ -63868,6 +63984,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1801060326
 SpriteRenderer:
@@ -68172,6 +68289,178 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902355163}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1904539470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904539471}
+  - component: {fileID: 1904539474}
+  - component: {fileID: 1904539473}
+  - component: {fileID: 1904539472}
+  m_Layer: 5
+  m_Name: TypeWriter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1904539471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904539470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061178942}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.3729, y: 61.2209}
+  m_SizeDelta: {x: 436.1381, y: 172.4419}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1904539472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904539470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849a8843e15426e47bb4bfe9c5268c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiText: {fileID: 0}
+  fullText: Once upon a time in the quaint village of Pickleton, there lived a humble
+    pickle named Pete. Unlike any ordinary pickle, Pete was legendary, and his tale
+    was known far and wide.  Pete began as a simple cucumber in Farmer Green's garden.
+    One fateful day, Farmer Green decided to make his famous batch of pickles, using
+    a secret family recipe passed down through generations. As the cucumbers soaked
+    in the brine, something extraordinary happened. A bolt of lightning struck the
+    jar containing Pete, infusing him with a magical glow.  When Farmer Green opened
+    the jar, he was astounded to find Pete glowing brightly. Curious, he took a bite
+    of Pete and felt a surge of energy and happiness like never before. Word of the
+    magical pickle spread quickly, and soon, people from all over came to see Pete,
+    hoping to experience his wondrous effects.  Pete's magic wasn't just limited
+    to making people happy. He had the power to heal the sick, mend broken hearts,
+    and bring peace to the most troubled souls. As his legend grew, Pete found himself
+    at the center of many grand adventures, helping villagers overcome obstacles
+    and bringing joy wherever he went.  Despite his fame, Pete remained humble and
+    kind. He cherished the simple joys of life and always reminded those around him
+    that true magic came from love, kindness, and the connections they shared. In
+    the end, Pete the Pickle became more than a legend; he became a symbol of hope
+    and goodness that would live on in the hearts of Pickleton's people forever. 
+    And so, the story of Pete the Legendary Pickle was told from generation to generation,
+    a timeless reminder of the extraordinary power that lies within the simplest
+    of things.
+  delay: 0.1
+--- !u!114 &1904539473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904539470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1904539474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904539470}
+  m_CullTransparentMesh: 1
 --- !u!1 &1909495447
 GameObject:
   m_ObjectHideFlags: 0
@@ -68213,6 +68502,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1909495449
 SpriteRenderer:
@@ -70471,6 +70761,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972265905
 SpriteRenderer:
@@ -70580,6 +70871,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1972432915
 SpriteRenderer:
@@ -71204,6 +71496,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!1001 &1985680614
 PrefabInstance:
@@ -71376,6 +71669,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &1988710919
 SpriteRenderer:
@@ -72656,6 +72950,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2020787770
 SpriteRenderer:
@@ -75557,6 +75852,7 @@ MonoBehaviour:
   SuperSolidMat: {fileID: 0}
   PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
 --- !u!212 &2121229600
 SpriteRenderer:

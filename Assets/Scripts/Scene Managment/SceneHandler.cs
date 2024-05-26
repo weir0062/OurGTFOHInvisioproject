@@ -129,7 +129,7 @@ public class SceneHandler : MonoBehaviour//, Saveable
 
     void OnGUI()
     {
-        GUI.Label(new Rect(5, 5, 3000, 40), "Save Game: F5, Load Game: F9");
+        GUI.Label(new Rect(5, 5, 3000, 40), "Fade In: F2, Fade Out: F3, Save Game: F5, Load Game: F9");
     }
 
 
