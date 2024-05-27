@@ -114,7 +114,7 @@ public class Tile : MonoBehaviour
 
     void MoveTileDown()
     {
-        LowerPosition = new Vector3(initialPosition.x, initialPosition.y - moveDistance, initialPosition.z);
+        LowerPosition = new Vector3(initialPosition.x, initialPosition.y, initialPosition.z + moveDistance);
         transform.localPosition = LowerPosition;
     }
 
