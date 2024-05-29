@@ -34,7 +34,6 @@ public class Tile : MonoBehaviour
     public Material MaxMat;
     public Material NonactiveMat;
     public Material SuperSolidMat;
-    public GameObject PositionIndicator;
     public GameObject DialogueBoxObject;
 
     float moveDistance = 0.25f;
@@ -50,10 +49,7 @@ public class Tile : MonoBehaviour
         gameObject.tag = "Tile";
         InitializeDefaults();
         UpdateState();
-        PositionIndicator.SetActive(false);
-        SpriteRenderer indicatorSprite = PositionIndicator.GetComponent<SpriteRenderer>();
 
-        indicatorSprite.material.color = Color.black;
 
        // initialPosition = transform.localPosition;
 
@@ -64,7 +60,7 @@ public class Tile : MonoBehaviour
     }
     private void Update()
     {
-        if (IsActive == true && PositionIndicator.active == false)
+        if (IsActive == true  )
         {
             SetActive();
         }
@@ -167,13 +163,11 @@ public class Tile : MonoBehaviour
     public void SetActive()
     {
         IsActive = true;
-        PositionIndicator.SetActive(true);
 
     }
     public void SetNotActive()
     {
         IsActive = false;
-        PositionIndicator.SetActive(false);
     }
     public int GetStepsTaken()
     {

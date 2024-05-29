@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,15 +11,14 @@ public class Player : MonoBehaviour
     Tile LastActiveTile;
     public Camera cam;
     CameraController camController;
-    public GameObject InGameMenuObj;
     InGameMenu inGameMenu;
+    public GameObject PositionIndicator;
     // Start is called before the first frame update
     void Start()
     {
 
         cam = GameObject.FindObjectOfType<Camera>();
         camController = cam.GetComponent<CameraController>();
-        inGameMenu = InGameMenuObj.GetComponent<InGameMenu>();
     }
 
 
@@ -40,10 +40,37 @@ public class Player : MonoBehaviour
                 if (camController != null) { camController = cam.GetComponent<CameraController>(); }
                 camController?.CameraFocus(ActiveTile.transform); // меняем фокусировку на новую активную плиту
                 ActiveTile.StepTaken(); // делаем шаг на новую плитку
+
+
+                StartCoroutine(MoveIndicator(ActiveTile, Newtile));
+
             }
         }
 
     }
+
+    private IEnumerator MoveIndicator(Tile activeTile, Tile newTile)
+    {
+        Vector3 startPos = activeTile.gameObject.transform.position;
+        Vector3 endPos = newTile.gameObject.transform.position;
+        startPos.y =6f;
+        endPos.y = 6f;
+
+        float duration = 0.069f; // Duration of the LERP in seconds
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            PositionIndicator.transform.position = Vector3.Lerp(startPos, endPos, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Ensure the final position is set
+        PositionIndicator.transform.position = endPos;
+    }
+
+
 
     bool CheckDistanceToTile(Tile ActiveTile, Tile NewTile)
     {

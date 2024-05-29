@@ -12106,7 +12106,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -16021,7 +16020,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -16710,7 +16708,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -18282,7 +18279,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -21444,7 +21440,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -21554,7 +21549,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -21664,7 +21658,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -24176,7 +24169,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -28796,7 +28788,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -33929,7 +33920,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -40710,10 +40700,15 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
+    - target: {fileID: 2733415727235385604, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8459780024916898693, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
@@ -40735,6 +40730,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8460925605862529070, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8660206010761487250, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -40754,6 +40754,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70969296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7045112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965546600346170310, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 89.581
       objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
@@ -40939,6 +40979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208724676725860107, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -42921,7 +42966,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -44786,7 +44830,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -45797,7 +45840,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -46128,7 +46170,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -49197,7 +49238,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -50387,7 +50427,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -52888,7 +52927,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -53189,7 +53227,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -57221,7 +57258,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -60207,7 +60243,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -63265,7 +63300,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -67460,7 +67494,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -69719,7 +69752,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -69829,7 +69861,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -70454,7 +70485,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -70627,7 +70657,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -71908,7 +71937,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -74810,7 +74838,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
