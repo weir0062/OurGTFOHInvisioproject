@@ -7,8 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class InGameMenu : MonoBehaviour
 {
+
+
+    public GameObject PauseButton;
+    public GameObject Resume;
+    public GameObject MainMenu;
+    public GameObject Restart;
     private void Start()
     {
+
+
         // Ensure EventSystem exists
         if (FindObjectOfType<EventSystem>() == null)
         {
@@ -16,6 +24,8 @@ public class InGameMenu : MonoBehaviour
             eventSystem.AddComponent<EventSystem>();
             eventSystem.AddComponent<StandaloneInputModule>();
         }
+
+
     }
 
     public void Update()
@@ -44,23 +54,31 @@ public class InGameMenu : MonoBehaviour
     public void TurnOnMenu()
     {
         Time.timeScale = 0f;
+
+        PauseButton.SetActive(false);
+        Resume.SetActive(true);
+        MainMenu.SetActive(true);
+        Restart.SetActive(true);
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
-        this.gameObject.SetActive(false);
-    }
 
-    public void QuitToMainMenu()
+        PauseButton.SetActive(true);
+        Resume.SetActive(false);
+        MainMenu.SetActive(false);
+        Restart.SetActive(false);
+    }
+    public void OpenMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+    public void RestartLevel()
+    {
+
+        //restart the level through SceneManager
        
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
-    }
 }

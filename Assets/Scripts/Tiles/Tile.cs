@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -19,7 +20,7 @@ public enum TileState
 };
 public class Tile : MonoBehaviour
 {
-    public TileState state; /*= TileState.Solid;*/
+    public TileState state;
     public MeshRenderer MatRenderer;
     int StepsTaken = 0;
 
@@ -125,18 +126,14 @@ public class Tile : MonoBehaviour
 
     public void StepTaken()
     {
-        if (state == TileState.Finish)
+        if (state == TileState.Finish) // level end, level passed. Here we will add moving on to the next level 
         {
             //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
             //handler.LoadLevelAt(0);
             SceneManager.LoadScene("MainMenu");
             return;
         } 
-        if (state == TileState.MaxDamaged)
-        {
-            SceneManager.LoadScene("MainMenu");
-            return;
-        }
+       
         if (state == TileState.NonActive)
         {
             return;
@@ -249,7 +246,7 @@ public class Tile : MonoBehaviour
                 currentMat = MaxMat;
                 break;
             case 5:
-                Destroy(this);
+                Death();
                 break;
             default:
                 break;
@@ -261,6 +258,11 @@ public class Tile : MonoBehaviour
 
     }
 
+    private void Death()
+    {
+        SceneManager.LoadScene("MainMenu");  // death, level not passed. Here we will open a menu asking whether you want to restart or go to main menu. 
+        return;
+    }
 }
 
 
