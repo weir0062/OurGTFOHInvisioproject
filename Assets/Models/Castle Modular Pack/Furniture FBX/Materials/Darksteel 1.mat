@@ -205,7 +205,7 @@ Material:
     - _GlossinessSource: 0
     - _GlossyReflections: 1
     - _METALNESS: 0
-    - _Metallic: 0
+    - _Metallic: 0.566
     - _Mode: 0
     - _OPACITY: 1
     - _OcclusionStrength: 1
