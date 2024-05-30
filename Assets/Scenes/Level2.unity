@@ -723,7 +723,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -1156,7 +1155,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -3379,7 +3377,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -5527,7 +5524,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -5637,7 +5633,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -5932,7 +5927,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -6408,7 +6402,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -6609,7 +6602,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -8397,7 +8389,7 @@ PrefabInstance:
     - target: {fileID: 8096570256631490306, guid: eb287f7db21b8db41854ed616610e70b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 64.866
+      value: 190.00829
       objectReference: {fileID: 0}
     - target: {fileID: 8096570256631490306, guid: eb287f7db21b8db41854ed616610e70b,
         type: 3}
@@ -10243,7 +10235,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -10979,7 +10970,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -11089,7 +11079,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -14721,7 +14710,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -16170,7 +16158,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -16292,7 +16279,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -18660,7 +18646,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -19432,7 +19417,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -21499,7 +21483,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -22895,7 +22878,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -23193,7 +23175,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -23601,7 +23582,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -24118,7 +24098,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -25171,7 +25150,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -25580,7 +25558,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -25690,7 +25667,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -26400,7 +26376,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -28252,7 +28227,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -29716,7 +29690,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -30112,7 +30085,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -31987,7 +31959,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -32485,7 +32456,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -33172,7 +33142,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -33923,7 +33892,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -34969,7 +34937,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -37679,7 +37646,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -38462,7 +38428,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -42017,7 +41982,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -43347,7 +43311,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -43554,7 +43517,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -43664,7 +43626,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -44449,7 +44410,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -44651,7 +44611,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -44761,7 +44720,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -46390,7 +46348,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -47309,7 +47266,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -48026,7 +47982,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -49069,7 +49024,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -49463,7 +49417,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -50302,7 +50255,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -50412,7 +50364,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -52715,7 +52666,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -53207,7 +53157,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -53992,7 +53941,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -55161,7 +55109,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -55478,7 +55425,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -56391,7 +56337,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
@@ -56695,7 +56640,6 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
