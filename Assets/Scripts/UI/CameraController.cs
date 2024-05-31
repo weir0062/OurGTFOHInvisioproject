@@ -12,8 +12,10 @@ public class CameraController : MonoBehaviour
     [SerializeField] Camera camera;
     float MinZoomIn = 69/2;
     float MidZoomIn = 0; 
-    float focusSpeed = 6.9f;
+    float focusSpeed = 6.9f*1.5f;
+    private Transform oldFocusObject;
     private Transform currentFocusObject;
+    private Vector3 CameraOffset;
     float MaxZoomIn = 0;
     // Start is called before the first frame update
     void Start()
@@ -90,23 +92,25 @@ public class CameraController : MonoBehaviour
     }
 
 
-   public void CameraFocus()
+    public void CameraFocus()
     {
         if (currentFocusObject != null)
-        { 
-            // Calculate the target position. You might want to adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z);
+        {
+            // Calculate the target position. Adjust the Z coordinate as needed
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z-4f) - (CameraOffset * 6.9f / 3);
 
-            // Smoothly interpolate the camera's position towards the target position
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * focusSpeed);
+            // Create a velocity vector to store the camera's velocity
+            Vector3 velocity = Vector3.zero;
 
+            // Smoothly interpolate the camera's position towards the target position using SmoothDamp
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, focusSpeed * Time.deltaTime);
         }
     }
-
-  public void CameraFocus(Transform focusObject)
+    public void CameraFocus(Transform focusObject)
     {
+        oldFocusObject = currentFocusObject;
         currentFocusObject = focusObject;
-
+        CameraOffset = (oldFocusObject.position - currentFocusObject.position).normalized; 
         CameraFocus();
     }
 

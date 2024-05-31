@@ -9,7 +9,7 @@ public class TileController : MonoBehaviour
 
     Tile ActiveTile;
     Tile CentralTile;
-
+    Tile StartingTile;
     Player player;
     void Start()
     {
@@ -74,16 +74,30 @@ public class TileController : MonoBehaviour
                 tile.SetPosition(xIndex, zIndex);
                 tiles[xIndex, zIndex] = tile;
 
-                 
+                if (tile.state == TileState.Start)
+                {
+                    StartingTile = tile;
+                }
             }
         }
 
 
 
         CentralTile = tiles[sortedX.Count / 2, sortedZ.Count / 2];
-        ActiveTile = tiles[0, 0];
+
+        if (StartingTile != null)
+        {
+            ActiveTile = StartingTile;
+        }
+        else
+        {
+            ActiveTile = tiles[0, 0];
+        }
+
+
+
         InitializePlayer();
-        tiles[0, 0]?.StepTaken();
+        ActiveTile?.StepTaken();
     }
 
 

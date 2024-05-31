@@ -13,6 +13,12 @@ public class Player : MonoBehaviour
     CameraController camController;
     InGameMenu inGameMenu;
     public GameObject PositionIndicator;
+
+
+
+    public float IndicatorOscillationFrequency = 1.69f; // Frequency of the oscillation
+    public float IndicatorOscillationAmplitude = 0.169f; // Amplitude of the oscillation
+    private Vector3 idlePosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,46 +37,66 @@ public class Player : MonoBehaviour
             {
 
 
-                LastActiveTile = ActiveTile; // ставим ту которая активна сейчас в позицию предыдущей плитки
-                LastActiveTile?.StepEnded(); // заканчиваем шаг на старой, если старая была. знак "?" после названия переменной проверяет работает ли она
-                ActiveTile = Newtile; // меняем нынешнюю активную плитку( которая уже в старой) на новую плитку, на которую переходим
-                tileController.SetActiveTile(ActiveTile); // Даем контроллеру понять что новая плитка активна
-                Vector2 tilepos = Newtile.GetPosition(); // получаем позицию плитки на карте (кастомную позицию плитки, а не позицию по Юнити)
+                LastActiveTile = ActiveTile; // Get reference to last active tile 
+                LastActiveTile?.StepEnded(); // use "?" to check if last tile is active, and, if so, end the step on it
+                ActiveTile = Newtile; // Get reference to new active tile 
+                tileController.SetActiveTile(ActiveTile); 
+                Vector2 tilepos = Newtile.GetPosition(); // getting our custom grid position for the tile 
 
                 if (camController != null) { camController = cam.GetComponent<CameraController>(); }
-                camController?.CameraFocus(ActiveTile.transform); // меняем фокусировку на новую активную плиту
-                ActiveTile.StepTaken(); // делаем шаг на новую плитку
+                camController?.CameraFocus(ActiveTile.transform); // move camera to new tile
+                StartCoroutine(MoveIndicator(ActiveTile, Newtile)); // Indicator movement animation to new tile 
+                ActiveTile.StepTaken(); // Take Step To new Tile 
 
 
-                StartCoroutine(MoveIndicator(ActiveTile, Newtile));
 
             }
         }
 
     }
 
+
     private IEnumerator MoveIndicator(Tile activeTile, Tile newTile)
     {
+        Vector3 Offset = new Vector3(0.0f, 0.0f, 0.69f*1.69f);
         Vector3 startPos = activeTile.gameObject.transform.position;
-        Vector3 endPos = newTile.gameObject.transform.position;
-        startPos.y =6f;
-        endPos.y = 6f;
-
-        float duration = 0.069f; // Duration of the LERP in seconds
+        Vector3 endPos = newTile.gameObject.transform.position - Offset;
+        startPos.y = 5f;
+        endPos.y = 5f;
+        float duration = 0.69f; // Duration of the LERP in seconds
         float elapsed = 0.0f;
 
         while (elapsed < duration)
         {
-            PositionIndicator.transform.position = Vector3.Lerp(startPos, endPos, elapsed / duration);
             elapsed += Time.deltaTime;
+            float t = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+
+            // Calculate vertical oscillation
+            float oscillation = Mathf.Sin(t * Mathf.PI * 2.0f) * IndicatorOscillationAmplitude;
+
+            // Interpolate position with oscillation
+            Vector3 interpolatedPosition = Vector3.Lerp(startPos, endPos, t);
+            interpolatedPosition.y += oscillation;
+
+            PositionIndicator.transform.position = interpolatedPosition;
             yield return null;
         }
 
         // Ensure the final position is set
         PositionIndicator.transform.position = endPos;
+        idlePosition = endPos; // Update the idle position
     }
 
+    private void PerformIdleOscillation()
+    {
+        float t = Time.time * IndicatorOscillationFrequency;
+        float oscillation = Mathf.Sin(t) * IndicatorOscillationAmplitude;
 
+        Vector3 oscillatedPosition = idlePosition;
+        oscillatedPosition.y += oscillation;
+
+        PositionIndicator.transform.position = oscillatedPosition;
+    }
 
     bool CheckDistanceToTile(Tile ActiveTile, Tile NewTile)
     {
@@ -126,6 +152,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        PerformIdleOscillation();
         CheckForTouch();
         inGameMenu.Update();
     }

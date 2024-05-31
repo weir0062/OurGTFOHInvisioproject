@@ -16,7 +16,8 @@ public enum TileState
     MaxDamaged,
     SuperSolid,
     Finish,
-    NonActive
+    NonActive,
+    Start
 };
 public class Tile : MonoBehaviour
 {
@@ -135,7 +136,7 @@ public class Tile : MonoBehaviour
             return;
         }
 
-        if (state == TileState.SuperSolid)
+        if (state == TileState.SuperSolid || state == TileState.Start)
         {
             SetActive();
             MoveTileDown();
