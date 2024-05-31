@@ -9,38 +9,23 @@ public class MainMenu : MonoBehaviour
 
     public GameObject mainMenu;
     public GameObject levelsMenu;
-    public GameObject shoesMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
     public GameObject MusicContObject;
     private MusicController MusicController;
-    public GameObject shoes2Menu;
-
-
 
     void Start()
     {
         OpenMainMenu();
     }
 
+    //Fix to Arcade
     public void OpenLevels()
     {
         mainMenu.SetActive(false);
         levelsMenu.SetActive(true);
     }
-    public void OpenShoes()
-    {
-        mainMenu.SetActive(false);
-        shoes2Menu.SetActive(false);
-        shoesMenu.SetActive(true);
-        
-    }
 
-    public void Open2Shoes()
-    {
-        shoesMenu.SetActive(false);
-        shoes2Menu.SetActive(true);
-    }
     public void OpenCredits()
     {
         mainMenu.SetActive(false);
@@ -65,7 +50,6 @@ public class MainMenu : MonoBehaviour
 
     public void OpenGameScene()
     {
-
         MusicController.SetSFXClip(MusicController.GameSFXClip);
         MusicController.SetMusicClip(MusicController.GameMusicClip);
         StartCoroutine(StartGame());
@@ -73,8 +57,6 @@ public class MainMenu : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
-
-
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level1");
         while (!asyncLoad.isDone)
         {
@@ -86,10 +68,8 @@ public class MainMenu : MonoBehaviour
     {
         mainMenu.SetActive(true);
         levelsMenu.SetActive(false);
-        shoesMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
-        shoes2Menu.SetActive(false);
 
         MusicController = MusicContObject.GetComponent<MusicController>();
         MusicController.SetMusicClip(MusicController.MenuMusicClip);
