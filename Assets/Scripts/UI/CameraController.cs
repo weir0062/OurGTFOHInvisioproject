@@ -102,7 +102,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         {
             // Calculate the target position. Adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z-2f) - (CameraOffset * 6.9f / 3);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z) - (CameraOffset * 6.9f / 3);
 
             // Create a velocity vector to store the camera's velocity
             Vector3 velocity = Vector3.zero;
