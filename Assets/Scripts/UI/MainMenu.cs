@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject mainMenu;
+    public GameObject ArcadeMenu;
     public GameObject levelsMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
@@ -17,9 +18,14 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         OpenMainMenu();
+    } 
+    //Make this open Arcade mode
+    public void OpenArcadeMenu()
+    {
+        mainMenu.SetActive(false);
+        ArcadeMenu.SetActive(true);
     }
 
-    //Fix to Arcade
     public void OpenLevels()
     {
         mainMenu.SetActive(false);
@@ -67,6 +73,7 @@ public class MainMenu : MonoBehaviour
     public void OpenMainMenu()
     {
         mainMenu.SetActive(true);
+        ArcadeMenu.SetActive(false);
         levelsMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
