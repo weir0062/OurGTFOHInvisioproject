@@ -58,9 +58,9 @@ public class Player : MonoBehaviour
 
     private IEnumerator MoveIndicator(Tile activeTile, Tile newTile)
     {
-        Vector3 Offset = new Vector3(0.0f, 0.0f, 0.69f*1.69f);
+       // Vector3 Offset = new Vector3(0.0f, 0.0f, 0.69f*1.69f);
         Vector3 startPos = activeTile.gameObject.transform.position;
-        Vector3 endPos = newTile.gameObject.transform.position - Offset;
+        Vector3 endPos = newTile.gameObject.transform.position;// - Offset;
         startPos.y = 5f;
         endPos.y = 5f;
         float duration = 0.69f; // Duration of the LERP in seconds
