@@ -18,11 +18,16 @@ public class CameraController : MonoBehaviour
     private Vector3 CameraOffset;
     float MaxZoomIn = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
+    {
+        InitializeLevel();
+
+    }
+
+    public void InitializeLevel()
     {
         InitializeTileController();
         InitilizeCamera();
-
     }
     void InitilizeCamera()
     {

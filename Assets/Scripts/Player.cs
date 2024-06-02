@@ -154,6 +154,5 @@ public class Player : MonoBehaviour
     {
         PerformIdleOscillation();
         CheckForTouch();
-        inGameMenu.Update();
     }
 }
