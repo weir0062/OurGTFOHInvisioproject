@@ -15,9 +15,10 @@ public class CameraController : MonoBehaviour
     float MidZoomIn = 0; 
     float focusSpeed = 6.9f*1.5f;
     private Transform oldFocusObject;
-    private Transform currentFocusObject;
+    public Transform currentFocusObject;
     private Vector3 CameraOffset;
     float MaxZoomIn = 0;
+    private Vector3 diff;
     // Start is called before the first frame update
     void Awake()
     {
@@ -123,8 +124,14 @@ public class CameraController : MonoBehaviour
             // Create a velocity vector to store the camera's velocity
             Vector3 velocity = Vector3.zero;
 
+            Vector3 Lastposition = transform.position;
             // Smoothly interpolate the camera's position towards the target position using SmoothDamp
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, focusSpeed * Time.deltaTime);
+
+             diff = transform.position - Lastposition;
+
+            Debug.Log(" Moved : " + diff);
+
         }
     }
     public void CameraFocus(Transform focusObject)

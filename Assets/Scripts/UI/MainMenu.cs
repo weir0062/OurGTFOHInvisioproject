@@ -68,6 +68,8 @@ public class MainMenu : MonoBehaviour
         {
             yield return null; // Wait until the scene fully loads
         }
+
+        Time.timeScale = 1f;
     }
 
     public void OpenMainMenu()
@@ -86,6 +88,8 @@ public class MainMenu : MonoBehaviour
     public void OpenLevel1()
     {
         SceneManager.LoadSceneAsync("Level1");
+
+        Time.timeScale = 1f;
     }
 
     public void OpenLevel2()
