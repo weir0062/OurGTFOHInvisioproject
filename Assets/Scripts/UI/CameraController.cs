@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -22,8 +23,21 @@ public class CameraController : MonoBehaviour
     {
         InitializeLevel();
 
+    } 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        InitializeLevel();
+    }
     public void InitializeLevel()
     {
         InitializeTileController();
@@ -44,6 +58,8 @@ public class CameraController : MonoBehaviour
         {
             camera = GameObject.FindObjectOfType<Camera>();
             Debug.Log(camera);
+
+            CameraFocus(tileController.GetActiveTile().transform);
         }
 
         if (camera != null && camera.orthographic == true)
