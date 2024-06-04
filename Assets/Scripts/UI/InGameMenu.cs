@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class InGameMenu : MonoBehaviour
 {
 
-
+    public CameraController Cam;
+    public GameObject ZoomSlider;
     public GameObject PauseButton;
     public GameObject Resume;
     public GameObject MainMenu;
     public GameObject Restart;
-    private void Start()
+
+    Slider slider;
+    private void Awake()
     {
 
 
@@ -25,6 +30,10 @@ public class InGameMenu : MonoBehaviour
             eventSystem.AddComponent<StandaloneInputModule>();
         }
 
+        Cam = GetComponentInParent<CameraController>();
+
+        slider = ZoomSlider.GetComponent<Slider>();
+        
 
     }
 
@@ -80,5 +89,10 @@ public class InGameMenu : MonoBehaviour
         //restart the level through SceneManager
        
     }
-
+    public void OnZoomSliderChanged()
+    {
+        slider.minValue = Cam.MinZoomIn/1.69f;
+        slider.maxValue = Cam.MaxZoomIn / 3.69f;
+        Cam.CameraZoom(slider.value);
+    }
 }
