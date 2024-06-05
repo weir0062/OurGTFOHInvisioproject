@@ -11,13 +11,13 @@ public class CameraController : MonoBehaviour
     [SerializeField] float ZoomSensitivity = 6.9f;
     [SerializeField] TileController tileController;
     [SerializeField] Camera camera;
-    float MinZoomIn = 69/2;
+    public float MaxZoomIn = 0;
+    public float MinZoomIn = 69/2;
     float MidZoomIn = 0; 
     float focusSpeed = 6.9f*1.5f;
     private Transform oldFocusObject;
-    private Transform currentFocusObject;
+    public Transform currentFocusObject;
     private Vector3 CameraOffset;
-    float MaxZoomIn = 0;
     // Start is called before the first frame update
     void Awake()
     {
@@ -103,16 +103,25 @@ public class CameraController : MonoBehaviour
         }
 
 
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        //float scroll = Input.GetAxis("Mouse ScrollWheel");
+       // CameraZoom(scroll);
 
-        if (camera)
-        {
-            camera.fieldOfView -= scroll * ZoomSensitivity;
-            camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, MinZoomIn, MaxZoomIn);
-        }
+
     }
 
 
+
+
+    public void CameraZoom(float zoom)
+    {
+        if (camera)
+        {
+          /*  camera.fieldOfView -= zoom/100 * ZoomSensitivity;
+            camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, MinZoomIn, MaxZoomIn);*/
+
+            camera.fieldOfView = zoom;
+        }
+    }
     public void CameraFocus()
     {
         if (currentFocusObject != null)
@@ -125,6 +134,9 @@ public class CameraController : MonoBehaviour
 
             // Smoothly interpolate the camera's position towards the target position using SmoothDamp
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, focusSpeed * Time.deltaTime);
+
+
+
         }
     }
     public void CameraFocus(Transform focusObject)

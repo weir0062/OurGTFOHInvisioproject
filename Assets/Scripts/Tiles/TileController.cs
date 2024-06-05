@@ -17,7 +17,6 @@ public class TileController : MonoBehaviour
     }
     private void Update()
     {
-         Debug.Log(ActiveTile);
         
     }
     public void InitializeTileArray(List<GameObject> tileObjects)
