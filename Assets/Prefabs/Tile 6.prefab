@@ -57,9 +57,10 @@ MonoBehaviour:
   MaxMat: {fileID: 2100000, guid: 07ffc93ffa536de418c1101952826064, type: 2}
   NonactiveMat: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   SuperSolidMat: {fileID: 2100000, guid: 94121525c2841044ca12f5f64bd3a3c3, type: 2}
-  PositionIndicator: {fileID: 1874191195570085332}
   DialogueBoxObject: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!23 &657003792909127491
 MeshRenderer:
   m_ObjectHideFlags: 0

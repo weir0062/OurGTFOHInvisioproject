@@ -82,7 +82,8 @@ public class SceneHandler : MonoBehaviour//, Saveable
     public void LoadLevelAt(int level)
     {
         LevelID = level;
-        SceneManager.LoadScene(level);
+        //SceneManager.LoadScene(level);
+        SceneManager.LoadSceneAsync(level);
     }
 
     public void GoBackALevel()

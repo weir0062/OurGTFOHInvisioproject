@@ -43,6 +43,8 @@ public class Tile : MonoBehaviour
     Player player;
     public bool IsActive = false;
     Vector2 position;
+
+     public SceneHandler m_SceneHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,10 @@ public class Tile : MonoBehaviour
         InitializeDefaults();
         UpdateState();
 
+        if(m_SceneHandler == null)
+        {
+            m_SceneHandler = GameObject.FindObjectOfType<SceneHandler>();
+        }
 
        // initialPosition = transform.localPosition;
 
@@ -127,7 +133,8 @@ public class Tile : MonoBehaviour
         {
             //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
             //handler.LoadLevelAt(0);
-            SceneManager.LoadScene("MainMenu");
+            //SceneManager.LoadScene("MainMenu");
+            m_SceneHandler.LoadNextLevel();
             return;
         } 
        

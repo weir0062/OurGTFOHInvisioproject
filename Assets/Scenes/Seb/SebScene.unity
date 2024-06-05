@@ -12155,10 +12155,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &347393781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16070,10 +16070,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &458481962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16759,10 +16759,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &476274449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18331,10 +18331,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &521616645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21493,10 +21493,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &592635946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21603,10 +21603,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &593718091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21713,10 +21713,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &598232503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24314,10 +24314,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &670467755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28934,10 +28934,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1 &794892242
 GameObject:
   m_ObjectHideFlags: 0
@@ -34215,10 +34215,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &945894842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36110,6 +36110,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 33.826, y: -157.239, z: -142.995}
+--- !u!1 &984436504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984436506}
+  - component: {fileID: 984436505}
+  m_Layer: 0
+  m_Name: Ads
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &984436505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984436504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231e763a541f7b64982e4a3e0ab33fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AndriodGameId: 5632413
+  IOSGameId: 5632412
+  TestMode: 1
+  AndriodInterstitialId: Interstitial_Android
+  IOSInterstitialId: Interstitial_iOS
+  AndriodRewardedId: Rewarded_Android
+  IOSRewardedId: Rewarded_iOS
+  AndriodBannerId: Banner_Android
+  IOSBannerId: Banner_iOS
+--- !u!4 &984436506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984436504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 252.47528, y: 14.656212, z: -623.2334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &989116899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38128,7 +38181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1061178939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38207,6 +38260,7 @@ RectTransform:
   - {fileID: 863814044}
   - {fileID: 1849967289}
   - {fileID: 1904539471}
+  - {fileID: 1659028234}
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41106,6 +41160,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4730828178695500997, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730828178695500997, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664338931200880692, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664338931200880692, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664338931200880692, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_CameraType
@@ -43262,10 +43341,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1173824303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45127,10 +45206,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1205653519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46138,10 +46217,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1241733855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46469,10 +46548,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1248982808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49675,10 +49754,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1334989728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50729,6 +50808,141 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1348231959}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1350990459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350990460}
+  - component: {fileID: 1350990462}
+  - component: {fileID: 1350990461}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1350990460
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350990459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1659028234}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1350990461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350990459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Add
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1350990462
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350990459}
+  m_CullTransparentMesh: 1
 --- !u!1 &1351756303
 GameObject:
   m_ObjectHideFlags: 0
@@ -50865,10 +51079,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1353486188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53366,10 +53580,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1446579661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53667,10 +53881,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1450711124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57740,10 +57954,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1606089896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59525,6 +59739,140 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1656898356}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1659028233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659028234}
+  - component: {fileID: 1659028238}
+  - component: {fileID: 1659028237}
+  - component: {fileID: 1659028236}
+  m_Layer: 5
+  m_Name: Level Test (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1659028234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659028233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1350990460}
+  m_Father: {fileID: 1061178942}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 70, y: -133}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1659028236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659028233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1659028237}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 984436505}
+        m_TargetAssemblyTypeName: AdsInitializer, Assembly-CSharp
+        m_MethodName: LoadInerstitialAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1659028237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659028233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1659028238
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659028233}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1659417985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60861,10 +61209,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1725854229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63982,10 +64330,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1801060326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68500,10 +68848,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1909495449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70759,10 +71107,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1972265905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70869,10 +71217,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1972432915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71494,10 +71842,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1985680614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71667,10 +72015,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1988710919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72948,10 +73296,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2020787770
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75850,10 +76198,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2121229600
 SpriteRenderer:
   m_ObjectHideFlags: 0
