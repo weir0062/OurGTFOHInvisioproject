@@ -40,7 +40,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
         
 
         //this should be the call that actually starts an ad
-        //LoadInerstitialAd();
+        LoadInerstitialAd();
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
@@ -91,6 +91,14 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
     {
         //add is complete do stuff
         Debug.Log("Ad Complete");
+
+        CutScene temp = GameObject.FindObjectOfType<CutScene>();
+
+        if(temp !=null)
+        {
+            temp.Paused = false;
+        }
+        
 
     }
 }

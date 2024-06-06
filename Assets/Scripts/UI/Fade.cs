@@ -13,11 +13,14 @@ public class Fade : MonoBehaviour
 
     FadeType fadeType = FadeType.None;
 
+    float PauseTimer = 0.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Darkness = GetComponent<RawImage>();
+        if(Darkness == null)
+            Darkness = GetComponent<RawImage>();
     }
 
     // Update is called once per frame
@@ -63,6 +66,33 @@ public class Fade : MonoBehaviour
                 else
                     Darkness.color = new Color(0, 0, 0, FadeAmount);
                 break;
+
+
+            case FadeType.FadeOutThanIn:
+                FadeAmount += Speed * Time.deltaTime;
+                if (FadeAmount >= 1)
+                {
+                    Darkness.enabled = true;
+                    FadeAmount = 1;
+                    Darkness.color = new Color(0, 0, 0, FadeAmount);
+                    fadeType = FadeType.Pause;
+                }
+                else
+                    Darkness.color = new Color(0, 0, 0, FadeAmount);
+                break;
+
+            case FadeType.Pause:
+                if(PauseTimer < 0.5f)
+                {
+                    FadeAmount = 1;
+                    PauseTimer += Time.deltaTime;
+                }
+                else
+                {
+                    FadeIn();
+                }
+                break;
+
         }
     }
 
@@ -74,6 +104,15 @@ public class Fade : MonoBehaviour
         fadeType = FadeType.FadeIn;
 
         
+
+    }
+
+    public void FadeOutThanIn()
+    {
+        Darkness.enabled = true;
+        FadeAmount = 0f;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+        fadeType = FadeType.FadeOutThanIn;
 
     }
 
@@ -94,5 +133,7 @@ public class Fade : MonoBehaviour
         None,
         FadeIn,
         FadeOut,
+        FadeOutThanIn,
+        Pause,
     }
 }
