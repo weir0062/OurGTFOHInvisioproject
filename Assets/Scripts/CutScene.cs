@@ -27,6 +27,8 @@ public class CutScene : MonoBehaviour
 
     public bool Paused = false;
 
+    public SoundManager soundManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,9 @@ public class CutScene : MonoBehaviour
 
         DisplayWindow.texture = CutsceneImages[CurrentImage];
         FadeObject = GameObject.FindObjectOfType<Fade>();
+
+        if(soundManager ==null)
+            soundManager = FindObjectOfType<SoundManager>();
 
 
 
@@ -72,6 +77,7 @@ public class CutScene : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 FadeObject.FadeOutThanIn();
+                soundManager.PlayClickSound();
 
                 Clicked = true;
 

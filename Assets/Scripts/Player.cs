@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     InGameMenu inGameMenu;
     public GameObject PositionIndicator;
 
+    public SoundManager soundManager;
+
 
 
     public float IndicatorOscillationFrequency = 1.69f; // Frequency of the oscillation
@@ -25,6 +27,9 @@ public class Player : MonoBehaviour
 
         cam = GameObject.FindObjectOfType<Camera>();
         camController = cam.GetComponent<CameraController>();
+
+        if(soundManager == null)
+            soundManager = FindObjectOfType<SoundManager>();
     }
 
 
@@ -135,6 +140,7 @@ public class Player : MonoBehaviour
                         if (!tile.IsActive)
                         {
                             tile.Pressed();
+                            soundManager.PlayStepSound();
                         }
                     }
                 }

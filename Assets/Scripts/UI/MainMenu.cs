@@ -15,9 +15,19 @@ public class MainMenu : MonoBehaviour
     public GameObject MusicContObject;
     private MusicController MusicController;
 
+    SceneHandler sceneHandler;
+    public SoundManager soundManager;
+
     void Start()
     {
+        sceneHandler = FindObjectOfType<SceneHandler>();
+
+        if(soundManager == null )
+            soundManager = FindObjectOfType<SoundManager>();
+
         OpenMainMenu();
+
+
     } 
     //Make this open Arcade mode
     public void OpenArcadeMenu()
@@ -39,7 +49,8 @@ public class MainMenu : MonoBehaviour
     }
     public void ButtonClick()
     {
-        MusicController.PlaySFXSound();
+        //MusicController.PlaySFXSound();
+        soundManager.PlayClickSound();
 
     }
     //public void CloseShoes() FIRST CODE OF ALPACIN ON C#
@@ -63,11 +74,12 @@ public class MainMenu : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level1");
-        while (!asyncLoad.isDone)
-        {
-            yield return null; // Wait until the scene fully loads
-        }
+        sceneHandler.LoadNextLevel();
+        //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level1");
+        //while (!asyncLoad.isDone)
+        //{
+        //    yield return null; // Wait until the scene fully loads
+        //}
 
         Time.timeScale = 1f;
     }
@@ -87,47 +99,66 @@ public class MainMenu : MonoBehaviour
 
     public void OpenLevel1()
     {
-        SceneManager.LoadSceneAsync("Level1");
+        //SceneManager.LoadSceneAsync("Level1");
+        sceneHandler.LoadLevelAt(1);
 
         Time.timeScale = 1f;
     }
 
     public void OpenLevel2()
     {
-        SceneManager.LoadSceneAsync("Level2");
+        //SceneManager.LoadSceneAsync("Level2");
+        sceneHandler.LoadLevelAt(2);
+
     }
 
     public void OpenLevel3()
     {
-        SceneManager.LoadSceneAsync("Level3");
+        //SceneManager.LoadSceneAsync("Level3");
+        sceneHandler.LoadLevelAt(3);
+
     }
     public void OpenLevel4()
     {
-        SceneManager.LoadSceneAsync("Level4");
+        //SceneManager.LoadSceneAsync("Level4");
+        sceneHandler.LoadLevelAt(4);
+
     }
     public void OpenLevel5()
     {
-        SceneManager.LoadSceneAsync("Level5");
+        //SceneManager.LoadSceneAsync("Level5");
+        sceneHandler.LoadLevelAt(5);
+
     }
     public void OpenLevel6()
     {
-        SceneManager.LoadSceneAsync("Level6");
+        //SceneManager.LoadSceneAsync("Level6");
+        sceneHandler.LoadLevelAt(6);
+
     }
     public void OpenLevel7()
     {
-        SceneManager.LoadSceneAsync("Level7");
+        //SceneManager.LoadSceneAsync("Level7");
+        sceneHandler.LoadLevelAt(7);
+
     }
     public void OpenLevel8()
     {
-        SceneManager.LoadSceneAsync("Level8");
+        //SceneManager.LoadSceneAsync("Level8");
+        sceneHandler.LoadLevelAt(8);
+
     }
     public void OpenLevel9()
     {
-        SceneManager.LoadSceneAsync("Level69");
+        //SceneManager.LoadSceneAsync("Level69");
+        sceneHandler.LoadLevelAt(9);
+
     }
     public void OpenLevel10()
     {
-        SceneManager.LoadSceneAsync("Level10");
+        //SceneManager.LoadSceneAsync("Level10");
+        sceneHandler.LoadLevelAt(10);
+
     }
     // Update is called once per frame
     void Update()
