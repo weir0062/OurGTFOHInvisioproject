@@ -78,14 +78,7 @@ public class CutScene : MonoBehaviour
             {
                 FadeObject.FadeOutThanIn();
 
-
-
                 soundManager?.PlayClickSound();
-
-
-
-
-
 
                 Clicked = true;
 
