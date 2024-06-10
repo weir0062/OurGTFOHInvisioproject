@@ -64,18 +64,27 @@ public class InGameMenu : MonoBehaviour
 
     public void TurnOnMenu()
     {
-        Time.timeScale = 0f;
-
+        Pause();
         PauseButton.SetActive(false);
         Resume.SetActive(true);
         MainMenu.SetActive(true);
         Restart.SetActive(true);
     }
 
-    public void ResumeGame()
+    void Pause()
+    {
+        Time.timeScale = 0f;
+        Cam.SetIsPaused(true);
+    }
+    void UnPause()
     {
         Time.timeScale = 1f;
+        Cam.SetIsPaused(false);
+    }
 
+    public void ResumeGame()
+    {
+        UnPause();
         PauseButton.SetActive(true);
         Resume.SetActive(false);
         MainMenu.SetActive(false);
