@@ -64,11 +64,11 @@ public class InGameMenu : MonoBehaviour
 
     public void TurnOnMenu()
     {
-        Pause();
         PauseButton.SetActive(false);
         Resume.SetActive(true);
         MainMenu.SetActive(true);
         Restart.SetActive(true);
+        Pause();
     }
 
     void Pause()
@@ -84,11 +84,11 @@ public class InGameMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-        UnPause();
         PauseButton.SetActive(true);
         Resume.SetActive(false);
         MainMenu.SetActive(false);
         Restart.SetActive(false);
+        UnPause();
     }
     public void OpenMainMenu()
     {
