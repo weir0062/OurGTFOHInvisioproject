@@ -2897,6 +2897,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &51356800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5157,6 +5158,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &94549572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7084,6 +7086,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &152318176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10182,7 +10185,7 @@ PrefabInstance:
     - target: {fileID: 1974770970731180228, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -26.899994
+      value: -26.900024
       objectReference: {fileID: 0}
     - target: {fileID: 8999043833888951856, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
@@ -12852,6 +12855,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &273221073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13198,6 +13202,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &279379529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13378,7 +13383,7 @@ PrefabInstance:
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8161
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
@@ -17973,6 +17978,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &399969111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20704,6 +20710,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &448499399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23902,6 +23909,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &504508799
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28565,6 +28573,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &599992085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28653,7 +28662,7 @@ PrefabInstance:
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8161
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
@@ -32475,7 +32484,7 @@ PrefabInstance:
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8161
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 7078381118531496088, guid: 93b0b0dcfb14efb4bab6684b53ce1ca9,
         type: 3}
@@ -33023,6 +33032,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &708618608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35196,6 +35206,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &743795256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38763,6 +38774,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &856371126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44894,6 +44906,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &971094073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45003,6 +45016,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &971905067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45334,6 +45348,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &974519673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48627,7 +48642,7 @@ PrefabInstance:
     - target: {fileID: 2862613748757001584, guid: 33d825fa7941fc9448597267285ab002,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.16
+      value: 19.06
       objectReference: {fileID: 0}
     - target: {fileID: 2862613748757001584, guid: 33d825fa7941fc9448597267285ab002,
         type: 3}
@@ -48637,7 +48652,7 @@ PrefabInstance:
     - target: {fileID: 2862613748757001584, guid: 33d825fa7941fc9448597267285ab002,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.41
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 2862613748757001584, guid: 33d825fa7941fc9448597267285ab002,
         type: 3}
@@ -49624,6 +49639,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1075871025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53486,7 +53502,7 @@ PrefabInstance:
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1802828
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
@@ -54976,6 +54992,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1177369349
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57879,7 +57896,7 @@ PrefabInstance:
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2080002
+      value: 2.7877173
       objectReference: {fileID: 0}
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
@@ -65152,7 +65169,7 @@ PrefabInstance:
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2080002
+      value: 2.7877173
       objectReference: {fileID: 0}
     - target: {fileID: 8691586660971297691, guid: 102043af7416cbc4c8c21640c834079b,
         type: 3}
@@ -66619,6 +66636,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1414001472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67035,6 +67053,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1428112199
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68254,6 +68273,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1445826363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70913,6 +70933,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1510418459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76908,6 +76929,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1631543365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78279,6 +78301,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1654782386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84450,6 +84473,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1761962402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89637,6 +89661,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1854321227
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95987,6 +96012,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1965905282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99855,6 +99881,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2032086554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101420,6 +101447,7 @@ MonoBehaviour:
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2070273869
 SpriteRenderer:
   m_ObjectHideFlags: 0
