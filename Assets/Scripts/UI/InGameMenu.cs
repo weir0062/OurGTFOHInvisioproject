@@ -33,6 +33,8 @@ public class InGameMenu : MonoBehaviour
         Cam = GetComponentInParent<CameraController>();
 
         slider = ZoomSlider.GetComponent<Slider>();
+        slider.value = slider.minValue;
+        Cam.GetComponent<Camera>().fieldOfView = Cam.MinZoomIn / 2.69f; 
         
 
     }
@@ -91,8 +93,8 @@ public class InGameMenu : MonoBehaviour
     }
     public void OnZoomSliderChanged()
     {
-        slider.minValue = Cam.MinZoomIn/1.69f;
-        slider.maxValue = Cam.MaxZoomIn / 3.69f;
+        slider.minValue = Cam.MinZoomIn/2.69f;
+        slider.maxValue = Cam.MaxZoomIn / 4.69f;
         Cam.CameraZoom(slider.value);
     }
 }

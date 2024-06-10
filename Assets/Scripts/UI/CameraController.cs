@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] TileController tileController;
     [SerializeField] Camera camera;
     public float MaxZoomIn = 0;
-    public float MinZoomIn = 69/2;
+    public float MinZoomIn = 0;
     float MidZoomIn = 0; 
     float focusSpeed = 6.9f*1.5f;
     private Transform oldFocusObject;
@@ -127,7 +127,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         {
             // Calculate the target position. Adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z) - (CameraOffset * 6.9f / 3);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z) - (CameraOffset/2);
 
             // Create a velocity vector to store the camera's velocity
             Vector3 velocity = Vector3.zero;
@@ -170,8 +170,7 @@ public class CameraController : MonoBehaviour
             MidZoomIn = MaxZoomIn * 0.8f;
         }
 
-    }
-     
+    }     
     float VerticalSizeToFOV(float size, float distance)
     {
         // Calculate the FOV needed to fit the size at the given distance
