@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
 
     public void TakeStep(Tile Newtile)
     {
+        if(camController?.GetIsPaused() == false)
+        {
+
         if (ActiveTile != null)
         {
             if (CheckDistanceToTile(ActiveTile, Newtile))
@@ -58,6 +61,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        }
     }
 
 
@@ -140,7 +144,7 @@ public class Player : MonoBehaviour
                         if (!tile.IsActive)
                         {
                             tile.Pressed();
-                            soundManager.PlayStepSound();
+                            soundManager?.PlayStepSound();
                         }
                     }
                 }
@@ -150,8 +154,7 @@ public class Player : MonoBehaviour
 
 
 
-
-    public void SetActiveTile(Tile newActiveTile)
+  public void SetActiveTile(Tile newActiveTile)
     {
         ActiveTile = newActiveTile;
     }

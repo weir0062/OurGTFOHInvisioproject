@@ -33,6 +33,8 @@ public class InGameMenu : MonoBehaviour
         Cam = GetComponentInParent<CameraController>();
 
         slider = ZoomSlider.GetComponent<Slider>();
+        slider.value = slider.minValue;
+        Cam.GetComponent<Camera>().fieldOfView = Cam.MinZoomIn / 2.69f; 
         
 
     }
@@ -62,22 +64,31 @@ public class InGameMenu : MonoBehaviour
 
     public void TurnOnMenu()
     {
-        Time.timeScale = 0f;
-
         PauseButton.SetActive(false);
         Resume.SetActive(true);
         MainMenu.SetActive(true);
         Restart.SetActive(true);
+        Pause();
+    }
+
+    void Pause()
+    {
+        Time.timeScale = 0f;
+        Cam.SetIsPaused(true);
+    }
+    void UnPause()
+    {
+        Time.timeScale = 1f;
+        Cam.SetIsPaused(false);
     }
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f;
-
         PauseButton.SetActive(true);
         Resume.SetActive(false);
         MainMenu.SetActive(false);
         Restart.SetActive(false);
+        UnPause();
     }
     public void OpenMainMenu()
     {
@@ -91,8 +102,8 @@ public class InGameMenu : MonoBehaviour
     }
     public void OnZoomSliderChanged()
     {
-        slider.minValue = Cam.MinZoomIn/1.69f;
-        slider.maxValue = Cam.MaxZoomIn / 3.69f;
+        slider.minValue = Cam.MinZoomIn/2.69f;
+        slider.maxValue = Cam.MaxZoomIn / 4.69f;
         Cam.CameraZoom(slider.value);
     }
 }
