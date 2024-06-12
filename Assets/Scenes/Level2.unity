@@ -44246,6 +44246,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8963183977622456610, guid: b359912709187c342b5065e5075a1ac8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8963183977674794944, guid: b359912709187c342b5065e5075a1ac8,
         type: 3}
       propertyPath: m_Name
@@ -44256,6 +44261,21 @@ PrefabInstance:
       propertyPath: Paused
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
+        type: 3}
+      propertyPath: CutsceneImages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
+        type: 3}
+      propertyPath: CutsceneImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 7ac8c48a08cacce418fe79e89bf0026d, type: 3}
+    - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
+        type: 3}
+      propertyPath: CutsceneImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 93e9c15428ee8604599fadcea659e9e2, type: 3}
     - target: {fileID: 8963183977674794946, guid: b359912709187c342b5065e5075a1ac8,
         type: 3}
       propertyPath: m_RootOrder
@@ -50007,6 +50027,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1509161841}
     m_Modifications:
+    - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
+        type: 3}
+      propertyPath: state
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: m_RootOrder
