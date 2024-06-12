@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AudioSource: {fileID: 0}
   StepSound: {fileID: 8300000, guid: a1cc6c4d6d49f8b4f8d579e20b3452c8, type: 3}
-  ClickSound: {fileID: 8300000, guid: a0b51d1501f5bee4faef3d82a999472b, type: 3}
+  ClickSound: {fileID: 8300000, guid: af84c3e6bd0b1354d866dc0bc5aba958, type: 3}
   CoinSound: {fileID: 8300000, guid: d9df82ba684452b45ae7a3002531cbef, type: 3}
   Volume: 100
 --- !u!82 &5175739554913135853

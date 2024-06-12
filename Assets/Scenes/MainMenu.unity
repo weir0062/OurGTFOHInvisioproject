@@ -13197,6 +13197,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d0e746da2e5f35a4e97585b6ca8075cf, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b09f7dcadeb26234397b5932bc51e58e, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d4b84a14bb1f9c4baba81cabe456fc7, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d0a83e84f377fd4589c034a34377788, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: d5154db43f95d2d4eb797299f3ed735c, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc72caf16bcd70e45bec2ef0a8e2c855, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: b9ceaa490d11fc04a841668372e143d2, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 22ab9ab316f2e154ea667b67b1646899, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 991688ddf82330d4ca1507d60b9f7714, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: f7bda7831b7d01140b3243ecffedfea2, type: 3}
+    - target: {fileID: 2643462628983280239, guid: b21e83456111a3b4cbcbbdcf0c453d2c,
+        type: 3}
+      propertyPath: Songs.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: ce2440f37a08ca9429f76a21c2063e6a, type: 3}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b21e83456111a3b4cbcbbdcf0c453d2c, type: 3}
@@ -13213,6 +13273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4200695751703182475, guid: cc359020a7132264798c4973a162432d,
+        type: 3}
+      propertyPath: ClickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: aecfdbb460c69e841aeed02bf37cff8c, type: 3}
     - target: {fileID: 6401538382523606546, guid: cc359020a7132264798c4973a162432d,
         type: 3}
       propertyPath: m_RootOrder
