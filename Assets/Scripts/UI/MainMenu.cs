@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     public GameObject levelsMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
+    public GameObject creditsMenu2;
     public GameObject MusicContObject;
     private MusicController MusicController;
 
@@ -45,7 +46,14 @@ public class MainMenu : MonoBehaviour
     public void OpenCredits()
     {
         mainMenu.SetActive(false);
+        creditsMenu2.SetActive(false);
         creditsMenu.SetActive(true);
+    }
+
+    public void OpenCredits2()
+    {
+        creditsMenu.SetActive(false);
+        creditsMenu2.SetActive(true);
     }
     public void ButtonClick()
     {
@@ -91,6 +99,7 @@ public class MainMenu : MonoBehaviour
         levelsMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+        creditsMenu2.SetActive(false);
 
         MusicController = MusicContObject.GetComponent<MusicController>();
         MusicController.SetMusicClip(MusicController.MenuMusicClip);
