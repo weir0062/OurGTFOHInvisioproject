@@ -12088,10 +12088,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &347393781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16003,10 +16003,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &458481962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16692,10 +16692,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &476274449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18264,10 +18264,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &521616645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21426,10 +21426,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &592635946
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21536,10 +21536,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &593718091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21646,10 +21646,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &598232503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24158,10 +24158,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &670467755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28778,10 +28778,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1 &794892242
 GameObject:
   m_ObjectHideFlags: 0
@@ -33911,10 +33911,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &945894842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40692,9 +40692,39 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 367163977843250039, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367163977843250039, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367163977843250039, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2799246618541456786, guid: d165f19b7c33ea74e87767840ed45eeb,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857422939048464378, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857422939048464378, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857422939048464378, guid: d165f19b7c33ea74e87767840ed45eeb,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6436231310631122506, guid: d165f19b7c33ea74e87767840ed45eeb,
@@ -42858,10 +42888,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1173824303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44723,10 +44753,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1205653519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45734,10 +45764,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1241733855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46065,10 +46095,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1248982808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49134,10 +49164,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1334989728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50324,10 +50354,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1353486188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52825,10 +52855,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1446579661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53126,10 +53156,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1450711124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57102,10 +57132,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1606089896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60088,10 +60118,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1725854229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63146,10 +63176,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1801060326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67341,10 +67371,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1909495449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69600,10 +69630,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1972265905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69710,10 +69740,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1972432915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70335,10 +70365,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!1001 &1985680614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70508,10 +70538,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &1988710919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71789,10 +71819,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2020787770
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74691,10 +74721,10 @@ MonoBehaviour:
   MaxMat: {fileID: 0}
   NonactiveMat: {fileID: 0}
   SuperSolidMat: {fileID: 0}
-  PositionIndicator: {fileID: 0}
   DialogueBoxObject: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   IsActive: 0
+  m_SceneHandler: {fileID: 0}
 --- !u!212 &2121229600
 SpriteRenderer:
   m_ObjectHideFlags: 0
