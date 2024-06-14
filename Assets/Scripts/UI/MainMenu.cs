@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject creditsMenu;
     public GameObject creditsMenu2;
+    public GameObject supportMenu;
     public GameObject MusicContObject;
     private MusicController MusicController;
 
@@ -37,9 +38,16 @@ public class MainMenu : MonoBehaviour
         ArcadeMenu.SetActive(true);
     }
 
+    public void OpenSupportMenu()
+    {
+        mainMenu.SetActive(false);
+        supportMenu.SetActive(true);
+    }
+
     public void OpenLevels()
     {
         mainMenu.SetActive(false);
+        ArcadeMenu.SetActive(false);
         levelsMenu.SetActive(true);
     }
 
@@ -100,6 +108,7 @@ public class MainMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
         creditsMenu2.SetActive(false);
+        supportMenu.SetActive(false);
 
         MusicController = MusicContObject.GetComponent<MusicController>();
         MusicController.SetMusicClip(MusicController.MenuMusicClip);
