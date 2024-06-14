@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -88,9 +89,17 @@ public class Player : MonoBehaviour
             return;
         }
 
+
+
         if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             Vector3 screenPoint = Input.touchCount > 0 ? (Vector3)Input.GetTouch(0).position : Input.mousePosition;
+
+            if (IsPointerOverUIElement(screenPoint))
+            {
+                return;
+            }
+
             Ray ray = cam.ScreenPointToRay(screenPoint);
             RaycastHit hit;
 
@@ -116,9 +125,16 @@ public class Player : MonoBehaviour
         }
     }
 
+    private bool IsPointerOverUIElement(Vector3 screenPosition)
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = screenPosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
+    }
 
-
-  public void SetActiveTile(Tile newActiveTile)
+    public void SetActiveTile(Tile newActiveTile)
     {
         ActiveTile = newActiveTile;
     }
