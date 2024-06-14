@@ -4111,7 +4111,7 @@ GameObject:
   - component: {fileID: 503880673}
   - component: {fileID: 503880672}
   m_Layer: 5
-  m_Name: Canva.com
+  m_Name: nva Team
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4157,7 +4157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Canva.com
+  m_text: Canva Team
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e3414fb2ab4bad84bae0c001798e7bd1, type: 2}
   m_sharedMaterial: {fileID: 456530123710407629, guid: e3414fb2ab4bad84bae0c001798e7bd1,
@@ -15256,6 +15256,26 @@ PrefabInstance:
       propertyPath: ClickSound
       value: 
       objectReference: {fileID: 8300000, guid: aecfdbb460c69e841aeed02bf37cff8c, type: 3}
+    - target: {fileID: 5175739554913135853, guid: cc359020a7132264798c4973a162432d,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175739554913135853, guid: cc359020a7132264798c4973a162432d,
+        type: 3}
+      propertyPath: Priority
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175739554913135853, guid: cc359020a7132264798c4973a162432d,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175739554913135853, guid: cc359020a7132264798c4973a162432d,
+        type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6401538382523606546, guid: cc359020a7132264798c4973a162432d,
         type: 3}
       propertyPath: m_RootOrder
