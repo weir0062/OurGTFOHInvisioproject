@@ -64339,6 +64339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level 3 Cutscene
       objectReference: {fileID: 0}
+    - target: {fileID: 8963183977674794944, guid: af514217086b801489084f0b67822ae4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8963183977674794946, guid: af514217086b801489084f0b67822ae4,
         type: 3}
       propertyPath: m_RootOrder
