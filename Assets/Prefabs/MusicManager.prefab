@@ -46,9 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Songs:
-  - {fileID: 8300000, guid: 7c43525fecfa26e4ba96e9f898da4a50, type: 3}
-  - {fileID: 8300000, guid: 494844b001b153a409cb76a3d8054fc0, type: 3}
-  - {fileID: 8300000, guid: 7c43525fecfa26e4ba96e9f898da4a50, type: 3}
+  - {fileID: 8300000, guid: d0e746da2e5f35a4e97585b6ca8075cf, type: 3}
+  - {fileID: 8300000, guid: b09f7dcadeb26234397b5932bc51e58e, type: 3}
+  - {fileID: 8300000, guid: 9d4b84a14bb1f9c4baba81cabe456fc7, type: 3}
+  - {fileID: 8300000, guid: 7d0a83e84f377fd4589c034a34377788, type: 3}
+  - {fileID: 8300000, guid: d5154db43f95d2d4eb797299f3ed735c, type: 3}
+  - {fileID: 8300000, guid: fc72caf16bcd70e45bec2ef0a8e2c855, type: 3}
+  - {fileID: 8300000, guid: b9ceaa490d11fc04a841668372e143d2, type: 3}
+  - {fileID: 8300000, guid: 22ab9ab316f2e154ea667b67b1646899, type: 3}
+  - {fileID: 8300000, guid: 991688ddf82330d4ca1507d60b9f7714, type: 3}
+  - {fileID: 8300000, guid: f7bda7831b7d01140b3243ecffedfea2, type: 3}
+  - {fileID: 8300000, guid: ce2440f37a08ca9429f76a21c2063e6a, type: 3}
   Volume: 0.15
   PlayOnAwake: 1
   Loop: 1

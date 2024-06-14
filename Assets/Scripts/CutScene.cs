@@ -39,13 +39,16 @@ public class CutScene : MonoBehaviour
 
         if(soundManager ==null)
             soundManager = FindObjectOfType<SoundManager>();
-        menu = GameObject.FindObjectOfType<InGameMenu>();
-        menu.PauseButton.SetActive(false);
-        menu.ZoomSlider.SetActive(false);
+        
 
 
     }
-
+     void Awake()
+    {
+        menu = GameObject.FindObjectOfType<InGameMenu>();
+        menu.PauseButton.SetActive(false);
+        menu.ZoomSlider.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
