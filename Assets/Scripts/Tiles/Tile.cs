@@ -24,9 +24,6 @@ public class Tile : MonoBehaviour
     public TileState state;
     public MeshRenderer MatRenderer;
     int StepsTaken = 0;
-
-    int hp = 5;
-
     Material currentMat;
     public Material SolidMat;
     public Material SmallMat;
@@ -36,14 +33,12 @@ public class Tile : MonoBehaviour
     public Material NonactiveMat;
     public Material SuperSolidMat;
     public GameObject DialogueBoxObject;
-
     float moveDistance = 0.25f;
     public Vector3 initialPosition;
     Vector3 LowerPosition;
     Player player;
     public bool IsActive = false;
     Vector2 position;
-
      public SceneHandler m_SceneHandler;
 
 
@@ -220,7 +215,7 @@ public class Tile : MonoBehaviour
                 break;
         }
 
-        hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
+     //   hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
     }
 
 
@@ -257,7 +252,7 @@ public class Tile : MonoBehaviour
         }
 
 
-        hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
+       // hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
         MatRenderer.material = currentMat;
 
     }

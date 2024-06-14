@@ -11,16 +11,11 @@ public class Player : MonoBehaviour
     Tile LastActiveTile;
     public Camera cam;
     CameraController camController;
-    InGameMenu inGameMenu;
-    public GameObject PositionIndicator;
-
+    public GameObject Indicator;
+    Vector3 IndicatorPosition;
     public SoundManager soundManager;
-
-
-
-    public float IndicatorOscillationFrequency = 1.69f; // Frequency of the oscillation
-    public float IndicatorOscillationAmplitude = 0.169f; // Amplitude of the oscillation
-    private Vector3 idlePosition;
+    
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +48,7 @@ public class Player : MonoBehaviour
 
                 if (camController != null) { camController = cam.GetComponent<CameraController>(); }
                 camController?.CameraFocus(ActiveTile.transform); // move camera to new tile
-                StartCoroutine(MoveIndicator(ActiveTile, Newtile)); // Indicator movement animation to new tile 
+                MoveIndicator(ActiveTile); // Indicator movement animation to new tile 
                 ActiveTile.StepTaken(); // Take Step To new Tile 
 
 
@@ -65,47 +60,12 @@ public class Player : MonoBehaviour
     }
 
 
-    private IEnumerator MoveIndicator(Tile activeTile, Tile newTile)
+    void MoveIndicator(Tile newActiveTile)
     {
-       // Vector3 Offset = new Vector3(0.0f, 0.0f, 0.69f*1.69f);
-        Vector3 startPos = activeTile.gameObject.transform.position;
-        Vector3 endPos = newTile.gameObject.transform.position;// - Offset;
-        startPos.y = 5f;
-        endPos.y = 5f;
-        float duration = 0.69f; // Duration of the LERP in seconds
-        float elapsed = 0.0f;
-
-        while (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.SmoothStep(0f, 1f, elapsed / duration);
-
-            // Calculate vertical oscillation
-            float oscillation = Mathf.Sin(t * Mathf.PI * 2.0f) * IndicatorOscillationAmplitude;
-
-            // Interpolate position with oscillation
-            Vector3 interpolatedPosition = Vector3.Lerp(startPos, endPos, t);
-            interpolatedPosition.y += oscillation;
-
-            PositionIndicator.transform.position = interpolatedPosition;
-            yield return null;
-        }
-
-        // Ensure the final position is set
-        PositionIndicator.transform.position = endPos;
-        idlePosition = endPos; // Update the idle position
+        IndicatorPosition = newActiveTile.gameObject.transform.position + new Vector3(0, 0f, 0.1f);
     }
 
-    private void PerformIdleOscillation()
-    {
-        float t = Time.time * IndicatorOscillationFrequency;
-        float oscillation = Mathf.Sin(t) * IndicatorOscillationAmplitude;
-
-        Vector3 oscillatedPosition = idlePosition;
-        oscillatedPosition.y += oscillation;
-
-        PositionIndicator.transform.position = oscillatedPosition;
-    }
+    
 
     bool CheckDistanceToTile(Tile ActiveTile, Tile NewTile)
     {
@@ -160,8 +120,9 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
-        PerformIdleOscillation();
+    { 
         CheckForTouch();
+
+        Indicator.transform.position = IndicatorPosition;
     }
 }
