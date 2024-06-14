@@ -96,6 +96,10 @@ public class Player : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
+                if(hit.collider.gameObject.layer == LayerMask.NameToLayer("UI"))
+                {
+                    return;
+                }
                 Tile tile = hit.collider.GetComponentInChildren<Tile>();
                 if (tile != null)
                 {
