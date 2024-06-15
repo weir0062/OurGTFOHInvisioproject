@@ -40,6 +40,7 @@ public class Tile : MonoBehaviour
     public bool IsActive = false;
     Vector2 position;
      public SceneHandler m_SceneHandler;
+    public TextMeshPro num; 
 
 
     // Start is called before the first frame update
@@ -61,6 +62,8 @@ public class Tile : MonoBehaviour
         {
             DialogueBoxObject.SetActive(false);
         }
+
+
     }
     private void Update()
     {

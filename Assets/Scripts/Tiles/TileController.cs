@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-
+using TMPro;
 public class TileController : MonoBehaviour
 {
     public Tile[,] tiles;
@@ -26,7 +26,7 @@ public class TileController : MonoBehaviour
         var xCoordinates = new HashSet<float>();
         var zCoordinates = new HashSet<float>();
 
-        float gridSize = 1.0f;
+        float gridSize = 1.01f;
 
         foreach (GameObject obj in tileObjects)
         {
@@ -73,7 +73,10 @@ public class TileController : MonoBehaviour
 
                 tile.SetPosition(xIndex, zIndex);
                 tiles[xIndex, zIndex] = tile;
+                tiles[xIndex, zIndex].num.text =  (xIndex + ", " +  zIndex);
 
+                tiles[xIndex, zIndex].num.SetText((xIndex + ", " + zIndex).ToString());
+                
                 if (tile.state == TileState.Start)
                 {
                     StartingTile = tile;
