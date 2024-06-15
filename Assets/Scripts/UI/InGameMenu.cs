@@ -11,6 +11,7 @@ public class InGameMenu : MonoBehaviour
 {
 
     public CameraController Cam;
+    public SoundManager soundManager;
     public GameObject ZoomSlider;
     public GameObject PauseButton;
     public GameObject Resume;
@@ -20,8 +21,6 @@ public class InGameMenu : MonoBehaviour
     Slider slider;
     private void Awake()
     {
-
-
         // Ensure EventSystem exists
         if (FindObjectOfType<EventSystem>() == null)
         {
@@ -34,8 +33,16 @@ public class InGameMenu : MonoBehaviour
 
         slider = ZoomSlider.GetComponent<Slider>();
         slider.value = slider.minValue;
-        Cam.GetComponent<Camera>().fieldOfView = Cam.MinZoomIn / 2.69f; 
-        
+        Cam.GetComponent<Camera>().fieldOfView = Cam.MinZoomIn / 2.69f;
+
+        if (soundManager == null)
+            soundManager = FindObjectOfType<SoundManager>();
+    }
+
+    public void ButtonClick()
+    {
+        //MusicController.PlaySFXSound();
+        soundManager.PlayClickSound();
 
     }
 

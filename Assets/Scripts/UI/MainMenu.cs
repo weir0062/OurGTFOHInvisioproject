@@ -115,6 +115,11 @@ public class MainMenu : MonoBehaviour
         MusicController.SetSFXClip(MusicController.MenuSFXClip);
     }
 
+
+    public void PlayArcade()
+    {
+        sceneHandler.LoadLevelAt(9);
+    }
     public void LevelsToArcadeMenu()
     {
         levelsMenu.SetActive(false);
