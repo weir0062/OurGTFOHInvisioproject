@@ -1,7 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 using System.Linq;
+using TMPro;
 
 public class TileController : MonoBehaviour
 {
@@ -73,11 +74,14 @@ public class TileController : MonoBehaviour
                 int xIndex = xMap[roundedX];
                 int zIndex = zMap[roundedZ];
 
-                // Проверка на дубликаты
-                if (tiles[xIndex, zIndex] != null)
+                // Проверяем, если предыдущий номер отсутствует, то используем его
+                if (xIndex > 0 && tiles[xIndex - 1, zIndex] == null)
                 {
-                    Debug.LogError($"Duplicate tile at position ({xIndex}, {zIndex})");
-                    continue;
+                    xIndex--;
+                }
+                else if (zIndex > 0 && tiles[xIndex, zIndex - 1] == null)
+                {
+                    zIndex--;
                 }
 
                 tile.SetPosition(xIndex, zIndex);
@@ -88,18 +92,6 @@ public class TileController : MonoBehaviour
                 if (tile.state == TileState.Start)
                 {
                     StartingTile = tile;
-                }
-            }
-        }
-
-        // Проверка и исправление пропущенных тайлов
-        for (int x = 0; x < sortedX.Count; x++)
-        {
-            for (int z = 0; z < sortedZ.Count; z++)
-            {
-                if (tiles[x, z] == null)
-                {
-                    ShiftTilesToFillMissing(x, z);
                 }
             }
         }
@@ -116,37 +108,7 @@ public class TileController : MonoBehaviour
         }
 
         InitializePlayer();
-        player.TakeStep(tiles[0, 0]) ;
         ActiveTile?.StepTaken();
-    }
-
-    void ShiftTilesToFillMissing(int missingX, int missingZ)
-    {
-        for (int x = missingX; x < tiles.GetLength(0); x++)
-        {
-            for (int z = missingZ; z < tiles.GetLength(1); z++)
-            {
-                if (tiles[x, z] == null)
-                {
-                    for (int nextX = x; nextX < tiles.GetLength(0); nextX++)
-                    {
-                        for (int nextZ = z + 1; nextZ < tiles.GetLength(1); nextZ++)
-                        {
-                            if (tiles[nextX, nextZ] != null)
-                            {
-                                tiles[x, z] = tiles[nextX, nextZ];
-                                tiles[nextX, nextZ] = null;
-                                tiles[x, z].SetPosition(x, z);
-                                tiles[x, z].num.text = (x + ", " + z);
-                                tiles[x, z].num.SetText((x + ", " + z).ToString());
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-            missingZ = 0; // Сброс Z на 0 после первой итерации
-        }
     }
 
     void InitializePlayer()
