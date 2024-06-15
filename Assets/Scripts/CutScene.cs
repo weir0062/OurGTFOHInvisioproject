@@ -13,7 +13,7 @@ public class CutScene : MonoBehaviour
     RawImage DisplayWindow;
 
     //MUST BE LONGER THAN THE TIME IT TAKES TO FADE
-    float TimeBeforeSkip = 3f;
+    float TimeBeforeSkip = 1.5f;
 
     float Timer = 0.0f;
 
@@ -28,7 +28,7 @@ public class CutScene : MonoBehaviour
     public bool Paused = false;
 
     public SoundManager soundManager;
-
+    InGameMenu menu;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,11 +39,16 @@ public class CutScene : MonoBehaviour
 
         if(soundManager ==null)
             soundManager = FindObjectOfType<SoundManager>();
-
+        
 
 
     }
-
+     void Awake()
+    {
+        menu = GameObject.FindObjectOfType<InGameMenu>();
+        menu.PauseButton.SetActive(false);
+        menu.ZoomSlider.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -99,7 +104,9 @@ public class CutScene : MonoBehaviour
 
             if (CurrentImage >= CutsceneImages.Count)
             {
-                this.gameObject.SetActive(false);
+                this.gameObject.SetActive(false); 
+                menu.PauseButton.SetActive(true);
+                menu.ZoomSlider.SetActive(true);
             }
             else
             {

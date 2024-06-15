@@ -1,6 +1,0 @@
-Prefabs - 241
-FBX - 189
-Materials - 13
-Textures - 13
-VFX - 2
-Shaders - 1

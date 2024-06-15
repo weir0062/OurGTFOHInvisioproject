@@ -174,7 +174,7 @@ public class CameraController : MonoBehaviour
             // Set the max zoom to the larger of the two sizes, plus a little margin
             MaxZoomIn = Mathf.Max(verticalSize, horizontalSize) * 1.69f; // 1.1f adds a 69% margin
             MaxZoomIn = VerticalSizeToFOV(MaxZoomIn * 2, camera.transform.position.z - boardHeight / 2.0f);
-            MaxZoomIn *= MaxZoomIn < 0 ? -2 : 2;
+            MaxZoomIn *= MaxZoomIn < 0 ? -1 : 1;
 
 
             MidZoomIn = MaxZoomIn * 0.8f;
