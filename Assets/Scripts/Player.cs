@@ -32,12 +32,12 @@ public class Player : MonoBehaviour
 
     public void TakeStep(Tile Newtile)
     {
-        if(camController?.GetIsPaused() == false)
+        if(camController?.GetIsPaused() == false || Newtile.state == TileState.Start)
         {
 
         if (ActiveTile != null)
         {
-            if (CheckDistanceToTile(ActiveTile, Newtile))
+            if (CheckDistanceToTile(ActiveTile, Newtile) )
             {
 
 
