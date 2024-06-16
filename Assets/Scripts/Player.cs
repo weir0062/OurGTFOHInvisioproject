@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
 
 
 
-            }
+            } 
         }
 
         }
@@ -77,9 +77,17 @@ public class Player : MonoBehaviour
         float DistX = Distance.x > 0 ? Distance.x : Distance.x * -1;
         float DistY = Distance.y > 0 ? Distance.y : Distance.y * -1;
 
+        if((DistX < 1.3 && DistY < 1.3))
+        {
+            Debug.Log("BLYAT OK X IS " + DistX + ",  Y IS" + DistY);
 
-        return (DistX < 1.2 && DistY < 1.2);
-
+        return true;
+        }
+        else
+        {
+            Debug.Log("BLYAT TO FAR X IS " + DistX + ",  Y IS" + DistY);
+            return false;
+        }
     }
     void CheckForTouch()
     {

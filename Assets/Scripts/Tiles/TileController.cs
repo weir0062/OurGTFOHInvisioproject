@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-
 public class TileController : MonoBehaviour
 {
     public Tile[,] tiles;
@@ -12,17 +11,14 @@ public class TileController : MonoBehaviour
     Tile CentralTile;
     Tile StartingTile;
     Player player;
-
     void Start()
     {
-        // Инициализация перенесена в другую функцию
-    }
 
+    }
     private void Update()
     {
-        // Не используется
-    }
 
+    }
     public void InitializeTileArray(List<GameObject> tileObjects)
     {
         if (tileObjects.Count == 0) return;
@@ -41,6 +37,7 @@ public class TileController : MonoBehaviour
 
             Tile tile = obj.GetComponent<Tile>();
             tile.initialPosition = tile.transform.localPosition;
+
 
             xCoordinates.Add(roundedX);
             zCoordinates.Add(roundedZ);
@@ -74,19 +71,10 @@ public class TileController : MonoBehaviour
                 int xIndex = xMap[roundedX];
                 int zIndex = zMap[roundedZ];
 
-                // Проверяем, если предыдущий номер отсутствует, то используем его
-                if (xIndex > 0 && tiles[xIndex - 1, zIndex] == null)
-                {
-                    xIndex--;
-                }
-                else if (zIndex > 0 && tiles[xIndex, zIndex - 1] == null)
-                {
-                    zIndex--;
-                }
-
                 tile.SetPosition(xIndex, zIndex);
                 tiles[xIndex, zIndex] = tile;
                 tiles[xIndex, zIndex].num.text = (xIndex + ", " + zIndex);
+
                 tiles[xIndex, zIndex].num.SetText((xIndex + ", " + zIndex).ToString());
 
                 if (tile.state == TileState.Start)
@@ -95,6 +83,8 @@ public class TileController : MonoBehaviour
                 }
             }
         }
+
+
 
         CentralTile = tiles[sortedX.Count / 2, sortedZ.Count / 2];
 
@@ -107,12 +97,18 @@ public class TileController : MonoBehaviour
             ActiveTile = tiles[0, 0];
         }
 
+
+
         InitializePlayer();
         ActiveTile?.StepTaken();
     }
 
+
+
+
     void InitializePlayer()
     {
+
         player = GameObject.FindObjectOfType<Player>();
 
         if (player == null)
@@ -127,7 +123,6 @@ public class TileController : MonoBehaviour
     {
         ActiveTile = tile;
     }
-
     public Tile GetActiveTile()
     {
         if (ActiveTile != null)
@@ -136,11 +131,11 @@ public class TileController : MonoBehaviour
         }
         else
         {
+
             Debug.Log("TileNotActive");
             return null;
         }
     }
-
     public Tile GetCentralTile()
     {
         if (CentralTile)
