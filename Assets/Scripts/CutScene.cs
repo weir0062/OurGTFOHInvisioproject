@@ -29,6 +29,8 @@ public class CutScene : MonoBehaviour
 
     public SoundManager soundManager;
 
+    public Fade IndependentFade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,6 +100,7 @@ public class CutScene : MonoBehaviour
 
             if (CurrentImage >= CutsceneImages.Count)
             {
+                IndependentFade.FadeIn();
                 this.gameObject.SetActive(false);
             }
             else

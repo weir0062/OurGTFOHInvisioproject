@@ -16,6 +16,8 @@ public class Fade : MonoBehaviour
     float PauseTimer = 0.0f;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -126,6 +128,43 @@ public class Fade : MonoBehaviour
 
 
     }
+
+    public IEnumerator FadeInCoroutine()
+    {
+        Darkness.enabled = true;
+        FadeAmount = 1f;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+
+        while (FadeAmount > 0)
+        {
+            FadeAmount -= Speed * Time.deltaTime;
+            Darkness.color = new Color(0, 0, 0, FadeAmount);
+            yield return null;
+        }
+
+        FadeAmount = 0;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+        Darkness.enabled = false;
+    }
+
+    public IEnumerator FadeOutCoroutine()
+    {
+        Darkness.enabled = true;
+        FadeAmount = 0f;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+
+        while (FadeAmount < 1)
+        {
+            FadeAmount += Speed * Time.deltaTime;
+            Darkness.color = new Color(0, 0, 0, FadeAmount);
+            yield return null;
+        }
+
+        FadeAmount = 1;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+    }
+
+
 
 
     enum FadeType

@@ -18,6 +18,8 @@ public class InGameMenu : MonoBehaviour
     public GameObject Restart;
 
     Slider slider;
+
+    public SceneHandler sceneHandler;
     private void Awake()
     {
 
@@ -34,7 +36,7 @@ public class InGameMenu : MonoBehaviour
 
         slider = ZoomSlider.GetComponent<Slider>();
         
-
+        sceneHandler = FindObjectOfType<SceneHandler>();
     }
 
     public void Update()
@@ -81,7 +83,9 @@ public class InGameMenu : MonoBehaviour
     }
     public void OpenMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        //SceneManager.LoadScene("MainMenu");
+        sceneHandler.LoadLevelAt(0);
     }
     public void RestartLevel()
     {

@@ -25,6 +25,7 @@ public class SceneHandler : MonoBehaviour//, Saveable
 
     bool TransferingScenes = false;
 
+    public Fade fader;
 
     void Awake()
     {
@@ -45,6 +46,8 @@ public class SceneHandler : MonoBehaviour//, Saveable
             Destroy(gameObject);
             return;
         }
+
+        fader = FindObjectOfType<Fade>();
     }
 
     // Start is called before the first frame update
@@ -69,9 +72,20 @@ public class SceneHandler : MonoBehaviour//, Saveable
 
     public void LoadNextLevel()
     {
-        LevelID++;
-        SceneManager.LoadScene(LevelID);
+        if (fader == null)
+            fader = FindObjectOfType<Fade>();
 
+        StartCoroutine(LoadNextLevelCoroutine());
+    }
+
+    private IEnumerator LoadNextLevelCoroutine()
+    {
+        yield return StartCoroutine(fader.FadeOutCoroutine());
+
+        LevelID++;
+        yield return SceneManager.LoadSceneAsync(LevelID);
+
+        yield return StartCoroutine(fader.FadeInCoroutine());
     }
 
     public void ReloadLevel()
@@ -79,11 +93,30 @@ public class SceneHandler : MonoBehaviour//, Saveable
         SceneManager.LoadScene(LevelID);
     }
 
+    //public void LoadLevelAt(int level)
+    //{
+    //    fader.FadeOut();
+    //    LevelID = level;
+    //    //SceneManager.LoadScene(level);
+    //    SceneManager.LoadSceneAsync(level);
+    //}
+
     public void LoadLevelAt(int level)
     {
+        if (fader == null)
+            fader = FindObjectOfType<Fade>();
+
+        StartCoroutine(LoadLevelAtCoroutine(level));
+    }
+
+    private IEnumerator LoadLevelAtCoroutine(int level)
+    {
+        yield return StartCoroutine(fader.FadeOutCoroutine());
+
         LevelID = level;
-        //SceneManager.LoadScene(level);
-        SceneManager.LoadSceneAsync(level);
+        yield return SceneManager.LoadSceneAsync(LevelID);
+
+        yield return StartCoroutine(fader.FadeInCoroutine());
     }
 
     public void GoBackALevel()
