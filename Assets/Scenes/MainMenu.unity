@@ -7680,7 +7680,7 @@ GameObject:
   - component: {fileID: 836518602}
   - component: {fileID: 836518601}
   m_Layer: 0
-  m_Name: WhiteBackgroundSprite
+  m_Name: WhiteBackgroundSpritee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
