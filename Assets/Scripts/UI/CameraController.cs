@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
     public float MaxZoomIn = 0;
     public float MinZoomIn = 0;
     float MidZoomIn = 0;
+    float defaultY = 0;
     float focusSpeed = 6.9f * 1.5f;
     private Transform oldFocusObject;
     public Transform currentFocusObject;
@@ -74,6 +75,8 @@ public class CameraController : MonoBehaviour
 
         }
         CalculateMaxZoom();
+
+        defaultY = transform.position.y;
     }
 
 
@@ -137,7 +140,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         {
             // Calculate the target position. Adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, transform.position.y, currentFocusObject.position.z) - (CameraOffset / 2);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x,defaultY, currentFocusObject.position.z) - (CameraOffset / 2);
 
             // Create a velocity vector to store the camera's velocity
             Vector3 velocity = Vector3.zero;
@@ -150,7 +153,7 @@ public class CameraController : MonoBehaviour
         }
     }
     public void CameraFocus(Transform focusObject)
-    {
+    {   
         oldFocusObject = currentFocusObject;
         currentFocusObject = focusObject;
         CameraOffset = (oldFocusObject.position - currentFocusObject.position).normalized;

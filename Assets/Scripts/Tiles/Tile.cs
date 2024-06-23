@@ -62,8 +62,8 @@ public class Tile : MonoBehaviour
         if (DialogueBoxObject != null)
         {
             DialogueBoxObject.SetActive(false);
-        }
-
+        } 
+        
 
 
 
