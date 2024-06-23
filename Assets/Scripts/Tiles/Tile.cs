@@ -39,8 +39,9 @@ public class Tile : MonoBehaviour
     Player player;
     public bool IsActive = false;
     Vector2 position;
-     public SceneHandler m_SceneHandler;
-    public TextMeshPro num; 
+    public SceneHandler m_SceneHandler;
+    public TextMeshPro num;
+    public GameObject[] StartObjects;
 
 
     // Start is called before the first frame update
@@ -51,12 +52,12 @@ public class Tile : MonoBehaviour
         InitializeDefaults();
         UpdateState();
 
-        if(m_SceneHandler == null)
+        if (m_SceneHandler == null)
         {
             m_SceneHandler = GameObject.FindObjectOfType<SceneHandler>();
         }
 
-       // initialPosition = transform.localPosition;
+        // initialPosition = transform.localPosition;
 
         if (DialogueBoxObject != null)
         {
@@ -64,10 +65,23 @@ public class Tile : MonoBehaviour
         }
 
 
+
+
+        if (StartObjects.Length > 0)
+        {
+
+            for (int i = 0; i < StartObjects.Length; i++)
+            {
+
+                StartObjects[i].SetActive(true);
+            }
+        }
+
+
     }
     private void Update()
     {
-        if (IsActive == true  )
+        if (IsActive == true)
         {
             SetActive();
         }
@@ -124,6 +138,7 @@ public class Tile : MonoBehaviour
 
     void MoveTileUp()
     {
+        initialPosition.z = 0.0f;
         transform.localPosition = initialPosition;
     }
 
@@ -136,8 +151,8 @@ public class Tile : MonoBehaviour
             //SceneManager.LoadScene("MainMenu");
             m_SceneHandler.LoadNextLevel();
             return;
-        } 
-       
+        }
+
         if (state == TileState.NonActive)
         {
             return;
@@ -154,17 +169,29 @@ public class Tile : MonoBehaviour
         MoveTileDown();
         UpdateState();
         SetActive();
-        
+
     }
 
     public void StepEnded()
     {
-            MoveTileUp();
+        MoveTileUp();
 
         if (state != TileState.NonActive)
         {
             SetNotActive();
         }
+
+
+        if (StartObjects.Length > 0)
+        {
+
+            for(int i = 0; i < StartObjects.Length; i++)
+            {
+
+            StartObjects[i].SetActive(false);
+            }
+        }
+
 
     }
 
@@ -189,27 +216,27 @@ public class Tile : MonoBehaviour
         switch (state)
         {
             case TileState.Solid:
-                currentMat= SolidMat;
+                currentMat = SolidMat;
                 StepsTaken = 0; break;
             case TileState.SmallDamage:
-                currentMat= SmallMat;
+                currentMat = SmallMat;
                 StepsTaken = 1; break;
             case TileState.MidDamage:
-                currentMat= MidMat;
+                currentMat = MidMat;
                 StepsTaken = 2; break;
             case TileState.VeryDamaged:
                 currentMat = VeryMat;
 
                 StepsTaken = 3; break;
             case TileState.MaxDamaged:
-                currentMat= MaxMat;
+                currentMat = MaxMat;
                 StepsTaken = 4; break;
             case TileState.NonActive:
-                currentMat= NonactiveMat;
+                currentMat = NonactiveMat;
                 StepsTaken = 69;
                 break;
             case TileState.SuperSolid:
-                currentMat= SuperSolidMat;
+                currentMat = SuperSolidMat;
                 StepsTaken = 69;
                 break;
             case TileState.Finish:
@@ -218,7 +245,7 @@ public class Tile : MonoBehaviour
                 break;
         }
 
-     //   hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
+        //   hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
     }
 
 
@@ -255,7 +282,7 @@ public class Tile : MonoBehaviour
         }
 
 
-       // hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
+        // hp = state == TileState.NonActive ? 0 : 5 - StepsTaken;
         MatRenderer.material = currentMat;
 
     }

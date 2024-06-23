@@ -900,6 +900,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &23710754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1632,6 +1633,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &31034091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4714,6 +4716,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &108217803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8117,6 +8120,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &197383930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8228,6 +8232,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &199066570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8606,6 +8611,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &204931672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9253,6 +9259,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &210437673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9490,6 +9497,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &216882522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14764,6 +14772,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &350145139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15888,6 +15897,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &383793772
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15999,6 +16009,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &385734959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20951,6 +20962,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &507284124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22767,6 +22779,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &564326509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22890,6 +22903,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &577500831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26410,6 +26424,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &659502583
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27531,6 +27546,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &680370313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31135,6 +31151,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &804183143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33449,6 +33466,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &877460829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33788,6 +33806,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &880125634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34323,6 +34342,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &893521244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35089,6 +35109,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &916879183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36541,6 +36562,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &961544362
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36992,6 +37014,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &978250798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37103,6 +37126,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &979958885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38200,6 +38224,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1019285458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40834,12 +40859,12 @@ PrefabInstance:
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.274
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
@@ -40943,6 +40968,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1074959080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43221,6 +43247,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1112753146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43628,6 +43655,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1129132903
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46051,6 +46079,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1186928934
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46737,6 +46766,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1200594913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47698,6 +47728,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1226919272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48739,6 +48770,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1243609512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50134,6 +50166,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1278816944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54158,6 +54191,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1394862406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55358,6 +55392,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1427456952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60396,6 +60431,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1557433473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62143,6 +62179,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1595637225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62427,6 +62464,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1603852224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62538,6 +62576,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1604277877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63608,6 +63647,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1633107325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63892,6 +63932,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1639365168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64003,6 +64044,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1640719873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66346,6 +66388,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1696560093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67432,6 +67475,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1734824191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68596,6 +68640,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1756339917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70451,6 +70496,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1801391568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70887,6 +70933,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1822997063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72278,6 +72325,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1857215897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72470,6 +72518,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1858472785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75517,6 +75566,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1931349573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76330,6 +76380,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1950670008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77353,6 +77404,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &1984638099
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79294,6 +79346,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &2028977108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79617,6 +79670,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &2042033174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80788,6 +80842,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &2086756514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81186,6 +81241,7 @@ MonoBehaviour:
   IsActive: 0
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
+  StartObjects: []
 --- !u!212 &2101760657
 SpriteRenderer:
   m_ObjectHideFlags: 0
