@@ -11,6 +11,7 @@ public class GameOverScreen : MonoBehaviour
     public SceneHandler m_SceneHandler;
     public GameObject Restart;
     public GameObject MainMenu;
+    public GameObject Text;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class GameOverScreen : MonoBehaviour
         IGMenu?.Pause();
         Restart.SetActive(true);
         MainMenu.SetActive(true);
+        Text.SetActive(true);
     }
 
     public void RestartButton()
