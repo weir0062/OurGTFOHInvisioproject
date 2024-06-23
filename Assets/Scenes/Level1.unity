@@ -39680,6 +39680,16 @@ PrefabInstance:
       propertyPath: CutsceneImages.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8963183977674794945, guid: 679c9271fbdb3384b809b56ce7c0b3d4,
+        type: 3}
+      propertyPath: CutsceneImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: b34bb9c6528483249955df3769b0e14e, type: 3}
+    - target: {fileID: 8963183977674794945, guid: 679c9271fbdb3384b809b56ce7c0b3d4,
+        type: 3}
+      propertyPath: CutsceneImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: e9bd182632416ad4eb2f606eeef5b756, type: 3}
     - target: {fileID: 8963183977674794946, guid: 679c9271fbdb3384b809b56ce7c0b3d4,
         type: 3}
       propertyPath: m_RootOrder

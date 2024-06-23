@@ -49478,12 +49478,12 @@ PrefabInstance:
         type: 3}
       propertyPath: CutsceneImages.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: 7ac8c48a08cacce418fe79e89bf0026d, type: 3}
+      objectReference: {fileID: 2800000, guid: 6ccea82328d01d247952a0b3c23af8f8, type: 3}
     - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
         type: 3}
       propertyPath: CutsceneImages.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 93e9c15428ee8604599fadcea659e9e2, type: 3}
+      objectReference: {fileID: 2800000, guid: cc64df3a5891ebc428e49404e63879b8, type: 3}
     - target: {fileID: 8963183977674794946, guid: b359912709187c342b5065e5075a1ac8,
         type: 3}
       propertyPath: m_RootOrder
