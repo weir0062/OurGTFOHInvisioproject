@@ -160,7 +160,7 @@ public class CameraController : MonoBehaviour
     void CalculateMaxZoom()
     {
         // Assume tiles are 1 unit in size, adjust if they are different
-        float tileSize = 1.5f;
+        float tileSize = 1.0f;
         if (tileController.tiles.GetLength(1) > 0)
         {
 
