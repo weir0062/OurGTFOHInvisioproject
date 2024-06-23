@@ -42,7 +42,7 @@ public class Tile : MonoBehaviour
     public SceneHandler m_SceneHandler;
     public TextMeshPro num;
     public GameObject[] StartObjects;
-
+    [HideInInspector] public GameObject Camera;
 
     // Start is called before the first frame update
     void Start()
@@ -289,7 +289,13 @@ public class Tile : MonoBehaviour
 
     private void Death()
     {
-        SceneManager.LoadScene("MainMenu");  // death, level not passed. Here we will open a menu asking whether you want to restart or go to main menu. 
+        GameOverScreen GOScreen = Camera.GetComponentInChildren<GameOverScreen>();
+        if (GOScreen != null)
+        {
+            GOScreen = GameObject.FindObjectOfType<GameOverScreen>();
+        }
+        GOScreen.TurnOnDeathMenu();
+        
         return;
     }
 }

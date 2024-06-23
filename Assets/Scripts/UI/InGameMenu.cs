@@ -17,10 +17,14 @@ public class InGameMenu : MonoBehaviour
     public GameObject Resume;
     public GameObject MainMenu;
     public GameObject Restart;
-
+    public SceneHandler m_SceneHandler;
     Slider slider;
     private void Awake()
     {
+        if (m_SceneHandler == null)
+        {
+            m_SceneHandler = GameObject.FindObjectOfType<SceneHandler>();
+        }
         // Ensure EventSystem exists
         if (FindObjectOfType<EventSystem>() == null)
         {
@@ -71,27 +75,30 @@ public class InGameMenu : MonoBehaviour
 
     public void TurnOnMenu()
     {
-        PauseButton.SetActive(false);
+        
         Resume.SetActive(true);
         MainMenu.SetActive(true);
         Restart.SetActive(true);
         Pause();
     }
 
-    void Pause()
+    public void Pause()
     {
         Time.timeScale = 0f;
         Cam.SetIsPaused(true);
+        PauseButton.SetActive(false);
+        ZoomSlider.SetActive(false);
     }
-    void UnPause()
+    public void UnPause()
     {
         Time.timeScale = 1f;
         Cam.SetIsPaused(false);
+        PauseButton.SetActive(true);
+        ZoomSlider.SetActive(true);
     }
 
     public void ResumeGame()
     {
-        PauseButton.SetActive(true);
         Resume.SetActive(false);
         MainMenu.SetActive(false);
         Restart.SetActive(false);
@@ -99,13 +106,11 @@ public class InGameMenu : MonoBehaviour
     }
     public void OpenMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        m_SceneHandler.LoadLevelAt(0);
     }
     public void RestartLevel()
     {
-
-        //restart the level through SceneManager
-       
+        m_SceneHandler.ReloadLevel(); //restart the level through SceneHandler
     }
     public void OnZoomSliderChanged()
     {

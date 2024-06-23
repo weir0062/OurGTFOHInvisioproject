@@ -93,21 +93,8 @@ public class CameraController : MonoBehaviour
         }
         CameraFocus();
 
-        if (camera.fieldOfView < MidZoomIn)
-        {
-            currentFocusObject = tileController.GetActiveTile().transform;
-            CameraFocus();
-        }
-        else
-        {
-            currentFocusObject = tileController.GetCentralTile().transform;
-
-        }
-
-
-        //float scroll = Input.GetAxis("Mouse ScrollWheel");
-        // CameraZoom(scroll);
-
+        currentFocusObject = tileController.GetActiveTile().transform;
+        tileController.GetActiveTile().Camera = this.gameObject;
 
     }
 
