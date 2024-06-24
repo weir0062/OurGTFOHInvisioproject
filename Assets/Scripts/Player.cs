@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public GameObject Indicator;
     Vector3 IndicatorPosition;
     public SoundManager soundManager;
+    public ScoreManager scoreManager;
     
      
     // Start is called before the first frame update
@@ -26,6 +27,9 @@ public class Player : MonoBehaviour
 
         if(soundManager == null)
             soundManager = FindObjectOfType<SoundManager>();
+        
+        if (scoreManager == null)
+            scoreManager = FindObjectOfType<ScoreManager>();
     }
 
 
@@ -52,7 +56,10 @@ public class Player : MonoBehaviour
                 MoveIndicator(ActiveTile); // Indicator movement animation to new tile 
                 ActiveTile.StepTaken(); // Take Step To new Tile 
 
+                if(scoreManager == null)
+                        scoreManager = FindObjectOfType<ScoreManager>();
 
+                scoreManager.CheckForCoin();
 
             } 
         }
@@ -130,6 +137,8 @@ public class Player : MonoBehaviour
                     }
                 }
             }
+
+            scoreManager.OnLevelStart();
         }
     }
 
@@ -145,6 +154,11 @@ public class Player : MonoBehaviour
     public void SetActiveTile(Tile newActiveTile)
     {
         ActiveTile = newActiveTile;
+    }
+
+    public Tile GetActiveTile()
+    {
+        return ActiveTile;
     }
 
     void Update()

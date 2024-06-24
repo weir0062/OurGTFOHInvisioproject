@@ -16,7 +16,7 @@ public class Fade : MonoBehaviour
     float PauseTimer = 0.0f;
 
 
-
+    public bool CutsceneThisLevel = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,11 @@ public class Fade : MonoBehaviour
 
 
         Darkness.color = new Color(0, 0, 0, FadeAmount);
+
+        if(CutsceneThisLevel == false)
+        {
+            FadeIn();
+        }
     }
 
     // Update is called once per frame

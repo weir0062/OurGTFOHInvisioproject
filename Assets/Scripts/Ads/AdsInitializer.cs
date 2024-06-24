@@ -106,5 +106,9 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
             musicManager.PlayMusicAfterAd();
         }
 
+        Fade fader  = GameObject.FindObjectOfType<Fade>();
+        if(fader.CutsceneThisLevel == false)
+            FindObjectOfType<Fade>().FadeIn();
+
     }
 }

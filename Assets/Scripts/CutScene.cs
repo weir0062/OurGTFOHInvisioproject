@@ -33,7 +33,6 @@ public class CutScene : MonoBehaviour
 
 
     InGameMenu menu;
-     public bool Skip = false;
 
     // Start is called before the first frame update
     void Start()
@@ -56,14 +55,6 @@ public class CutScene : MonoBehaviour
         menu.PauseButton.SetActive(false);
         menu.ZoomSlider.SetActive(false);
 
-        if(Skip == true)
-        {
-            IndependentFade.FadeIn();
-            this.gameObject.SetActive(false);
-            this.gameObject.SetActive(false);
-            menu.PauseButton.SetActive(true);
-            menu.ZoomSlider.SetActive(true);
-        }
     }
     // Update is called once per frame
     void Update()
