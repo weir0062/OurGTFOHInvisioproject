@@ -7,15 +7,12 @@ public class CameraController : MonoBehaviour
 {
 
     [SerializeField] bool ShouldZoom = true;
-    [SerializeField] float ZoomSpeed = 1f;
-    [SerializeField] float ZoomSensitivity = 6.9f;
     [SerializeField] TileController tileController;
     [SerializeField] Camera camera;
-    public float MaxZoomIn = 0;
-    public float MinZoomIn = 0;
-    float MidZoomIn = 0;
+    [HideInInspector] public float MinZoomIn;
+    [HideInInspector] public float MaxZoomIn;
     float defaultY = 0;
-    float focusSpeed = 6.9f * 1.5f;
+    float focusSpeed = 6.9f;
     private Transform oldFocusObject;
     public Transform currentFocusObject;
     private Vector3 CameraOffset;
@@ -26,6 +23,9 @@ public class CameraController : MonoBehaviour
         InitializeLevel();
         SetIsPaused(false);
         IsPaused = false;
+        MinZoomIn = 10;
+        MaxZoomIn = 30;
+        CameraZoom((MinZoomIn + MaxZoomIn)/2);
     }
     void OnEnable()
     {
@@ -70,11 +70,7 @@ public class CameraController : MonoBehaviour
             camera.orthographic = false;
 
         }
-        if (tileController)
-        {
-
-        }
-        CalculateMaxZoom();
+        
 
         defaultY = transform.position.y;
     }
@@ -116,8 +112,6 @@ public class CameraController : MonoBehaviour
     {
         if (camera)
         {
-            /*  camera.fieldOfView -= zoom/100 * ZoomSensitivity;
-              camera.fieldOfView = Mathf.Clamp(camera.fieldOfView, MinZoomIn, MaxZoomIn);*/
 
             camera.fieldOfView = zoom;
         }
@@ -127,7 +121,7 @@ public class CameraController : MonoBehaviour
         if (currentFocusObject != null)
         {
             // Calculate the target position. Adjust the Z coordinate as needed
-            Vector3 targetPosition = new Vector3(currentFocusObject.position.x,defaultY, currentFocusObject.position.z) - (CameraOffset / 2);
+            Vector3 targetPosition = new Vector3(currentFocusObject.position.x, defaultY, currentFocusObject.position.z) - (CameraOffset / 2);
 
             // Create a velocity vector to store the camera's velocity
             Vector3 velocity = Vector3.zero;
@@ -140,43 +134,12 @@ public class CameraController : MonoBehaviour
         }
     }
     public void CameraFocus(Transform focusObject)
-    {   
+    {
         oldFocusObject = currentFocusObject;
         currentFocusObject = focusObject;
         CameraOffset = (oldFocusObject.position - currentFocusObject.position).normalized;
         CameraFocus();
     }
 
-    void CalculateMaxZoom()
-    {
-        // Assume tiles are 1 unit in size, adjust if they are different
-        float tileSize = 1.0f;
-        if (tileController.tiles.GetLength(1) > 0)
-        {
-
-            float boardWidth = tileController.tiles.GetLength(0) * tileSize;
-            float boardHeight = tileController.tiles.GetLength(1) * tileSize;
-
-            // Calculate the vertical size needed to fit the board
-            float verticalSize = boardHeight / 2.0f;
-            float horizontalSize = boardWidth / (2.0f * camera.aspect);
-
-            // Set the max zoom to the larger of the two sizes, plus a little margin
-            MaxZoomIn = Mathf.Max(verticalSize, horizontalSize) * 1.69f; // 1.1f adds a 69% margin
-            MaxZoomIn = VerticalSizeToFOV(MaxZoomIn * 2, camera.transform.position.z - boardHeight / 2.0f);
-            MaxZoomIn *= MaxZoomIn < 0 ? -1 : 1;
-
-
-            MidZoomIn = MaxZoomIn * 0.8f;
-        }
-
-    }
-
-
-
-    float VerticalSizeToFOV(float size, float distance)
-    {
-        // Calculate the FOV needed to fit the size at the given distance
-        return 2.0f * Mathf.Atan(size / (2.0f * distance)) * Mathf.Rad2Deg;
-    }
+     
 }
