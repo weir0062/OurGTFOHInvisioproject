@@ -901,6 +901,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &23710754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1634,6 +1635,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &31034091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4717,6 +4719,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &108217803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5619,6 +5622,108 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 41cd78ce808542b40ba35850a0ab1a11, type: 3}
+--- !u!1 &135642899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135642903}
+  - component: {fileID: 135642902}
+  - component: {fileID: 135642901}
+  - component: {fileID: 135642900}
+  m_Layer: 5
+  m_Name: Canvas (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &135642900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135642899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &135642901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135642899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &135642902
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135642899}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!224 &135642903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135642899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1209595523}
+  m_Father: {fileID: 0}
+  m_RootOrder: 161
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &135707051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8121,6 +8226,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &197383930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8233,6 +8339,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &199066570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8612,6 +8719,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &204931672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9260,6 +9368,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &210437673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9498,6 +9607,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &216882522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14773,6 +14883,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &350145139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15898,6 +16009,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &383793772
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16010,6 +16122,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &385734959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20963,6 +21076,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &507284124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22780,6 +22894,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &564326509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22904,6 +23019,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &577500831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26425,6 +26541,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &659502583
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27547,6 +27664,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &680370313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29077,6 +29195,70 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1084706513}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &729741040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729741043}
+  - component: {fileID: 729741042}
+  - component: {fileID: 729741041}
+  m_Layer: 0
+  m_Name: Scene Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &729741041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4912ea47520d8bf489985e99cf8ef6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowSave: 1
+  AssignSaveId: 0
+  SaveId: d43aff94-f551-4ac1-b7fc-3592cf3dea6e
+--- !u!114 &729741042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66742f72ddf614b499ed2a2914f4c441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelID: 2
+  OwningLevelName: 
+  SaveFileName: TestSaveGame.sav
+  fader: {fileID: 0}
+--- !u!4 &729741043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729741040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.943098, y: 10.507562, z: -10.990926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 160
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &730594081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 320661578962884500, guid: 41cd78ce808542b40ba35850a0ab1a11,
@@ -31152,6 +31334,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &804183143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33467,6 +33650,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &877460829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33807,6 +33991,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &880125634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34343,6 +34528,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &893521244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35110,6 +35296,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &916879183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36563,6 +36750,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &961544362
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37015,6 +37203,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &978250798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37127,6 +37316,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &979958885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38225,6 +38415,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1019285458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40969,6 +41160,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1074959080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43248,6 +43440,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1112753146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43656,6 +43849,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1129132903
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46080,6 +46274,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1186928934
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46767,6 +46962,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1200594913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46922,6 +47118,167 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208180119}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1209595522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 135642903}
+    m_Modifications:
+    - target: {fileID: 3027866076798180758, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: Darkness
+      value: 
+      objectReference: {fileID: 1209595525}
+    - target: {fileID: 3027866076798180758, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: FadeAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.00024414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180762, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_Name
+      value: Fader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2d7ec310e8e0974985f7e83da6b2221, type: 3}
+--- !u!224 &1209595523 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3027866076798180761, guid: e2d7ec310e8e0974985f7e83da6b2221,
+    type: 3}
+  m_PrefabInstance: {fileID: 1209595522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1209595524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3027866076798180758, guid: e2d7ec310e8e0974985f7e83da6b2221,
+    type: 3}
+  m_PrefabInstance: {fileID: 1209595522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aace1ff50e332e4d9dcd0d5859850bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1209595525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3027866076798180760, guid: e2d7ec310e8e0974985f7e83da6b2221,
+    type: 3}
+  m_PrefabInstance: {fileID: 1209595522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1209776636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47729,6 +48086,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1226919272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48771,6 +49129,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1243609512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49503,6 +49862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
         type: 3}
+      propertyPath: IndependentFade
+      value: 
+      objectReference: {fileID: 1209595524}
+    - target: {fileID: 8963183977674794945, guid: b359912709187c342b5065e5075a1ac8,
+        type: 3}
       propertyPath: CutsceneImages.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -50167,6 +50531,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1278816944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54192,6 +54557,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1394862406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55393,6 +55759,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1427456952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60432,6 +60799,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1557433473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62180,6 +62548,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1595637225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62465,6 +62834,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1603852224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62577,6 +62947,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1604277877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63648,6 +64019,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1633107325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63933,6 +64305,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1639365168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64045,6 +64418,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1640719873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66389,6 +66763,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1696560093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67476,6 +67851,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1734824191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68641,6 +69017,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1756339917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70497,6 +70874,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1801391568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70934,6 +71312,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1822997063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72326,6 +72705,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1857215897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72519,6 +72899,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1858472785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75567,6 +75948,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1931349573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76381,6 +76763,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1950670008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77405,6 +77788,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &1984638099
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79347,6 +79731,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &2028977108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79671,6 +80056,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &2042033174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80843,6 +81229,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &2086756514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81242,6 +81629,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 0}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!212 &2101760657
 SpriteRenderer:
   m_ObjectHideFlags: 0
