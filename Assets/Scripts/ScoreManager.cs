@@ -36,7 +36,7 @@ public class ScoreManager : MonoBehaviour
         player = FindObjectOfType<Player>();
 
         if(endScreen== null)
-            Debug.Log("ScoreManager requuires a reference to the end screen. Please drag the end screen into the score manager inspector");
+            Debug.Log("ScoreManager requires a reference to the end screen. Please drag the end screen into the score manager inspector");
 
     }
 

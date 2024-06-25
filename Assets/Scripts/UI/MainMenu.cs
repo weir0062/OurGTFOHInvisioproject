@@ -90,7 +90,14 @@ public class MainMenu : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(0.5f); // Ensure any pending operations complete.
-        sceneHandler.LoadNextLevel();
+
+
+        //sceneHandler.LoadNextLevel(); -- not using save
+
+        //using save
+        sceneHandler.LoadLevelAt(sceneHandler.LevelID);
+        
+        
         //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level1");
         //while (!asyncLoad.isDone)
         //{
@@ -113,17 +120,31 @@ public class MainMenu : MonoBehaviour
         MusicController = MusicContObject.GetComponent<MusicController>();
         MusicController.SetMusicClip(MusicController.MenuMusicClip);
         MusicController.SetSFXClip(MusicController.MenuSFXClip);
+
+        //sceneHandler.Load(sceneHandler.SaveFileName);
     }
 
 
     public void PlayArcade()
     {
-        sceneHandler.LoadLevelAt(9);
+        sceneHandler.LoadLevelAt(11);
     }
     public void LevelsToArcadeMenu()
     {
         levelsMenu.SetActive(false);
         ArcadeMenu.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        sceneHandler.LoadLevelAt(1); // not using save
+        
+        //So this doesnt fucking with testing
+        ////using save
+        //if(sceneHandler.LevelID <= 0 || sceneHandler.LevelID > 10)
+        //    sceneHandler.LoadLevelAt(1);
+        //else
+        //    sceneHandler.LoadLevelAt(sceneHandler.LevelID);
     }
     public void OpenLevel1()
     {

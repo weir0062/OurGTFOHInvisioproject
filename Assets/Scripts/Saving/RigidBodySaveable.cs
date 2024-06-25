@@ -3,7 +3,8 @@ using System.Runtime.Serialization;
 using System.IO;
 
 //Put this component on objects that are raw physics objects that just need their rigid bodies serialized
-public class RigidBodySaveable : MonoBehaviour, Saveable
+public class RigidBody
+    : MonoBehaviour, Saveable
 {
     public void OnSave(Stream stream, IFormatter formatter)
     {
