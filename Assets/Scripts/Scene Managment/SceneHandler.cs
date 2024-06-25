@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
-public class SceneHandler : MonoBehaviour//, Saveable
+public class SceneHandler : MonoBehaviour, Saveable
 {
     public int LevelID = 0;
 
@@ -48,6 +48,8 @@ public class SceneHandler : MonoBehaviour//, Saveable
         }
 
         fader = FindObjectOfType<Fade>();
+
+        Load(SaveFileName);
     }
 
     // Start is called before the first frame update
@@ -55,16 +57,18 @@ public class SceneHandler : MonoBehaviour//, Saveable
     {
         DontDestroyOnLoad(this);
 
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F5))
+        if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             Save(SaveFileName);
         }
-        else if (Input.GetKeyDown(KeyCode.F9))
+        else if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             Load(SaveFileName);
         }
@@ -125,18 +129,18 @@ public class SceneHandler : MonoBehaviour//, Saveable
         SceneManager.LoadScene(LevelID);
     }
 
-    //public void OnSave(Stream stream, IFormatter formatter)
-    //{
-    //    formatter.Serialize(stream, LevelID);
-    //}
+    public void OnSave(Stream stream, IFormatter formatter)
+    {
+        formatter.Serialize(stream, LevelID);
+    }
+    
+    public void OnLoad(Stream stream, IFormatter formatter)
+    {
+        LevelID = (int)formatter.Deserialize(stream);
+        DebugUtils.Log("Level Id: {0}", LevelID);
+        //LoadLevelAt(LevelID);
 
-    //public void OnLoad(Stream stream, IFormatter formatter)
-    //{
-    //    LevelID = (int)formatter.Deserialize(stream);
-
-    //    LoadLevelAt(LevelID);
-
-    //}
+    }
 
     //This will search for a game object based on a save id.  This might end up being slow if 
     //there are a lot of objects in a scene.
@@ -186,7 +190,7 @@ public class SceneHandler : MonoBehaviour//, Saveable
         binaryFormatter.Serialize(file, SaveGameVersionNum);
 
         //Save Level 
-        binaryFormatter.Serialize(file, LevelID);
+        //binaryFormatter.Serialize(file, LevelID);
 
 
         //Save the objects
@@ -256,13 +260,13 @@ public class SceneHandler : MonoBehaviour//, Saveable
         DebugUtils.Log("Load file version number: {0}", versionNumber);
 
         //Level ID
-        LevelID = (int)m_LoadGameFormatter.Deserialize(m_LoadGameStream);
-        DebugUtils.Log("Level Id: {0}", LevelID);
+        //LevelID = (int)m_LoadGameFormatter.Deserialize(m_LoadGameStream);
+        //DebugUtils.Log("Level Id: {0}", LevelID);
 
         TransferingScenes = true;
 
-        LoadLevelAt(LevelID);
-
+        //LoadLevelAt(LevelID);
+        //m_LoadGameStream.Close();
 
     }
 
@@ -276,6 +280,7 @@ public class SceneHandler : MonoBehaviour//, Saveable
     //This callback gets called when a scene is done loading
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+
         if(TransferingScenes == true)
         {
             //This section will finish loading the save game.  We need to load the objects here since

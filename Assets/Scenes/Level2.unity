@@ -29205,7 +29205,6 @@ GameObject:
   m_Component:
   - component: {fileID: 729741043}
   - component: {fileID: 729741042}
-  - component: {fileID: 729741041}
   m_Layer: 0
   m_Name: Scene Handler
   m_TagString: Untagged
@@ -29213,21 +29212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &729741041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729741040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4912ea47520d8bf489985e99cf8ef6b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllowSave: 1
-  AssignSaveId: 0
-  SaveId: d43aff94-f551-4ac1-b7fc-3592cf3dea6e
 --- !u!114 &729741042
 MonoBehaviour:
   m_ObjectHideFlags: 0

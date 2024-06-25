@@ -10369,6 +10369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166462243}
   - component: {fileID: 1166462242}
+  - component: {fileID: 1166462244}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -10407,6 +10408,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1166462244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166462241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4912ea47520d8bf489985e99cf8ef6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowSave: 1
+  AssignSaveId: 0
+  SaveId: 9dc15381-652b-4058-aae3-de12d5104cf1
 --- !u!1 &1169558493
 GameObject:
   m_ObjectHideFlags: 0
@@ -16110,7 +16126,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1239564414}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: OpenLevel1
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

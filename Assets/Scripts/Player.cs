@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -30,8 +31,22 @@ public class Player : MonoBehaviour
         
         if (scoreManager == null)
             scoreManager = FindObjectOfType<ScoreManager>();
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneHandler sceneHandler = FindObjectOfType<SceneHandler>();
+
+        if (sceneHandler == null)
+            return;
+        
+        if(sceneHandler.LevelID <= 10 && sceneHandler.LevelID != 0)
+        {
+            sceneHandler.Save(sceneHandler.SaveFileName);
+        }
+    }
 
 
     public void TakeStep(Tile Newtile)
@@ -140,7 +155,11 @@ public class Player : MonoBehaviour
                 }
             }
 
-            scoreManager.OnLevelStart();
+            if(scoreManager == null)
+                scoreManager = FindObjectOfType<ScoreManager>();
+
+            if (scoreManager != null)
+                scoreManager.OnLevelStart();
         }
     }
 
