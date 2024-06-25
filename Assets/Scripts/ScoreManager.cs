@@ -25,6 +25,7 @@ public class ScoreManager : MonoBehaviour
     public int Score = 0;
     public bool LevelStarted = false;
     public  TextMeshProUGUI TimerText;
+    public GameObject endScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,9 @@ public class ScoreManager : MonoBehaviour
         Debug.Assert(enoughcoins, "The Score Manager is missing the coins. Please drag them into the script component. Please have them in order");
 
         player = FindObjectOfType<Player>();
+
+        if(endScreen== null)
+            Debug.Log("ScoreManager requuires a reference to the end screen. Please drag the end screen into the score manager inspector");
 
     }
 

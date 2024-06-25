@@ -149,7 +149,24 @@ public class Tile : MonoBehaviour
             //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
             //handler.LoadLevelAt(0);
             //SceneManager.LoadScene("MainMenu");
+            ScoreManager scoreManager = player.scoreManager;
+
+            if (scoreManager != null) // This check means "If we are in Arcade mode do X"
+            {
+                EndScreen endScreen = player.scoreManager.endScreen.GetComponent<EndScreen>();
+
+                if(endScreen == null)
+                    return;
+                
+                endScreen.gameObject.SetActive(true);
+                endScreen.DisplayScore();
+
+                return;
+            }
+            
             m_SceneHandler.LoadNextLevel();
+
+
             return;
         }
 

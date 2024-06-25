@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: SuperDream-ax3vE SDF
+  m_Name: SuperSeb
   m_EditorClassIdentifier: 
-  hashCode: -1407919493
+  hashCode: 1463807381
   material: {fileID: 456530123710407629}
-  materialHashCode: 554256635
+  materialHashCode: 1523222037
   m_Version: 1.1.0
   m_SourceFontFileGUID: 245b22e4ab896f34d9fc072e3c4471aa
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 245b22e4ab896f34d9fc072e3c4471aa,
@@ -1964,7 +1964,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - GLOW_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2009,26 +2010,26 @@ Material:
     - _ColorMask: 15
     - _CullMode: 0
     - _Diffuse: 0.5
-    - _FaceDilate: 0.035
+    - _FaceDilate: -0.23
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 0.05
+    - _GlowInner: 0.081
     - _GlowOffset: 0
-    - _GlowOuter: 0.05
+    - _GlowOuter: 0.246
     - _GlowPower: 0.75
     - _GradientScale: 10
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
-    - _OutlineSoftness: 0.294
+    - _OutlineSoftness: 0.062
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.69975
-    - _ScaleRatioC: 0.69975
+    - _ScaleRatioB: 0.93824995
+    - _ScaleRatioC: 0.93824995
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 1
@@ -2053,7 +2054,7 @@ Material:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}

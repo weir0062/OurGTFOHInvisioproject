@@ -59,7 +59,9 @@ public class Player : MonoBehaviour
                 if(scoreManager == null)
                         scoreManager = FindObjectOfType<ScoreManager>();
 
-                scoreManager.CheckForCoin();
+
+                if(scoreManager!= null)
+                    scoreManager.CheckForCoin();
 
             } 
         }
