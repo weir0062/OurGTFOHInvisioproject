@@ -2909,9 +2909,10 @@ RectTransform:
   m_GameObject: {fileID: 329712788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.58, y: 25.1, z: 14.388184}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_LocalScale: {x: 11.23, y: 30.571829, z: 17.524824}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1879394600}
   m_Father: {fileID: 1541805727}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14712,7 +14713,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 329712789}
-  - {fileID: 1879394600}
   - {fileID: 1812916421}
   - {fileID: 401850361}
   - {fileID: 2043668433}
@@ -18519,16 +18519,16 @@ RectTransform:
   m_GameObject: {fileID: 1879394599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 14.388182, y: 14.388183, z: 14.388183}
+  m_LocalScale: {x: 1.5605361, y: 0.5732344, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541805727}
+  m_Father: {fileID: 329712789}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 481.10037}
-  m_SizeDelta: {x: -1840, y: -470}
+  m_AnchoredPosition: {x: 0, y: -0.35455322}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879394601
 MonoBehaviour:
@@ -18550,9 +18550,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Breaking
+  m_text: 'Heavy
 
-    ground'
+    Heart'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c350e515f99f96244a357ff050e84731, type: 2}
   m_sharedMaterial: {fileID: 7527497798448719004, guid: c350e515f99f96244a357ff050e84731,
@@ -18580,8 +18580,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.43
-  m_fontSizeBase: 17.43
+  m_fontSize: 17.61
+  m_fontSizeBase: 17.61
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18590,7 +18590,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 40.2
+  m_characterSpacing: 27.28
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

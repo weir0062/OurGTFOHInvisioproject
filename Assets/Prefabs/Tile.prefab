@@ -63,6 +63,7 @@ MonoBehaviour:
   m_SceneHandler: {fileID: 0}
   num: {fileID: 2695923389875435477}
   StartObjects: []
+  Camera: {fileID: 0}
 --- !u!23 &657003792909127491
 MeshRenderer:
   m_ObjectHideFlags: 0
