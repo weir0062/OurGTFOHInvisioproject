@@ -89,7 +89,7 @@ public class ProgressTracker : MonoBehaviour, Saveable
                 LevelScores[AracdeLevelIndex].HighScore= score;
         }
 
-        //sceneHandler.Save(sceneHandler.SaveFileName);
+        sceneHandler.Save(sceneHandler.SaveFileName);
     }
 
     public void OnSave(Stream stream, IFormatter formatter)
