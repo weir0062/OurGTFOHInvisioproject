@@ -139,8 +139,6 @@ public class MainMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-        //sceneHandler.LoadLevelAt(1); // not using save
-
         //So this doesnt fucking with testing
         //using save
         if (sceneHandler.LevelID <= 0 || sceneHandler.LevelID > 10)
@@ -148,6 +146,8 @@ public class MainMenu : MonoBehaviour
         else
             sceneHandler.LoadLevelAt(sceneHandler.LevelID);
     }
+
+
     public void OpenLevel1()
     {
         //SceneManager.LoadSceneAsync("Level1");
