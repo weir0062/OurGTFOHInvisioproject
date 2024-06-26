@@ -150,25 +150,7 @@ public class Tile : MonoBehaviour
             //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
             //handler.LoadLevelAt(0);
             //SceneManager.LoadScene("MainMenu");
-            ScoreManager scoreManager = player.scoreManager;
-
-            if (scoreManager != null) // This check means "If we are in Arcade mode do X"
-            {
-                EndScreen endScreen = player.scoreManager.endScreen.GetComponent<EndScreen>();
-                ProgressTracker highscores = FindObjectOfType<ProgressTracker>();
-
-
-                if(endScreen == null)
-                    return;
-                
-                endScreen.gameObject.SetActive(true);
-                endScreen.DisplayScore();
-                
-                if (highscores != null)
-                    highscores.UpdateScore(scoreManager.Score);
-
-                return;
-            }
+           FinishedLevel();
             
             m_SceneHandler.LoadNextLevel();
 
@@ -195,6 +177,29 @@ public class Tile : MonoBehaviour
 
     }
 
+
+    public void FinishedLevel()
+    {
+        ScoreManager scoreManager = player.scoreManager;
+
+        if (scoreManager != null) // This check means "If we are in Arcade mode do X"
+        {
+            EndScreen endScreen = player.scoreManager.endScreen.GetComponent<EndScreen>();
+            ProgressTracker highscores = FindObjectOfType<ProgressTracker>();
+
+
+            if (endScreen == null)
+                return;
+
+            endScreen.gameObject.SetActive(true);
+            endScreen.DisplayScore();
+
+            if (highscores != null)
+                highscores.UpdateScore(scoreManager.Score);
+
+            return;
+        }
+    }
     public void StepEnded()
     {
         MoveTileUp();
@@ -321,6 +326,7 @@ public class Tile : MonoBehaviour
         {
             GOScreen = GameObject.FindObjectOfType<GameOverScreen>();
         }
+        FinishedLevel();
         GOScreen.TurnOnDeathMenu();
         
         return;

@@ -49,7 +49,7 @@ public class InGameMenu : MonoBehaviour
     public void ButtonClick()
     {
         //MusicController.PlaySFXSound();
-        soundManager.PlayClickSound();
+        soundManager?.PlayClickSound();
 
     }
 

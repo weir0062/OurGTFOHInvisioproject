@@ -53,7 +53,7 @@ public class GameOverScreen : MonoBehaviour
     {
         InGameMenu IGMenu = GameObject.FindObjectOfType<InGameMenu>();
         IGMenu?.UnPause();
-        m_SceneHandler.ReloadLevel();
+        m_SceneHandler.LoadLevelAt(m_SceneHandler.LevelID);
     }
 
     public void ExitButton()
