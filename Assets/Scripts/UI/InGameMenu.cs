@@ -109,11 +109,24 @@ public class InGameMenu : MonoBehaviour
     }
     public void OpenMainMenu()
     {
+
         m_SceneHandler.LoadLevelAt(0);
+       
+        Time.timeScale = 1f;
+        Cam.SetIsPaused(false);
+
+        PauseButton.SetActive(false);
+        ZoomSlider.SetActive(false);
     }
     public void RestartLevel()
     {
-        m_SceneHandler.ReloadLevel(); //restart the level through SceneHandler
+
+        m_SceneHandler.LoadLevelAt(m_SceneHandler.LevelID);//restart the level through SceneHandler
+        Time.timeScale = 1f;
+        Cam.SetIsPaused(false);
+
+        PauseButton.SetActive(false);
+        ZoomSlider.SetActive(false);
     }
     public void OnZoomSliderChanged()
     {
