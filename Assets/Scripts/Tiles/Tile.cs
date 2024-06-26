@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -311,6 +312,10 @@ public class Tile : MonoBehaviour
 
     private void Death()
     {
+
+        if(Camera == null) {
+        Camera = GameObject.FindObjectOfType<CameraController>().gameObject;
+        }
         GameOverScreen GOScreen = Camera.GetComponentInChildren<GameOverScreen>();
         if (GOScreen != null)
         {
