@@ -129,16 +129,61 @@ public class SceneHandler : MonoBehaviour, Saveable
         SceneManager.LoadScene(LevelID);
     }
 
+    private int savedLevelID = 0;
+
     public void OnSave(Stream stream, IFormatter formatter)
     {
-        formatter.Serialize(stream, LevelID);
+        //formatter.Serialize(stream, LevelID);
+
+        // Save only if the current level is a valid story level
+        if (LevelID >= 1 && LevelID <= 10)
+        {
+            savedLevelID = LevelID;
+            formatter.Serialize(stream, true); // Indicate a valid LevelID was saved
+            formatter.Serialize(stream, savedLevelID);
+        }
+        else if (savedLevelID >= 1 && savedLevelID <= 10)
+        {
+            formatter.Serialize(stream, true); // Indicate a valid LevelID was previously saved
+            formatter.Serialize(stream, savedLevelID);
+        }
+        else
+        {
+            formatter.Serialize(stream, false); // Indicate no valid LevelID was saved
+        }
     }
     
     public void OnLoad(Stream stream, IFormatter formatter)
     {
-        LevelID = (int)formatter.Deserialize(stream);
-        DebugUtils.Log("Level Id: {0}", LevelID);
-        //LoadLevelAt(LevelID);
+        try
+        {
+            if (stream.Length == 0)
+            {
+                throw new SerializationException("Stream is empty.");
+            }
+
+            bool isValid = (bool)formatter.Deserialize(stream);
+            if (isValid)
+            {
+                savedLevelID = (int)formatter.Deserialize(stream);
+                LevelID = savedLevelID;
+                DebugUtils.Log("Level Id: {0}", LevelID);
+                // LoadLevelAt(LevelID);
+            }
+            else
+            {
+                Debug.Log("No valid Level Id was saved.");
+                // Handle the case where no valid LevelID was saved, if needed
+            }
+        }
+        catch (SerializationException ex)
+        {
+            Debug.Log("Deserialization failed: " + ex.Message);
+            // Handle the deserialization error as needed
+        }
+        //LevelID = (int)formatter.Deserialize(stream);
+        //DebugUtils.Log("Level Id: {0}", LevelID);
+        ////LoadLevelAt(LevelID);
 
     }
 
@@ -167,7 +212,7 @@ public class SceneHandler : MonoBehaviour, Saveable
 
     void OnGUI()
     {
-        GUI.Label(new Rect(5, 5, 3000, 40), "Fade In: F2, Fade Out: F3, Save Game: F5, Load Game: F9");
+        //GUI.Label(new Rect(5, 5, 3000, 40), "Fade In: F2, Fade Out: F3, Save Game: F5, Load Game: F9");
     }
 
 

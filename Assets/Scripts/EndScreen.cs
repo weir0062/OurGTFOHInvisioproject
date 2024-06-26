@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
+
+
 public class EndScreen : MonoBehaviour
 {
     public List<RawImage> CoinImages;
@@ -74,32 +76,39 @@ public class EndScreen : MonoBehaviour
             scoreManager.Score++;
         }
 
-        char ScoreLetter = 'D';
-
-        if (scoreManager.Score == 0)
-        {
-            ScoreLetter = 'D';
-        }
-        else if(scoreManager.Score ==1)
-        {
-            ScoreLetter = 'C';
-        }
-        else if(scoreManager.Score ==2)
-        {
-            ScoreLetter = 'B';
-        }
-        else if(scoreManager.Score ==3)
-        {
-            ScoreLetter = 'A';
-        }
-        else if(scoreManager.Score ==4)
-        {
-            ScoreLetter = 'S';
-        }
+        char ScoreLetter = ConvertScoreToLetter(scoreManager.Score);
 
         Score.text = ScoreLetter.ToString();
 
 
+    }
+
+    public static char ConvertScoreToLetter(int score)
+    {
+        char ScoreLetter = 'D';
+
+        if (score == 0)
+        {
+            ScoreLetter = 'D';
+        }
+        else if (score == 1)
+        {
+            ScoreLetter = 'C';
+        }
+        else if (score == 2)
+        {
+            ScoreLetter = 'B';
+        }
+        else if (score == 3)
+        {
+            ScoreLetter = 'A';
+        }
+        else if (score == 4)
+        {
+            ScoreLetter = 'S';
+        }
+
+        return ScoreLetter;
     }
 
     // Update is called once per frame

@@ -154,12 +154,17 @@ public class Tile : MonoBehaviour
             if (scoreManager != null) // This check means "If we are in Arcade mode do X"
             {
                 EndScreen endScreen = player.scoreManager.endScreen.GetComponent<EndScreen>();
+                ProgressTracker highscores = FindObjectOfType<ProgressTracker>();
+
 
                 if(endScreen == null)
                     return;
                 
                 endScreen.gameObject.SetActive(true);
                 endScreen.DisplayScore();
+                
+                if (highscores != null)
+                    highscores.UpdateScore(scoreManager.Score);
 
                 return;
             }

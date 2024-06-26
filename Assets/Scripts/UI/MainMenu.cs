@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,7 @@ public class MainMenu : MonoBehaviour
     SceneHandler sceneHandler;
     public SoundManager soundManager;
 
+    public List<TextMeshProUGUI> LevelScoreTexts;
     void Start()
     {
         sceneHandler = FindObjectOfType<SceneHandler>();
@@ -137,14 +139,14 @@ public class MainMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-        sceneHandler.LoadLevelAt(1); // not using save
-        
+        //sceneHandler.LoadLevelAt(1); // not using save
+
         //So this doesnt fucking with testing
-        ////using save
-        //if(sceneHandler.LevelID <= 0 || sceneHandler.LevelID > 10)
-        //    sceneHandler.LoadLevelAt(1);
-        //else
-        //    sceneHandler.LoadLevelAt(sceneHandler.LevelID);
+        //using save
+        if (sceneHandler.LevelID <= 0 || sceneHandler.LevelID > 10)
+            sceneHandler.LoadLevelAt(1);
+        else
+            sceneHandler.LoadLevelAt(sceneHandler.LevelID);
     }
     public void OpenLevel1()
     {
