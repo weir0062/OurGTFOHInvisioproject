@@ -160,13 +160,13 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.527
+    m_Value: 0.513
   response:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.516
   texture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
