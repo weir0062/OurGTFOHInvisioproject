@@ -2909,8 +2909,8 @@ RectTransform:
   m_GameObject: {fileID: 329712788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.23, y: 30.571829, z: 17.524824}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 13.146653, y: 21.089243, z: 20.515833}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1879394600}
   m_Father: {fileID: 1541805727}
@@ -2918,7 +2918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 490.0002}
+  m_AnchoredPosition: {x: -0.8245, y: 392}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329712790
@@ -11235,6 +11235,8 @@ MonoBehaviour:
   OwningLevelName: 
   SaveFileName: TestSaveGame.sav
   fader: {fileID: 0}
+  LevelReturnedFrom: 0
+  Returning: 0
 --- !u!4 &1166462243
 Transform:
   m_ObjectHideFlags: 0
@@ -18519,7 +18521,7 @@ RectTransform:
   m_GameObject: {fileID: 1879394599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5605361, y: 0.5732344, z: 1}
+  m_LocalScale: {x: 1.43726, y: 0.8959622, z: 0.9210042}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 329712789}
@@ -18527,7 +18529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.35455322}
+  m_AnchoredPosition: {x: 0.36698914, y: -0.8005371}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879394601
@@ -18550,9 +18552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Heavy
-
-    Heart'
+  m_text: Heavy Heart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c350e515f99f96244a357ff050e84731, type: 2}
   m_sharedMaterial: {fileID: 7527497798448719004, guid: c350e515f99f96244a357ff050e84731,
@@ -18590,7 +18590,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 27.28
+  m_characterSpacing: -1.51
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
