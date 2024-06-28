@@ -19,13 +19,29 @@ public class ProgressTracker : MonoBehaviour, Saveable
     public MainMenu mainMenu;
     public int NumberOfScenesBeforeArcade = 10;
     public SceneHandler sceneHandler;
+
+    public static ProgressTracker Instance;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
-        for(int i = 0; i < 10; i++)
+        if (Instance == null)
         {
-            LevelScores.Add(new LevelProgress { HighScore = 0 });
+            //This tells unity not to delete the object when you load another scene
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        if (LevelScores.Count <= 0)
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                LevelScores.Add(new LevelProgress { HighScore = 0 });
+            }
         }
 
         mainMenu = FindObjectOfType<MainMenu>();

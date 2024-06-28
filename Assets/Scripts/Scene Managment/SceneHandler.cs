@@ -27,6 +27,11 @@ public class SceneHandler : MonoBehaviour, Saveable
 
     public Fade fader;
 
+    AdsInitializer ads;
+
+    public int LevelReturnedFrom = 0;
+
+    public bool Returning = false;
     void Awake()
     {
         //This is similar to a singleton in that it only allows one instance to exist and there is instant global 
@@ -58,7 +63,7 @@ public class SceneHandler : MonoBehaviour, Saveable
         DontDestroyOnLoad(this);
 
 
-
+        ads = FindObjectOfType<AdsInitializer>();
     }
 
     // Update is called once per frame
@@ -120,7 +125,7 @@ public class SceneHandler : MonoBehaviour, Saveable
         LevelID = level;
         yield return SceneManager.LoadSceneAsync(LevelID);
 
-        yield return StartCoroutine(fader.FadeInCoroutine());
+        //yield return StartCoroutine(fader.FadeInCoroutine());
     }
 
     public void GoBackALevel()
@@ -315,6 +320,8 @@ public class SceneHandler : MonoBehaviour, Saveable
 
     }
 
+
+
     //A helper function to create the save path.  This uses the persistentDataPath, which will be a safe place
     //to store data on a user's machine without errors.
     string GetSaveFilePath(string fileName)
@@ -328,6 +335,7 @@ public class SceneHandler : MonoBehaviour, Saveable
 
         if(TransferingScenes == true)
         {
+
             //This section will finish loading the save game.  We need to load the objects here since
 
             //Get number of objects to load  //continue loading from stream of open file
@@ -364,6 +372,16 @@ public class SceneHandler : MonoBehaviour, Saveable
 
 
         }
+
+        if (LevelID > 1 && ads != null)
+            ads.LoadInerstitialAd();
+
+        if(LevelID == 0 && Returning == true)
+        {
+            LevelID = LevelReturnedFrom;
+        }
+
+
         TransferingScenes = false;
     }
 

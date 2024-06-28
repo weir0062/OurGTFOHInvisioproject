@@ -40,7 +40,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
         
 
         //this should be the call that actually starts an ad
-        LoadInerstitialAd();
+        //LoadInerstitialAd();
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
@@ -110,5 +110,10 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
         if(fader.CutsceneThisLevel == false)
             FindObjectOfType<Fade>().FadeIn();
 
+    }
+
+    public void Start()
+    {
+        DontDestroyOnLoad(this);
     }
 }
