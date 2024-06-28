@@ -26283,7 +26283,7 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.7894
+      value: 19.783527
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -26293,32 +26293,32 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 41.011703
+      value: 41.01429
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.6575341
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.65753406
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.26009423
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.26009417
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -26328,7 +26328,7 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 43.164
       objectReference: {fileID: 0}
     - target: {fileID: 6877491033567833556, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -39336,6 +39336,11 @@ PrefabInstance:
       propertyPath: CutsceneImages.Array.data[1]
       value: 
       objectReference: {fileID: 2800000, guid: 95ada7acca655174abb895d11e1df797, type: 3}
+    - target: {fileID: 8963183977674794945, guid: 679c9271fbdb3384b809b56ce7c0b3d4,
+        type: 3}
+      propertyPath: CutsceneImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 5cf03c5f70080a8458ffc42d6c348b76, type: 3}
     - target: {fileID: 8963183977674794946, guid: 679c9271fbdb3384b809b56ce7c0b3d4,
         type: 3}
       propertyPath: m_RootOrder

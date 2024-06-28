@@ -96,8 +96,8 @@ public class MusicManager : MonoBehaviour
             audioSorce.clip = Songs[sceneHandler.LevelID];
             audioSorce.Play();
         }
-        
-        if(sceneHandler.LevelID == 0) 
+
+        if (sceneHandler.LevelID == 0 || sceneHandler.LevelID == 1)
         {
             audioSorce.volume = Volume;
             audioSorce.clip = Songs[sceneHandler.LevelID];
