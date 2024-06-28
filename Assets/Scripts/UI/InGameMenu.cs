@@ -109,7 +109,8 @@ public class InGameMenu : MonoBehaviour
     }
     public void OpenMainMenu()
     {
-
+        m_SceneHandler.LevelReturnedFrom = m_SceneHandler.LevelID;
+        m_SceneHandler.Returning = true;
         m_SceneHandler.LoadLevelAt(0);
        
         Time.timeScale = 1f;

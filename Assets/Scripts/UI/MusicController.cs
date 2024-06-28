@@ -51,15 +51,17 @@ public class MusicController : MonoBehaviour
     {
         if (instance == null)
         {
-            instance = this;
             DontDestroyOnLoad(gameObject); // Keep this GameObject across scenes
+            instance = this;
             UpdateSettings(); // Initialize settings from the scene.
+            this.gameObject.SetActive(false);
         }
-        else if (instance != this)
+        else
         {
             Destroy(gameObject); // Destroy if another instance is already there.
             return;
         }
+
     }
 
 
@@ -75,7 +77,12 @@ public class MusicController : MonoBehaviour
 
     public void ChangeMusicVolume()
     {
+        if(MusicvolumeSlider == null)
+            UpdateSettings();
+
         musicSource.volume = MusicvolumeSlider.value;
+
+        SaveSettings();
     }
     public void ChangeSFXVolume()
     {
@@ -96,14 +103,17 @@ public class MusicController : MonoBehaviour
 
         //music
         MusicvolumeSlider = MusicSlider.GetComponent<Slider>();
-        MusicvolumeSlider.value = 50;
+        MusicvolumeSlider.normalizedValue = 0.5f;
         musicSource.volume = MusicvolumeSlider.value;
 
         //sfx
         SFXvolumeSlider = SFXSlider.GetComponent<Slider>();
-        SFXvolumeSlider.value = 50;
+        SFXvolumeSlider.normalizedValue = 0.5f;
         SFXSource.volume = SFXvolumeSlider.value;
+
+        SaveSettings();
     }
+
     public void PlaySFXSound()
     {
 
@@ -141,7 +151,7 @@ public class MusicController : MonoBehaviour
         }
         if (musicSource == null || musicSource.clip == null)
         {
-            musicSource = GameObject.Find("Music").GetComponent<AudioSource>();
+            musicSource = GameObject.Find("MusicManager").GetComponent<AudioSource>();
 
         }
         musicSource.clip = clip;

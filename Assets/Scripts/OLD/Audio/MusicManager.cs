@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MusicManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class MusicManager : MonoBehaviour
     [SerializeField] float Volume;
     [SerializeField] bool PlayOnAwake;
     [SerializeField] bool Loop;
+    [SerializeField] Slider MusicSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,16 @@ public class MusicManager : MonoBehaviour
         
 
         SceneManager.sceneLoaded += PlayMusic;
-        audioSorce.clip = Songs[sceneHandler.LevelID];
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            audioSorce.volume = Volume;
+            audioSorce.clip = Songs[0];
+        }
+        else
+        {
+            audioSorce.clip = Songs[sceneHandler.LevelID];
+        }
 
 
 
@@ -72,7 +83,11 @@ public class MusicManager : MonoBehaviour
             audioSorce.Play();
         }
 
+        if (MusicSlider == null)
+            MusicSlider = GameObject.Find("SliderMusic").GetComponent<Slider>();
 
+        if(MusicSlider != null)
+            MusicSlider.normalizedValue = Volume;
 
     }
 
@@ -85,10 +100,60 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    public void OnSliderChanged(float value)
+    {
+        Volume = value;
+        audioSorce.volume = Volume;
+    }
+
+    public void OnSliderChanged()
+    {
+        Volume = MusicSlider.value;
+        audioSorce.volume = Volume;
+    }
+
+    public void CheckForMainMenu()
+    {
+        StartCoroutine(WaitAndFind(0.3f));
+    }
+
+    public IEnumerator WaitAndFind(float waitTime)
+    {
+        // Print message before waiting
+        Debug.Log("Waiting for " + waitTime + " seconds...");
+
+        // Wait for the specified time
+        yield return new WaitForSeconds(waitTime);
+
+        // Print message after waiting
+        Debug.Log("Waited for " + waitTime + " seconds, now continuing...");
+
+        // Continue with the rest of your code here
+        // ...
+
+
+        ReferenceHolder obj = FindObjectOfType<ReferenceHolder>();
+
+        if(obj != null)
+        {
+            Slider temp = obj.MusicSliderRef;
+            if (temp != null)
+            {
+                temp.value = Volume;
+            }
+
+        }
+
+
+
+    }
+
     //gets called when a scene is loaded, however if there is an add initilizer it wont go off until the ad is complete=
     public void PlayMusic(Scene scene, LoadSceneMode mode)
     {
         audioSorce.Stop();
+
+        CheckForMainMenu();
 
         if (GameObject.FindObjectOfType<AdsInitializer>() == null)
         {
@@ -101,6 +166,14 @@ public class MusicManager : MonoBehaviour
         {
             audioSorce.volume = Volume;
             audioSorce.clip = Songs[sceneHandler.LevelID];
+            audioSorce.Play();
+            return;
+        }
+
+        if(SceneManager.GetActiveScene().buildIndex == 0) 
+        {
+            audioSorce.volume = Volume;
+            audioSorce.clip = Songs[0];
             audioSorce.Play();
         }
     }

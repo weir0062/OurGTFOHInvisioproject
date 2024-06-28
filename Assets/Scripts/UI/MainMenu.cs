@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsMenu2;
     public GameObject supportMenu;
     public GameObject MusicContObject;
-    private MusicController MusicController;
+    private MusicManager MusicController;
 
     SceneHandler sceneHandler;
     public SoundManager soundManager;
@@ -67,6 +67,8 @@ public class MainMenu : MonoBehaviour
     }
     public void ButtonClick()
     {
+        if (soundManager == null)
+            soundManager = FindObjectOfType<SoundManager>();
         //MusicController.PlaySFXSound();
         soundManager.PlayClickSound();
 
@@ -85,8 +87,6 @@ public class MainMenu : MonoBehaviour
 
     public void OpenGameScene()
     {
-        MusicController.SetSFXClip(MusicController.GameSFXClip);
-        MusicController.SetMusicClip(MusicController.GameMusicClip);
         StartCoroutine(StartGame());
     }
     IEnumerator StartGame()
@@ -118,10 +118,6 @@ public class MainMenu : MonoBehaviour
         creditsMenu.SetActive(false);
         creditsMenu2.SetActive(false);
         supportMenu.SetActive(false);
-
-        MusicController = MusicContObject.GetComponent<MusicController>();
-        MusicController.SetMusicClip(MusicController.MenuMusicClip);
-        MusicController.SetSFXClip(MusicController.MenuSFXClip);
 
         //sceneHandler.Load(sceneHandler.SaveFileName);
     }
