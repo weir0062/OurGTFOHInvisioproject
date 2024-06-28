@@ -32,6 +32,7 @@ public class SceneHandler : MonoBehaviour, Saveable
     public int LevelReturnedFrom = 0;
 
     public bool Returning = false;
+
     void Awake()
     {
         //This is similar to a singleton in that it only allows one instance to exist and there is instant global 
@@ -383,6 +384,28 @@ public class SceneHandler : MonoBehaviour, Saveable
 
 
         TransferingScenes = false;
+    }
+
+    public void LongSave()
+    {
+        StartCoroutine(WaitAndSave(1.0f));
+    }
+
+    public IEnumerator WaitAndSave(float waitTime)
+    {
+        // Print message before waiting
+        Debug.Log("Waiting for " + waitTime + " seconds...");
+
+        // Wait for the specified time
+        yield return new WaitForSeconds(waitTime);
+
+        // Print message after waiting
+        Debug.Log("Waited for " + waitTime + " seconds, now continuing...");
+
+        // Continue with the rest of your code here
+        // ...
+        Save(SaveFileName);
+
     }
 
     BinaryFormatter m_LoadGameFormatter;

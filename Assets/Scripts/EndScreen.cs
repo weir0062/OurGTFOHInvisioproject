@@ -72,7 +72,7 @@ public class EndScreen : MonoBehaviour
         }
         else if(scoreManager.TimeElpased < scoreManager.TimeToBeat)
         {
-            PlayerTime.color = Color.black;
+            PlayerTime.color = Color.white;
             scoreManager.Score++;
         }
 

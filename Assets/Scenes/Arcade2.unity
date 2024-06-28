@@ -15889,6 +15889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArcadeUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2774656154658297108, guid: 38dbd05b09df21b47a67429ba91e4d58,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38dbd05b09df21b47a67429ba91e4d58, type: 3}
@@ -29413,6 +29418,8 @@ MonoBehaviour:
   OwningLevelName: 
   SaveFileName: TestSaveGame.sav
   fader: {fileID: 140475806}
+  LevelReturnedFrom: 0
+  Returning: 0
 --- !u!4 &729741043
 Transform:
   m_ObjectHideFlags: 0

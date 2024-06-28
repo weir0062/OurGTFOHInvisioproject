@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
         
         if(sceneHandler.LevelID <= 10 && sceneHandler.LevelID != 0)
         {
-            //sceneHandler.Save(sceneHandler.SaveFileName);
+            sceneHandler.LongSave();
         }
     }
 

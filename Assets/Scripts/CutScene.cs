@@ -34,6 +34,9 @@ public class CutScene : MonoBehaviour
 
     InGameMenu menu;
 
+    public bool EndCutScene = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +114,19 @@ public class CutScene : MonoBehaviour
 
             if (CurrentImage >= CutsceneImages.Count)
             {
+                if(EndCutScene == true)
+                {
+                    SceneHandler sceneHandler = FindObjectOfType<SceneHandler>();
+
+                    sceneHandler.LevelID = 1;
+
+                    sceneHandler.Save(sceneHandler.SaveFileName);
+
+                    sceneHandler.LoadLevelAt(0);
+
+                    return;
+                }
+
                 IndependentFade.FadeIn();
                 this.gameObject.SetActive(false);
                 menu.PauseButton.SetActive(true);
@@ -127,4 +143,5 @@ public class CutScene : MonoBehaviour
         }
 
     }
+
 }

@@ -143,6 +143,21 @@ public class Tile : MonoBehaviour
         transform.localPosition = initialPosition;
     }
 
+    IEnumerator WaitAndContinue(float waitTime)
+    {
+        // Print message before waiting
+        Debug.Log("Waiting for " + waitTime + " seconds...");
+
+        // Wait for the specified time
+        yield return new WaitForSeconds(waitTime);
+
+        // Print message after waiting
+        Debug.Log("Waited for " + waitTime + " seconds, now continuing...");
+
+        // Continue with the rest of your code here
+        // ...
+    }
+
     public void StepTaken()
     {
         if (state == TileState.Finish) // level end, level passed. Here we will add moving on to the next level 
@@ -150,8 +165,33 @@ public class Tile : MonoBehaviour
             //SceneHandler handler = GameObject.FindObjectOfType<SceneHandler>();
             //handler.LoadLevelAt(0);
             //SceneManager.LoadScene("MainMenu");
+            if(m_SceneHandler.LevelID == 10) 
+            {
+                GameObject temp = GameObject.FindGameObjectWithTag("YourMom");
+                //Bring up end cutscene
+                if(temp != null) 
+                {
+                    temp.transform.GetChild(0).gameObject.SetActive(true);
+                }
+
+                return;
+
+            }
+
+            if(m_SceneHandler.LevelID == 20)
+            {
+                //NOT SURE IF THIS IS NEEDED
+                //m_SceneHandler.Save(m_SceneHandler.SaveFileName);
+
+                m_SceneHandler.LoadLevelAt(0);
+
+                return;
+            }
+
            FinishedLevel();
-            
+
+           //StartCoroutine(WaitAndContinue(2.5f));
+           
             m_SceneHandler.LoadNextLevel();
 
 
