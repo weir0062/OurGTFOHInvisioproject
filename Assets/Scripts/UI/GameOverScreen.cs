@@ -61,8 +61,8 @@ public class GameOverScreen : MonoBehaviour
         InGameMenu IGMenu = GameObject.FindObjectOfType<InGameMenu>();
         IGMenu?.UnPause();
         m_SceneHandler.LevelReturnedFrom = m_SceneHandler.LevelID;
-        m_SceneHandler.LoadLevelAt(0);
         m_SceneHandler.Returning = true;
+        m_SceneHandler.LoadLevelAt(0);
     }
 
 }

@@ -151,7 +151,7 @@ public class MainMenu : MonoBehaviour
     public void OpenLevel1()
     {
         //SceneManager.LoadSceneAsync("Level1");
-        sceneHandler.LoadLevelAt(1);
+        sceneHandler.LoadLevelAt(11);
 
         Time.timeScale = 1f;
     }
@@ -159,56 +159,56 @@ public class MainMenu : MonoBehaviour
     public void OpenLevel2()
     {
         //SceneManager.LoadSceneAsync("Level2");
-        sceneHandler.LoadLevelAt(2);
+        sceneHandler.LoadLevelAt(12);
 
     }
 
     public void OpenLevel3()
     {
         //SceneManager.LoadSceneAsync("Level3");
-        sceneHandler.LoadLevelAt(3);
+        sceneHandler.LoadLevelAt(13);
 
     }
     public void OpenLevel4()
     {
         //SceneManager.LoadSceneAsync("Level4");
-        sceneHandler.LoadLevelAt(4);
+        sceneHandler.LoadLevelAt(14);
 
     }
     public void OpenLevel5()
     {
         //SceneManager.LoadSceneAsync("Level5");
-        sceneHandler.LoadLevelAt(5);
+        sceneHandler.LoadLevelAt(15);
 
     }
     public void OpenLevel6()
     {
         //SceneManager.LoadSceneAsync("Level6");
-        sceneHandler.LoadLevelAt(6);
+        sceneHandler.LoadLevelAt(16);
 
     }
     public void OpenLevel7()
     {
         //SceneManager.LoadSceneAsync("Level7");
-        sceneHandler.LoadLevelAt(7);
+        sceneHandler.LoadLevelAt(17);
 
     }
     public void OpenLevel8()
     {
         //SceneManager.LoadSceneAsync("Level8");
-        sceneHandler.LoadLevelAt(8);
+        sceneHandler.LoadLevelAt(18);
 
     }
     public void OpenLevel9()
     {
         //SceneManager.LoadSceneAsync("Level69");
-        sceneHandler.LoadLevelAt(9);
+        sceneHandler.LoadLevelAt(19);
 
     }
     public void OpenLevel10()
     {
         //SceneManager.LoadSceneAsync("Level10");
-        sceneHandler.LoadLevelAt(10);
+        sceneHandler.LoadLevelAt(20);
 
     }
     // Update is called once per frame
