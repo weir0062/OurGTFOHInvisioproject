@@ -12190,8 +12190,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292584267}
   m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0, z: 0.28208882}
-  m_LocalScale: {x: 0.057473477, y: 0.057473477, z: 0.013786371}
+  m_LocalPosition: {x: 0, y: 0, z: 9.77}
+  m_LocalScale: {x: 0.0427413, y: 0.0427413, z: 0.01025251}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1187532927}
@@ -12200,7 +12200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.3349142, y: 5.204998}
+  m_AnchoredPosition: {x: 5.21, y: 5.204998}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292584269
@@ -12215,7 +12215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbbde4c49d46824ba1656f24c442334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinSound: {fileID: 8300000, guid: 1f173442e579aec4b8199b2cfa98e586, type: 3}
+  CoinSound: {fileID: 8300000, guid: b3f181326498a114090793715c1def7a, type: 3}
   CoinLocation: {x: 0, y: 0}
   Collected: 0
   audioSource: {fileID: 0}
@@ -26901,7 +26901,7 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.7894
+      value: 19.783854
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -26911,32 +26911,32 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 41.011703
+      value: 41.014008
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.66395825
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.6639583
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.24322712
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.24322715
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -26946,7 +26946,7 @@ PrefabInstance:
     - target: {fileID: 6069182159045719918, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 40.239
       objectReference: {fileID: 0}
     - target: {fileID: 6877491033567833556, guid: ec82eb749f5e1e040adde2e25d5022bd,
         type: 3}
@@ -29146,7 +29146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616017905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.024077088, y: -0.012680961, z: -0.53599185}
+  m_LocalPosition: {x: -0.024077088, y: -0.987, z: -0.54}
   m_LocalScale: {x: 0.090642616, y: 0.090642616, z: 0.37787658}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62862,7 +62862,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: state
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
@@ -72534,8 +72534,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516128293}
   m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0, z: 2.1820884}
-  m_LocalScale: {x: 0.057473477, y: 0.057473477, z: 0.013786371}
+  m_LocalPosition: {x: 0, y: 0, z: 11.731}
+  m_LocalScale: {x: 0.0427413, y: 0.0427413, z: 0.01025251}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1638287290}
@@ -72544,7 +72544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.4349146, y: 5.204998}
+  m_AnchoredPosition: {x: 20.535, y: 5.204998}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516128295
@@ -72559,7 +72559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbbde4c49d46824ba1656f24c442334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinSound: {fileID: 8300000, guid: 1f173442e579aec4b8199b2cfa98e586, type: 3}
+  CoinSound: {fileID: 8300000, guid: b3f181326498a114090793715c1def7a, type: 3}
   CoinLocation: {x: 0, y: 0}
   Collected: 0
   audioSource: {fileID: 0}
@@ -95720,8 +95720,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005948759}
   m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0, z: 0.28208882}
-  m_LocalScale: {x: 0.057473477, y: 0.057473477, z: 0.013786371}
+  m_LocalPosition: {x: 0, y: 0, z: 6.001}
+  m_LocalScale: {x: 0.0427413, y: 0.0427413, z: 0.01025251}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 358260023}
@@ -95730,7 +95730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.134914, y: 5.204998}
+  m_AnchoredPosition: {x: -6.08, y: 5.204998}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005948764
@@ -95745,7 +95745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbbde4c49d46824ba1656f24c442334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinSound: {fileID: 8300000, guid: 1f173442e579aec4b8199b2cfa98e586, type: 3}
+  CoinSound: {fileID: 8300000, guid: b3f181326498a114090793715c1def7a, type: 3}
   CoinLocation: {x: 0, y: 0}
   Collected: 0
   audioSource: {fileID: 0}
@@ -97849,7 +97849,7 @@ PrefabInstance:
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}
       propertyPath: state
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -7380485186867303360, guid: 41cd78ce808542b40ba35850a0ab1a11,
         type: 3}

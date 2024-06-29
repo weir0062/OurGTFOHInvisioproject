@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbbde4c49d46824ba1656f24c442334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinSound: {fileID: 8300000, guid: 1f173442e579aec4b8199b2cfa98e586, type: 3}
+  CoinSound: {fileID: 8300000, guid: b3f181326498a114090793715c1def7a, type: 3}
   CoinLocation: {x: 0, y: 0}
   Collected: 0
   audioSource: {fileID: 0}
