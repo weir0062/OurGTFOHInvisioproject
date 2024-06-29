@@ -22,7 +22,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
     [SerializeField] string IOSBannerId;
     string BannerId;
 
-    AdsInitializer Instance;
+    static AdsInitializer Instance;
 
     public void Awake()
     {

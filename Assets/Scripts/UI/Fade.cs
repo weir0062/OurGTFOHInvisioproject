@@ -18,6 +18,8 @@ public class Fade : MonoBehaviour
 
     public bool CutsceneThisLevel = true;
 
+    GameObject ToActivate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -103,6 +105,28 @@ public class Fade : MonoBehaviour
                 }
                 break;
 
+
+            case FadeType.EndFade:
+            {
+                FadeAmount += Speed * Time.deltaTime;
+                if (FadeAmount >= 1)
+                {
+                    Darkness.enabled = true;
+                    FadeAmount = 1;
+                    Darkness.color = new Color(0, 0, 0, FadeAmount);
+                        if (ToActivate != null)
+                            ToActivate.GetComponent<RawImage>().color = new Color(ToActivate.GetComponent<RawImage>().color.r,
+                                                                                  ToActivate.GetComponent<RawImage>().color.g,
+                                                                                  ToActivate.GetComponent<RawImage>().color.b,
+                                                                                  1);
+                        fadeType = FadeType.Pause;
+
+                }
+                else
+                    Darkness.color = new Color(0, 0, 0, FadeAmount);
+                break;
+            }
+
         }
     }
 
@@ -115,6 +139,15 @@ public class Fade : MonoBehaviour
 
         
 
+    }
+
+    public void FadeForEndScreen(GameObject obj)
+    {
+        Darkness.enabled = true;
+        FadeAmount = 0f;
+        Darkness.color = new Color(0, 0, 0, FadeAmount);
+        ToActivate = obj;
+        fadeType = FadeType.EndFade;
     }
 
     public void FadeOutThanIn()
@@ -182,5 +215,6 @@ public class Fade : MonoBehaviour
         FadeOut,
         FadeOutThanIn,
         Pause,
+        EndFade
     }
 }

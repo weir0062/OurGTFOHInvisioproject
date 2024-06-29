@@ -5,8 +5,7 @@ using TMPro;
 using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
+using UnityEngine.UI;
 
 public enum TileState
 {
@@ -172,6 +171,11 @@ public class Tile : MonoBehaviour
                 if(temp != null) 
                 {
                     temp.transform.GetChild(0).gameObject.SetActive(true);
+                    temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color = new Color(temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color.r,
+                                                                                                                                     temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color.g,
+                                                                                                                                     temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color.b,
+                                                                                                                                     0);
+                    temp.transform.GetChild(0).GetComponent<CutScene>().IndependentFade.FadeForEndScreen(temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage);
                 }
 
                 return;
@@ -192,7 +196,8 @@ public class Tile : MonoBehaviour
 
            //StartCoroutine(WaitAndContinue(2.5f));
            
-            m_SceneHandler.LoadNextLevel();
+            if(m_SceneHandler.LevelID < 10)
+                m_SceneHandler.LoadNextLevel();
 
 
             return;
@@ -366,7 +371,10 @@ public class Tile : MonoBehaviour
         {
             GOScreen = GameObject.FindObjectOfType<GameOverScreen>();
         }
-        FinishedLevel();
+        if(m_SceneHandler.LevelID <= 10)
+            FinishedLevel();
+
+
         GOScreen.TurnOnDeathMenu();
         
         return;

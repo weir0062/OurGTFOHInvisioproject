@@ -35,6 +35,7 @@ public class CutScene : MonoBehaviour
     InGameMenu menu;
 
     public bool EndCutScene = false;
+    public GameObject EndScutSceneImage;
 
 
     // Start is called before the first frame update
@@ -69,7 +70,8 @@ public class CutScene : MonoBehaviour
 
         if(First == false)
         {
-            FadeObject.FadeIn();
+            if(EndCutScene== false)
+                FadeObject.FadeIn();
             Timer = 0.0f;
             CanSkip = false;
             First = true;

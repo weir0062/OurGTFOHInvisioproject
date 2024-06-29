@@ -44,6 +44,8 @@ public class ProgressTracker : MonoBehaviour, Saveable
             }
         }
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
         mainMenu = FindObjectOfType<MainMenu>();
         sceneHandler= FindObjectOfType<SceneHandler>();
     }
@@ -120,5 +122,14 @@ public class ProgressTracker : MonoBehaviour, Saveable
 
         //LoadLevelAt(LevelID);
 
+    }
+
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.buildIndex == 0)
+        {
+            UpdateMenu();
+        }
     }
 }
