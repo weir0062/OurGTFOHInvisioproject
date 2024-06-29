@@ -109,6 +109,9 @@ public class InGameMenu : MonoBehaviour
     }
     public void OpenMainMenu()
     {
+        //If we are in arcade we need to call update to see the scores on the level
+
+
         m_SceneHandler.LevelReturnedFrom = m_SceneHandler.LevelID;
         m_SceneHandler.Returning = true;
         m_SceneHandler.LoadLevelAt(0);

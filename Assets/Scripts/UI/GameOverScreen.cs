@@ -42,6 +42,9 @@ public class GameOverScreen : MonoBehaviour
     }
     public void TurnOnDeathMenu()
     {
+        if (m_SceneHandler.LevelID > 10)
+            return;
+
         InGameMenu IGMenu = GameObject.FindObjectOfType<InGameMenu>();
         IGMenu?.Pause();
         Restart.SetActive(true);

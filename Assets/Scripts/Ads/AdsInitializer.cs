@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
 {
@@ -21,9 +22,12 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
     [SerializeField] string IOSBannerId;
     string BannerId;
 
+    AdsInitializer Instance;
+
     public void Awake()
     {
-        InitializeAds();
+
+
     }
 
     public void InitializeAds()
@@ -114,6 +118,17 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
 
     public void Start()
     {
-        DontDestroyOnLoad(this);
+        if (Instance == null)
+        {
+            //This tells unity not to delete the object when you load another scene
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+            InitializeAds();
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 }

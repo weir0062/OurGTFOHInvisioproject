@@ -68,7 +68,7 @@ public class EndScreen : MonoBehaviour
         //Color change based off of if the player got the time score point or not
         if(scoreManager.TimeElpased >= scoreManager.TimeToBeat)
         {
-            PlayerTime.color = Color.red;
+            PlayerTime.color = Color.grey;
         }
         else if(scoreManager.TimeElpased < scoreManager.TimeToBeat)
         {
@@ -124,6 +124,11 @@ public class EndScreen : MonoBehaviour
 
     public void Reset()
     {
-        sceneHandler.ReloadLevel();
+        sceneHandler.LoadLevelAt(sceneHandler.LevelID);
+    }
+
+    public void ReturnMainMenu()
+    {
+        sceneHandler.LoadLevelAt(0);
     }
 }

@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 37641987146059909, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -669.99994
+      value: -617.99994
       objectReference: {fileID: 0}
     - target: {fileID: 37641987146059909, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
@@ -299,7 +299,7 @@ PrefabInstance:
     - target: {fileID: 37641987209410506, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 69.2
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 37641987209410506, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
@@ -411,7 +411,7 @@ PrefabInstance:
     - target: {fileID: 37641987268029038, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -670
+      value: -618
       objectReference: {fileID: 0}
     - target: {fileID: 37641987268029038, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
@@ -980,6 +980,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8351439016592455512, guid: 77e4cd67c261f2a48a17cc9919aec6f9,
         type: 2}
+    - target: {fileID: 37641988426726340, guid: 646096961d4148243b03ed9c7f9c23ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 37641988859685870, guid: 646096961d4148243b03ed9c7f9c23ef,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1051,6 +1056,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795776292061445413, guid: 646096961d4148243b03ed9c7f9c23ef,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526280302922803496, guid: 646096961d4148243b03ed9c7f9c23ef,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -758
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1189,6 +1204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fader
       objectReference: {fileID: 0}
+    - target: {fileID: 3027866076798180762, guid: e2d7ec310e8e0974985f7e83da6b2221,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e2d7ec310e8e0974985f7e83da6b2221, type: 3}
@@ -1319,7 +1339,7 @@ PrefabInstance:
     - target: {fileID: 6133627946297165117, guid: fd9c078bc0c2891488cc6119ce5f6a31,
         type: 3}
       propertyPath: m_fontSize
-      value: 42.2
+      value: 53.65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

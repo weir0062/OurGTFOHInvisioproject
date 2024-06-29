@@ -50,7 +50,7 @@ public class ScoreManager : MonoBehaviour
 
             if(TimeElpased >= TimeToBeat) 
             {
-                TimerText.color = Color.red;
+                TimerText.color = Color.grey;
             }
         }
     }
