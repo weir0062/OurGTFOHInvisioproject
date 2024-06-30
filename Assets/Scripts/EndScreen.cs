@@ -119,6 +119,12 @@ public class EndScreen : MonoBehaviour
 
     public void NextLevel()
     {
+        if(SceneManager.GetActiveScene().buildIndex == 20)
+        {
+            sceneHandler.LoadLevelAt(0);
+            return;
+        }
+
         sceneHandler.LoadNextLevel();
     }
 

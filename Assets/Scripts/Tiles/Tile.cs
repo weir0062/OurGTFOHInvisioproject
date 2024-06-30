@@ -186,8 +186,9 @@ public class Tile : MonoBehaviour
             {
                 //NOT SURE IF THIS IS NEEDED
                 //m_SceneHandler.Save(m_SceneHandler.SaveFileName);
-
-                m_SceneHandler.LoadLevelAt(0);
+                FinishedLevel();
+               
+                //m_SceneHandler.LoadLevelAt(0);
 
                 return;
             }
