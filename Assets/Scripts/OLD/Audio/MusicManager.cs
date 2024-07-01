@@ -160,6 +160,7 @@ public class MusicManager : MonoBehaviour
             audioSorce.volume = Volume;
             audioSorce.clip = Songs[sceneHandler.LevelID];
             audioSorce.Play();
+            return;
         }
 
         if (sceneHandler.LevelID == 0 || sceneHandler.LevelID == 1)
@@ -175,12 +176,19 @@ public class MusicManager : MonoBehaviour
             audioSorce.volume = Volume;
             audioSorce.clip = Songs[0];
             audioSorce.Play();
+            return;
         }
+
+        audioSorce.volume = Volume;
+        audioSorce.clip = Songs[sceneHandler.LevelID];
+        audioSorce.Play();
     }
 
     //Used for levels that start with an add like level 2 that way the music does not play over the ad
     public void PlayMusicAfterAd()
     {
+        audioSorce = GetComponent<AudioSource>();
+        sceneHandler = GameObject.FindObjectOfType<SceneHandler>();
         audioSorce.Stop();
         audioSorce.volume = Volume;
         audioSorce.clip = Songs[sceneHandler.LevelID];

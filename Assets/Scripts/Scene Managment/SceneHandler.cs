@@ -90,10 +90,18 @@ public class SceneHandler : MonoBehaviour, Saveable
 
     private IEnumerator LoadNextLevelCoroutine()
     {
-        yield return StartCoroutine(fader.FadeOutCoroutine());
+        if(fader== null)
+            fader = FindObjectOfType<Fade>();
 
-        LevelID++;
-        yield return SceneManager.LoadSceneAsync(LevelID);
+        if(fader != null)
+        {
+            yield return StartCoroutine(fader.FadeOutCoroutine());
+
+        }
+
+         LevelID++;
+         yield return SceneManager.LoadSceneAsync(LevelID);
+
 
         //yield return StartCoroutine(fader.FadeInCoroutine());
     }
@@ -337,6 +345,12 @@ public class SceneHandler : MonoBehaviour, Saveable
         if(TransferingScenes == true)
         {
 
+            MusicManager musicManager = FindObjectOfType<MusicManager>();
+
+            if (musicManager != null)
+            {
+                musicManager.PlayMusicAfterAd();
+            }
             //This section will finish loading the save game.  We need to load the objects here since
 
             //Get number of objects to load  //continue loading from stream of open file

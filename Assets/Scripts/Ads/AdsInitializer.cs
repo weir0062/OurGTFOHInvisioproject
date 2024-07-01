@@ -103,12 +103,12 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IU
             temp.Paused = false;
         }
         
-        MusicManager musicManager = GameObject.FindObjectOfType<MusicManager>();
+        //MusicManager musicManager = GameObject.FindObjectOfType<MusicManager>();
 
-        if(musicManager != null) 
-        {
-            musicManager.PlayMusicAfterAd();
-        }
+        //if(musicManager != null) 
+        //{
+        //    musicManager.PlayMusicAfterAd();
+        //}
 
         Fade fader  = GameObject.FindObjectOfType<Fade>();
         if(fader.CutsceneThisLevel == false)

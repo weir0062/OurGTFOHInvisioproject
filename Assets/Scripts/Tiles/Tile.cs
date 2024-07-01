@@ -175,7 +175,9 @@ public class Tile : MonoBehaviour
                                                                                                                                      temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color.g,
                                                                                                                                      temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage.GetComponent<RawImage>().color.b,
                                                                                                                                      0);
-                    temp.transform.GetChild(0).GetComponent<CutScene>().IndependentFade.FadeForEndScreen(temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage);
+                    
+                    if(temp.transform.GetChild(0).GetComponent<CutScene>().IndependentFade != null)
+                        temp.transform.GetChild(0).GetComponent<CutScene>().IndependentFade.FadeForEndScreen(temp.transform.GetChild(0).GetComponent<CutScene>().EndScutSceneImage);
                 }
 
                 return;

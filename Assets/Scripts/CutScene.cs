@@ -71,7 +71,11 @@ public class CutScene : MonoBehaviour
         if(First == false)
         {
             if(EndCutScene== false)
-                FadeObject.FadeIn();
+            {
+                if(FadeObject != null)
+                    FadeObject.FadeIn();
+
+            }
             Timer = 0.0f;
             CanSkip = false;
             First = true;
@@ -93,7 +97,8 @@ public class CutScene : MonoBehaviour
         {
             if(Input.GetMouseButton(0))
             {
-                FadeObject.FadeOutThanIn();
+                if(FadeObject != null)
+                    FadeObject.FadeOutThanIn();
 
                 soundManager?.PlayClickSound();
 
@@ -107,8 +112,15 @@ public class CutScene : MonoBehaviour
         if (Clicked == true)
         {
 
-
-            if (FadeObject.FadeAmount >= 1.0f)
+            if(FadeObject != null)
+            {
+                if (FadeObject.FadeAmount >= 1.0f)
+                {
+                    CurrentImage++;
+                    Clicked = false;
+                }
+            }
+            else
             {
                 CurrentImage++;
                 Clicked = false;
