@@ -19,6 +19,10 @@ public class InGameMenu : MonoBehaviour
     public GameObject Restart;
     public SceneHandler m_SceneHandler;
     Slider slider;
+
+    bool Clicked = false;
+    float ClickTimer = 0.0f;
+    float ResetTime = 5.0f;
     private void Awake()
     {
         if (m_SceneHandler == null)
@@ -58,6 +62,19 @@ public class InGameMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             ToggleMenu();
+        }
+
+        if(Clicked == true)
+        {
+            if(ClickTimer < ResetTime) 
+            {
+                ClickTimer += Time.deltaTime;
+            }
+            else
+            {
+                ClickTimer = 0.0f;
+                Clicked= false;
+            }
         }
     }
 
@@ -110,27 +127,34 @@ public class InGameMenu : MonoBehaviour
     public void OpenMainMenu()
     {
         //If we are in arcade we need to call update to see the scores on the level
-
-
-        m_SceneHandler.LevelReturnedFrom = m_SceneHandler.LevelID;
-        m_SceneHandler.Returning = true;
-        m_SceneHandler.LoadLevelAt(0);
+        if(Clicked == false)
+        {
+            m_SceneHandler.LevelReturnedFrom = m_SceneHandler.LevelID;
+            m_SceneHandler.Returning = true;
+            m_SceneHandler.LoadLevelAt(0);
        
-        Time.timeScale = 1f;
-        Cam.SetIsPaused(false);
+            Time.timeScale = 1f;
+            Cam.SetIsPaused(false);
 
-        PauseButton.SetActive(false);
-        ZoomSlider.SetActive(false);
+            PauseButton.SetActive(false);
+            ZoomSlider.SetActive(false);
+
+            Clicked = true;
+        }
+
     }
     public void RestartLevel()
     {
+        if(Clicked == false)
+        {
+            m_SceneHandler.LoadLevelAt(m_SceneHandler.LevelID);//restart the level through SceneHandler
+            Time.timeScale = 1f;
+            Cam.SetIsPaused(false);
 
-        m_SceneHandler.LoadLevelAt(m_SceneHandler.LevelID);//restart the level through SceneHandler
-        Time.timeScale = 1f;
-        Cam.SetIsPaused(false);
-
-        PauseButton.SetActive(false);
-        ZoomSlider.SetActive(false);
+            PauseButton.SetActive(false);
+            ZoomSlider.SetActive(false);
+            Clicked = true;
+        }
     }
     public void OnZoomSliderChanged()
     {

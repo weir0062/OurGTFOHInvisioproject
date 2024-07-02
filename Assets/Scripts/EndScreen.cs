@@ -17,6 +17,12 @@ public class EndScreen : MonoBehaviour
 
     ScoreManager scoreManager;
     SceneHandler sceneHandler;
+
+
+    bool Clicked = false;
+    float ClickTimer = 0.0f;
+    float ResetTime = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -113,27 +119,51 @@ public class EndScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Clicked == true)
+        {
+            if (ClickTimer < ResetTime)
+            {
+                ClickTimer += Time.deltaTime;
+            }
+            else
+            {
+                ClickTimer = 0.0f;
+                Clicked = false;
+            }
+        }
     }
 
     public void NextLevel()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 20)
+        if(Clicked == false)
         {
-            sceneHandler.LoadLevelAt(0);
-            return;
-        }
+            if(SceneManager.GetActiveScene().buildIndex == 20)
+            {
+                sceneHandler.LoadLevelAt(0);
+                return;
+            }
 
-        sceneHandler.LoadNextLevel();
+            sceneHandler.LoadNextLevel();
+
+            Clicked = true;
+        }
     }
 
     public void Reset()
     {
-        sceneHandler.LoadLevelAt(sceneHandler.LevelID);
+        if(Clicked == false)
+        {
+            sceneHandler.LoadLevelAt(sceneHandler.LevelID);
+            Clicked = true;
+        }
     }
 
     public void ReturnMainMenu()
     {
-        sceneHandler.LoadLevelAt(0);
+        if(Clicked == false )
+        {
+            sceneHandler.LoadLevelAt(0);
+            Clicked= true;
+        }
     }
 }
