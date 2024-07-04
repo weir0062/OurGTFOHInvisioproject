@@ -97,6 +97,9 @@ public class CutScene : MonoBehaviour
         {
             if(Input.GetMouseButton(0))
             {
+                if(FadeObject== null)
+                    FadeObject = FindObjectOfType<Fade>();
+
                 if(FadeObject != null)
                     FadeObject.FadeOutThanIn();
 

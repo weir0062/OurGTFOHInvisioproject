@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     [HideInInspector] public float MinZoomIn;
     [HideInInspector] public float MaxZoomIn;
     float defaultY = 0;
-    float focusSpeed = 6.9f;
+    public float focusSpeed = 6.9f;
     private Transform oldFocusObject;
     public Transform currentFocusObject;
     private Vector3 CameraOffset;
