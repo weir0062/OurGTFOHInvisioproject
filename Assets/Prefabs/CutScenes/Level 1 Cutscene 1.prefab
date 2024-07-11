@@ -89,6 +89,7 @@ MonoBehaviour:
   Darkness: {fileID: 0}
   Speed: 0.75
   FadeAmount: 0
+  CutsceneThisLevel: 1
 --- !u!1 &8963183977622456609
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +215,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 93e9c15428ee8604599fadcea659e9e2, type: 3}
   Paused: 0
   soundManager: {fileID: 0}
+  IndependentFade: {fileID: 0}
+  EndCutScene: 0
+  EndScutSceneImage: {fileID: 0}
 --- !u!1 &8963183978408295278
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,7 @@ public class CameraController : MonoBehaviour
     public Transform currentFocusObject;
     private Vector3 CameraOffset;
     bool IsPaused;
+    float CurrentZoom;
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,7 +26,8 @@ public class CameraController : MonoBehaviour
         SetIsPaused(false);
         IsPaused = false;
         MinZoomIn = 10;
-        MaxZoomIn = 30;
+        MaxZoomIn = 90;
+        CurrentZoom = (MinZoomIn + MaxZoomIn) / 2;
         CameraZoom((MinZoomIn + MaxZoomIn)/2);
     }
     void OnEnable()
@@ -95,6 +98,17 @@ public class CameraController : MonoBehaviour
         currentFocusObject = tileController.GetActiveTile().transform;
         tileController.GetActiveTile().Camera = this.gameObject;
 
+
+        if(Input.mouseScrollDelta.y > 0)
+        {
+            CurrentZoom -= 5;
+            CameraZoom(CurrentZoom);
+        }
+        else if(Input.mouseScrollDelta.y < 0)
+        {
+            CurrentZoom += 5;
+            CameraZoom(CurrentZoom);
+        }
     }
 
 
@@ -112,7 +126,7 @@ public class CameraController : MonoBehaviour
     {
         if (camera)
         {
-
+            CurrentZoom = zoom;
             camera.fieldOfView = zoom;
         }
     }

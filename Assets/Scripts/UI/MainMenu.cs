@@ -46,6 +46,11 @@ public class MainMenu : MonoBehaviour
         supportMenu.SetActive(true);
     }
 
+    public void OpenQuitGame()
+    {
+        Application.Quit();
+    }
+
     public void OpenLevels()
     {
         mainMenu.SetActive(false);
