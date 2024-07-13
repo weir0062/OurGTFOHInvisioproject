@@ -342,7 +342,18 @@ public class SceneHandler : MonoBehaviour, Saveable
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
-        if(TransferingScenes == true)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+
+            if(fader != null)
+            {
+                Fade temp = FindObjectOfType<Fade>();
+                temp.Darkness.color = new Color(0, 0, 0, 1);
+                temp.FadeIn();
+            }
+        }
+
+        if (TransferingScenes == true)
         {
 
             MusicManager musicManager = FindObjectOfType<MusicManager>();
