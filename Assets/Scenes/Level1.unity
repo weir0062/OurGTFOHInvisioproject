@@ -104218,6 +104218,7 @@ MonoBehaviour:
   CutsceneImages:
   - {fileID: 2800000, guid: d2abca6e5955bd44499b8bcdb0157d15, type: 3}
   - {fileID: 2800000, guid: 95ada7acca655174abb895d11e1df797, type: 3}
+  FadeObject: {fileID: 8018397101975844195}
   Paused: 0
   soundManager: {fileID: 0}
   IndependentFade: {fileID: 832899629}

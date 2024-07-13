@@ -342,7 +342,15 @@ public class SceneHandler : MonoBehaviour, Saveable
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
-        if(TransferingScenes == true)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+
+            Fade temp = FindObjectOfType<Fade>();
+            temp.Darkness.color = new Color(0, 0, 0, 1);
+            temp.FadeIn();
+        }
+
+        if (TransferingScenes == true)
         {
 
             MusicManager musicManager = FindObjectOfType<MusicManager>();
@@ -351,6 +359,9 @@ public class SceneHandler : MonoBehaviour, Saveable
             {
                 musicManager.PlayMusicAfterAd();
             }
+
+
+
             //This section will finish loading the save game.  We need to load the objects here since
 
             //Get number of objects to load  //continue loading from stream of open file

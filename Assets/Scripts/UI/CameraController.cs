@@ -107,6 +107,7 @@ public class CameraController : MonoBehaviour
         else if(Input.mouseScrollDelta.y < 0)
         {
             CurrentZoom += 5;
+            CurrentZoom = Mathf.Clamp(CurrentZoom, 1, 75);
             CameraZoom(CurrentZoom);
         }
     }

@@ -19,7 +19,7 @@ public class CutScene : MonoBehaviour
 
     bool CanSkip = false;
 
-    Fade FadeObject;
+    public Fade FadeObject;
 
     bool First = false;
 
@@ -44,7 +44,9 @@ public class CutScene : MonoBehaviour
         DisplayWindow = GetComponentInChildren<RawImage>();
 
         DisplayWindow.texture = CutsceneImages[CurrentImage];
-        FadeObject = GameObject.FindObjectOfType<Fade>();
+        
+        if(FadeObject == null)
+            FadeObject = GameObject.FindObjectOfType<Fade>();
 
         if(soundManager ==null)
             soundManager = FindObjectOfType<SoundManager>();

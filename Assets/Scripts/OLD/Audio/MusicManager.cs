@@ -158,7 +158,7 @@ public class MusicManager : MonoBehaviour
         if (GameObject.FindObjectOfType<AdsInitializer>() == null)
         {
             audioSorce.volume = Volume;
-            audioSorce.clip = Songs[sceneHandler.LevelID];
+            audioSorce.clip = Songs[SceneManager.GetActiveScene().buildIndex];
             audioSorce.Play();
             return;
         }
@@ -166,7 +166,7 @@ public class MusicManager : MonoBehaviour
         if (sceneHandler.LevelID == 0 || sceneHandler.LevelID == 1)
         {
             audioSorce.volume = Volume;
-            audioSorce.clip = Songs[sceneHandler.LevelID];
+            audioSorce.clip = Songs[SceneManager.GetActiveScene().buildIndex];
             audioSorce.Play();
             return;
         }
@@ -180,7 +180,7 @@ public class MusicManager : MonoBehaviour
         }
 
         audioSorce.volume = Volume;
-        audioSorce.clip = Songs[sceneHandler.LevelID];
+        audioSorce.clip = Songs[SceneManager.GetActiveScene().buildIndex];
         audioSorce.Play();
     }
 
