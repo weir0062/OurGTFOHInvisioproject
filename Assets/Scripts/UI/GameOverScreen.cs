@@ -16,7 +16,9 @@ public class GameOverScreen : MonoBehaviour
 
     bool Clicked = false;
     float ClickTimer = 0.0f;
-    float ResetTime = 5.0f;
+    float ResetTime = 5.0f; 
+
+
     // Start is called before the first frame update
     void Start()
     {
